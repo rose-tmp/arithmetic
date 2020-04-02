@@ -1,24 +1,22 @@
-package jianZhi.BiTreeOrder;
+package BiTreeOrder;
 
 /**
  * @author - ZwZ
- * @date - 2020/2/12 - 22:22
- * @Description:递归中序遍历二叉树 1.写递归出口
- * 2.将问题分解后，书写递归式，即 将问题分解成一个个的小问题
- * 3.递归返回值
+ * @date - 2020/2/12 - 22:18
+ * @Description:递归先序遍历二叉树
  */
-public class InOrderRecurrence {
-    public void inOrder(TreeNode root) {
+public class PreOrderRecurrence {
+    public void preOrder(TreeNode root) {
         if (root == null)
             return;
-        inOrder(root.left);
         //visit(root);
         System.out.println(root.val);
-        inOrder(root.right);
+        preOrder(root.left);
+        preOrder(root.right);
     }
 
     public static void main(String[] args) {
-        InOrderRecurrence order = new InOrderRecurrence();
+        PreOrderRecurrence order = new PreOrderRecurrence();
         TreeNode root = new TreeNode(8);
         root.left = new TreeNode(6);
         root.left.left = new TreeNode(5);
@@ -26,6 +24,6 @@ public class InOrderRecurrence {
         root.right = new TreeNode(10);
         root.right.left = new TreeNode(9);
         root.right.right = new TreeNode(11);
-        order.inOrder(root);
+        order.preOrder(root);
     }
 }

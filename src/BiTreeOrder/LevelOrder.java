@@ -1,4 +1,4 @@
-package jianZhi.BiTreeOrder;
+package BiTreeOrder;
 
 import java.util.LinkedList;
 import java.util.Queue;

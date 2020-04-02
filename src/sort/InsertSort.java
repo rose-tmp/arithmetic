@@ -1,4 +1,4 @@
-package jianZhi.sort;
+package sort;
 
 import zuoPrimary.Swap;
 

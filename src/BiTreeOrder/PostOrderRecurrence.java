@@ -1,22 +1,22 @@
-package jianZhi.BiTreeOrder;
+package BiTreeOrder;
 
 /**
  * @author - ZwZ
- * @date - 2020/2/12 - 22:18
- * @Description:递归先序遍历二叉树
+ * @date - 2020/2/12 - 22:24
+ * @Description:递归后序遍历二叉树
  */
-public class PreOrderRecurrence {
-    public void preOrder(TreeNode root) {
+public class PostOrderRecurrence {
+    public void postOrder(TreeNode root) {
         if (root == null)
             return;
+        postOrder(root.left);
+        postOrder(root.right);
         //visit(root);
         System.out.println(root.val);
-        preOrder(root.left);
-        preOrder(root.right);
     }
 
     public static void main(String[] args) {
-        PreOrderRecurrence order = new PreOrderRecurrence();
+        PostOrderRecurrence order = new PostOrderRecurrence();
         TreeNode root = new TreeNode(8);
         root.left = new TreeNode(6);
         root.left.left = new TreeNode(5);
@@ -24,6 +24,6 @@ public class PreOrderRecurrence {
         root.right = new TreeNode(10);
         root.right.left = new TreeNode(9);
         root.right.right = new TreeNode(11);
-        order.preOrder(root);
+        order.postOrder(root);
     }
 }
