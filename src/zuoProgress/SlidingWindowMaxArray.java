@@ -40,9 +40,7 @@ import java.util.LinkedList;
  * 以上述为例，结果应该返回(5.5.5.4.6.7).
  *
  * 思路：
- * 使用双向链表，从前到后满足从大到小的顺序存储数据以及数据的下标(这是逻辑上的，物理上直接存储原数组下标即可，因为通过下标可以直接找到相对应的值，不需要存储一个hashMap)
- * 然后，如果遍历的原数组的数比链表尾部的数大，那么链表尾部的数一直删除，如果比尾部的最后一个数小，加入链表尾部
- * 每次求最大值的时候，
+ * 在WindowMax的基础上进行定制
  */
 public class SlidingWindowMaxArray {
     /** 
@@ -55,14 +53,14 @@ public class SlidingWindowMaxArray {
     public int[] getMaxWindow(int[] arr, int W){
         if(arr == null || W < 1 || W > arr.length)
             return null;
-        LinkedList<Integer> qMax = new LinkedList<>();//双端队列
+        LinkedList<Integer> qMax = new LinkedList<>();//双端队列 它还是存储的窗口每个状态下的最大值的下标
         int index = 0;
         int[] res = new int[arr.length - W + 1];
         for (int i = 0; i < arr.length; i++) {
             while(!qMax.isEmpty() && arr[qMax.peekLast()] <= arr[i])
                 qMax.pollLast();
             qMax.addLast(i);
-            //本题目中窗口大小固定，当此if成立时，说明qMax的头结点此时已经“过期”即窗口已经滑过它的位置
+            //本题目中窗口大小固定，当此if成立时，说明qMax的头结点此时已经“过期”即窗口已经滑过它的位置 就好比left--的过程
             if(i - W == qMax.peekFirst())
                 qMax.pollFirst();
             if(i > W - 1)
