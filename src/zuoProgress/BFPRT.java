@@ -36,6 +36,10 @@ import java.util.Arrays;
  * 首先将原数组分成 5 个一组，每组内进行排序，组间不排序
  * 然后将每组的中位数取出再次进行上述操作,然后取出中位数
  * 将这个中位数当作pivot进行 partition 操作
+ *
+ * 应用：求一个无序数组中最大/小的K个数
+ * 先用BFPRT算法求出第K大/小的数，然后再遍历一遍原数组
+ * 或者使用堆排序
  */
 public class BFPRT {
     public static int getMinKthByBFPRT(int[] arr,int k) {
