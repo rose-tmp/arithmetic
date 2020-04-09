@@ -87,7 +87,7 @@
       <option name="IGNORE_JAVADOC_PERIOD" value="true" />
       <option name="IGNORE_DUPLICATED_THROWS" value="false" />
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
-      <option name="myAdditionalJavadocTags" value="date" />
+      <option name="myAdditionalJavadocTags" value="date,Description:窗口中从前面删除一个数,Author:,Param:,return:,Date:,Description:求窗口中的最大值做到O(1),Description:最大值减去最小值小于或等于num的子数组数量,Description:暴力,Description:借用窗口最大值最小值思想,Description:验证某子数组是否满足最大值减去最小值小于或等于num ,Description:添加数据进入窗口 ,Description:双端链表中的队列头存储的始终是当前窗口的最大值 ,Description:对WindowMax中的思想的定制,Description:生成窗口最大值敷组[题目],Description:暴力遍历,Description:马拉车算法" />
     </inspection_tool>
     <inspection_tool class="MapOrSetKeyShouldOverrideHashCodeEquals" enabled="false" level="CRITICAL" enabled_by_default="false" />
   </profile>
