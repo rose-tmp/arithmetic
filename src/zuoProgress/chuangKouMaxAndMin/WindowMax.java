@@ -1,4 +1,4 @@
-package zuoProgress;
+package zuoProgress.chuangKouMaxAndMin;
 
 import java.util.LinkedList;
 

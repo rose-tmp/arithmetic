@@ -1,4 +1,4 @@
-package zuoProgress;
+package zuoProgress.MonotionicStack;
 
 import java.util.Stack;
 
@@ -26,7 +26,7 @@ public class MonotonicStack {
      * 它出栈之后栈顶的元素，右边的比它大的离它最近的值就是打破这个顺序的那个元素
      * @Date: 下午9:48 20-4-9
      * @Param: [arr]
-     * @return: zuoProgress.MonotonicStack.Res[]
+     * @return: zuoProgress.MonotionicStack.MonotonicStack.Res[]
      **/
     public Res[] getMax(int[] arr){
         if(arr == null || arr.length == 0)

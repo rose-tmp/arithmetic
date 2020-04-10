@@ -1,4 +1,4 @@
-package zuoProgress;
+package zuoProgress.MonotionicStack;
 
 /**
  * @author - zwz
@@ -25,7 +25,7 @@ public class MaxTree {
      * @Description:建立一个大根堆 然后再遍历一次数组将大根堆构造成完全二叉树
      * @Date: 下午10:27 20-4-9
      * @Param: [arr]
-     * @return: zuoProgress.MaxTree.TreeNode
+     * @return: zuoProgress.MonotionicStack.MaxTree.TreeNode
      **/
     public TreeNode getMaxTree1(int[] arr){
         //...
@@ -40,7 +40,7 @@ public class MaxTree {
      * 如果左右都有的话，就挂在数值较小的那个数下面
      * @Date: 下午2:04 20-4-10
      * @Param: [arr]
-     * @return: zuoProgress.MaxTree.TreeNode
+     * @return: zuoProgress.MonotionicStack.MaxTree.TreeNode
      **/
     public TreeNode getMaxTree2(int[] arr){
 
