@@ -1,9 +1,9 @@
-package zuoProgress.tree;
+package zuoProgress.AVLtree;
 
 /**
  * Not implemented by ZwZ
  * 
- * Red-Black tree implementation. From Introduction to Algorithms 3rd edition.
+ * Red-Black AVLtree implementation. From Introduction to Algorithms 3rd edition.
  * 
  * @author Ignas Lelys
  * @created May 6, 2011
@@ -29,7 +29,7 @@ public class RedBlackTree extends AbstractSelfBalancingBinarySearchTree {
     }
     
     /**
-     * Slightly modified delete routine for red-black tree.
+     * Slightly modified delete routine for red-black AVLtree.
      * 
      * {@inheritDoc}
      */
@@ -163,7 +163,7 @@ public class RedBlackTree extends AbstractSelfBalancingBinarySearchTree {
     }
     
     /**
-     * Restores Red-Black tree properties after delete if needed.
+     * Restores Red-Black AVLtree properties after delete if needed.
      */
     private void deleteRBFixup(RedBlackNode x) {
         while (x != root && isBlack(x)) {
@@ -238,7 +238,7 @@ public class RedBlackTree extends AbstractSelfBalancingBinarySearchTree {
     }
 
     /**
-     * Restores Red-Black tree properties after insert if needed. Insert can
+     * Restores Red-Black AVLtree properties after insert if needed. Insert can
      * break only 2 properties: root is red or if node is red then children must
      * be black.
      */

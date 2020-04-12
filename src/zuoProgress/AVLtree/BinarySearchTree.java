@@ -1,12 +1,12 @@
-package zuoProgress.tree;
+package zuoProgress.AVLtree;
 
 /**
  * Not implemented by ZwZ
  * 
- * Binary search tree implementation.
+ * Binary search AVLtree implementation.
  * 
- * In computer science, a binary search tree (BST), which may sometimes also be
- * called an ordered or sorted binary tree, is a node-based binary tree data
+ * In computer science, a binary search AVLtree (BST), which may sometimes also be
+ * called an ordered or sorted binary AVLtree, is a node-based binary AVLtree data
  * structure which has the following properties:
  * 
  * a) The left subtree of a node contains only nodes with keys less than the node's key. </br>

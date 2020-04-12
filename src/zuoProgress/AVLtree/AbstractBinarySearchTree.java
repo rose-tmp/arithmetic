@@ -1,12 +1,12 @@
-package zuoProgress.tree;
+package zuoProgress.AVLtree;
 
 /**
  * Not implemented by ZwZ
  * 
- * Abstract binary search tree implementation. Its basically fully implemented
- * binary search tree, just template method is provided for creating Node (other
+ * Abstract binary search AVLtree implementation. Its basically fully implemented
+ * binary search AVLtree, just template method is provided for creating Node (other
  * trees can have slightly different nodes with more info). This way some code
- * from standart binary search tree can be reused for other kinds of binary
+ * from standart binary search AVLtree can be reused for other kinds of binary
  * trees.
  * 
  * @author Ignas Lelys
@@ -15,7 +15,7 @@ package zuoProgress.tree;
  */
 public class AbstractBinarySearchTree {
 
-	/** Root node where whole tree starts. */
+	/** Root node where whole AVLtree starts. */
 	public Node root;
 
 	/** Tree size. */
@@ -62,7 +62,7 @@ public class AbstractBinarySearchTree {
 	}
 
 	/**
-	 * Insert new element to tree.
+	 * Insert new element to AVLtree.
 	 * 
 	 * @param element
 	 *            Element to insert.
@@ -151,10 +151,10 @@ public class AbstractBinarySearchTree {
 	}
 
 	/**
-	 * Put one node from tree (newNode) to the place of another (nodeToReplace).
+	 * Put one node from AVLtree (newNode) to the place of another (nodeToReplace).
 	 * 
 	 * @param nodeToReplace
-	 *            Node which is replaced by newNode and removed from tree.
+	 *            Node which is replaced by newNode and removed from AVLtree.
 	 * @param newNode
 	 *            New node.
 	 * 
@@ -176,21 +176,21 @@ public class AbstractBinarySearchTree {
 
 	/**
 	 * @param element
-	 * @return true if tree contains element.
+	 * @return true if AVLtree contains element.
 	 */
 	public boolean contains(int element) {
 		return search(element) != null;
 	}
 
 	/**
-	 * @return Minimum element in tree.
+	 * @return Minimum element in AVLtree.
 	 */
 	public int getMinimum() {
 		return getMinimum(root).value;
 	}
 
 	/**
-	 * @return Maximum element in tree.
+	 * @return Maximum element in AVLtree.
 	 */
 	public int getMaximum() {
 		return getMaximum(root).value;
@@ -209,7 +209,7 @@ public class AbstractBinarySearchTree {
 	}
 
 	/**
-	 * @return Number of elements in the tree.
+	 * @return Number of elements in the AVLtree.
 	 */
 	public int getSize() {
 		return size;

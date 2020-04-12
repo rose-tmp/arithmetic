@@ -1,17 +1,17 @@
-package zuoProgress.tree;
+package zuoProgress.AVLtree;
 
 /**
  * Not implemented by ZwZ
  * <p>
- * AVL tree implementation.
+ * AVL AVLtree implementation.
  * <p>
- * In computer science, an AVL tree is a self-balancing binary search tree, and
- * it was the first such data structure to be invented.[1] In an AVL tree, the
+ * In computer science, an AVL AVLtree is a self-balancing binary search AVLtree, and
+ * it was the first such data structure to be invented.[1] In an AVL AVLtree, the
  * heights of the two child subtrees of any node differ by at most one. Lookup,
  * insertion, and deletion all take O(log n) time in both the average and worst
- * cases, where n is the number of nodes in the tree prior to the operation.
- * Insertions and deletions may require the tree to be rebalanced by one or more
- * tree rotations.
+ * cases, where n is the number of nodes in the AVLtree prior to the operation.
+ * Insertions and deletions may require the AVLtree to be rebalanced by one or more
+ * AVLtree rotations.
  *
  * @author Ignas Lelys
  * @created Jun 28, 2011
@@ -19,10 +19,10 @@ package zuoProgress.tree;
 public class AVLTree extends AbstractSelfBalancingBinarySearchTree {
 
     /**
-     * AVL tree insert method also balances tree if needed. Additional
+     * AVL AVLtree insert method also balances AVLtree if needed. Additional
      * height parameter on node is used to track if one subtree is higher
-     * than other by more than one, if so AVL tree rotations is performed
-     * to regain balance of the tree.
+     * than other by more than one, if so AVL AVLtree rotations is performed
+     * to regain balance of the AVLtree.
      */
     @Override
     public Node insert(int element) {
@@ -169,7 +169,7 @@ public class AVLTree extends AbstractSelfBalancingBinarySearchTree {
     }
 
     /**
-     * Node of AVL tree has height and balance additional properties. If balance
+     * Node of AVL AVLtree has height and balance additional properties. If balance
      * equals 2 (or -2) that node needs to be re balanced. (Height is height of
      * the subtree starting with this node, and balance is difference between
      * left and right nodes heights).
