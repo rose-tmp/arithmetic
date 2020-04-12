@@ -71,18 +71,18 @@ public class AVLTree extends AbstractSelfBalancingBinarySearchTree {
             // rebalance (-2 means left subtree outgrow, 2 means right subtree)
             if (nodeBalance == 2) {
                 if (node.right.right != null) {
-                    node = (AVLNode) avlRotateLeft(node);
+                    node = (AVLNode) avlRotateLeft(node);//RR
                     break;
                 } else {
-                    node = (AVLNode) doubleRotateRightLeft(node);
+                    node = (AVLNode) doubleRotateRightLeft(node);//RL
                     break;
                 }
             } else if (nodeBalance == -2) {
                 if (node.left.left != null) {
-                    node = (AVLNode) avlRotateRight(node);
+                    node = (AVLNode) avlRotateRight(node);//LL
                     break;
                 } else {
-                    node = (AVLNode) doubleRotateLeftRight(node);
+                    node = (AVLNode) doubleRotateLeftRight(node);//LR
                     break;
                 }
             } else {
@@ -120,8 +120,8 @@ public class AVLTree extends AbstractSelfBalancingBinarySearchTree {
      * node to the left side.
      */
     protected Node doubleRotateRightLeft(Node node) {
-        node.right = avlRotateRight(node.right);
-        return avlRotateLeft(node);
+        node.right = avlRotateRight(node.right);//先右旋
+        return avlRotateLeft(node);//后左旋
     }
 
     /**
@@ -129,8 +129,8 @@ public class AVLTree extends AbstractSelfBalancingBinarySearchTree {
      * node to the left side.
      */
     protected Node doubleRotateLeftRight(Node node) {
-        node.left = avlRotateLeft(node.left);
-        return avlRotateRight(node);
+        node.left = avlRotateLeft(node.left);//先左旋
+        return avlRotateRight(node);//后右旋
     }
 
     /**
