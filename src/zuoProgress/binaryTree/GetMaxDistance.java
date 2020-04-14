@@ -1,4 +1,4 @@
-package zuoProgress.Tree;
+package zuoProgress.binaryTree;
 
 import zuoPrimary.shu.TreeNode;
 

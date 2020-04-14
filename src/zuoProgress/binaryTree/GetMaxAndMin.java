@@ -1,4 +1,4 @@
-package zuoProgress.Tree;
+package zuoProgress.binaryTree;
 
 import zuoPrimary.shu.TreeNode;
 
@@ -40,7 +40,7 @@ public class GetMaxAndMin {
      * 判断左右子树的最大值和当前节点的值哪个更大，即作为结果
      * @Date: 下午2:18 20-4-13
      * @Param: [head]
-     * @return: zuoProgress.Tree.GetMaxAndMin.ReturnType
+     * @return: zuoProgress.binaryTree.GetMaxAndMin.ReturnType
      **/
     private ReturnType get(TreeNode head) {
         //最小值返回系统最大，最大值返回系统最小 从而做到不影响父节点决策

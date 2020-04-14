@@ -1,4 +1,4 @@
-package zuoProgress.Tree.AVLtree;
+package zuoProgress.binaryTree.AVLtree;
 
 /**
  * Not implemented by ZwZ

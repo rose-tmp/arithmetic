@@ -1,4 +1,4 @@
-package zuoProgress.Tree.AVLtree;
+package zuoProgress.binaryTree.AVLtree;
 
 /**
  * Not implemented by ZwZ
@@ -18,7 +18,7 @@ public class AbstractBinarySearchTree {
 	/** Root node where whole AVLtree starts. */
 	public Node root;
 
-	/** Tree size. */
+	/** binaryTree size. */
 	protected int size;
 
 	/**
@@ -216,21 +216,21 @@ public class AbstractBinarySearchTree {
 	}
 
 	/**
-	 * Tree traversal with printing element values. In order method.
+	 * binaryTree traversal with printing element values. In order method.
 	 */
 	public void printTreeInOrder() {
 		printTreeInOrder(root);
 	}
 
 	/**
-	 * Tree traversal with printing element values. Pre order method.
+	 * binaryTree traversal with printing element values. Pre order method.
 	 */
 	public void printTreePreOrder() {
 		printTreePreOrder(root);
 	}
 
 	/**
-	 * Tree traversal with printing element values. Post order method.
+	 * binaryTree traversal with printing element values. Post order method.
 	 */
 	public void printTreePostOrder() {
 		printTreePostOrder(root);

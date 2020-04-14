@@ -1,4 +1,4 @@
-package zuoProgress.Tree;
+package zuoProgress.binaryTree;
 
 import zuoPrimary.shu.TreeNode;
 
@@ -35,7 +35,7 @@ public class BiggestSubBSTInTree {
      * 右子树的最小值大于当前节点值的时候，整颗树是最大搜索二叉树
      * @Date: 下午3:21 20-4-13
      * @Param: [head]
-     * @return: zuoProgress.Tree.BiggestSubBSTInTree.ReturnType
+     * @return: zuoProgress.binaryTree.BiggestSubBSTInTree.ReturnType
      **/
     public ReturnInfo biggestSubBST(TreeNode head){
         if(head == null)
