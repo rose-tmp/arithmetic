@@ -21,16 +21,20 @@ public class MinCoin {
      */
     public int minCoin1(int amount, int[] coin) {
         //base case
-        if (amount <= 0)
+        if (amount == 0)
             return 0;
-        int res = Integer.MAX_VALUE;
-        for (int i = 0; i < coin.length; i++) {
-            if (amount - coin[i] < 0)
-                return -1;
-            res = Math.min(res, minCoin1(amount - coin[i], coin) + 1);
-            return res;
+        else if (amount < 0)
+            return -1;
+        else {
+            int res = Integer.MAX_VALUE;
+            for (int i = 0; i < coin.length; i++) {
+                int subProblem = minCoin1(amount - coin[i], coin);
+                if (subProblem == -1)
+                    continue;
+                res = Math.min(res, subProblem + 1);
+            }
+            return res != Integer.MAX_VALUE ? res : -1;
         }
-        return -1;
     }
 
     /**
@@ -42,7 +46,7 @@ public class MinCoin {
      */
     public int minCoin2(int amount, int[] coins) {
         //base case
-        if (amount == 0)
+        if (amount <= 0)
             return 0;
         int[] dpArr = new int[amount + 1];
         //赋初值 dpArr[0] == 0
@@ -59,6 +63,7 @@ public class MinCoin {
         }
         return dpArr[amount] != Integer.MAX_VALUE ? dpArr[amount] : -1;
     }
+
     public static void main(String[] args) {
         MinCoin coin = new MinCoin();
         int[] coins = {1, 3, 5};
