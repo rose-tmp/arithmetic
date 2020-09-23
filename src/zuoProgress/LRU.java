@@ -11,5 +11,5 @@ package zuoProgress;
  *  3.当缓存的大小超过K时，移除最不经常使用的记录，即set或get最久远的
  */
 public class LRU {
-    private
+   // private
 }

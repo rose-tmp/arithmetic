@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.pool;
 
 /**
  * @author - ZwZ
@@ -6,9 +6,10 @@ package leetcode;
  * @Description:
  */
 public class ListNode {
-    ListNode next = null;
-    int value;
-    public  ListNode(int value){
+    public ListNode next = null;
+    public int value;
+
+    public ListNode(int value) {
         this.value = value;
     }
 

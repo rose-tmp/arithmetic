@@ -1,12 +1,14 @@
 package jianZhi;
 
 import java.util.*;
+import java.util.Stack;
 
 /**
  * @author - ZwZ
  * @date - 2020/2/5 - 19:48
  * @Description:翻转链表
  */
+
 public class OverTurn {
     public static ListNode overTurn(String[] str) {
         if (str == null || str.length == 0)
@@ -19,7 +21,7 @@ public class OverTurn {
             temp = temp.next;
         }
         temp = pHead;
-        Stack<ListNode> stack = new Stack();
+        Stack<ListNode> stack = new Stack<>();
         while (temp != null) {
             stack.push(temp);
             temp = temp.next;

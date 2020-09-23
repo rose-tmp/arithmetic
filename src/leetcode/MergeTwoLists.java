@@ -1,5 +1,7 @@
 package leetcode;
 
+import leetcode.pool.ListNode;
+
 /**
  * @author - ZwZ
  * @date - 2020/9/21 - 8:00
@@ -8,10 +10,10 @@ package leetcode;
 public class MergeTwoLists {
     /** 
     * @Description: 递归 
-    * @return: leetcode.ListNode 
+    * @return: leetcode.pool.ListNode 
     * @Date: 2020/9/21-8:13
     */
-    public ListNode mergeTwoLists(ListNode list1,ListNode list2){
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2){
         //判空
         if(list1 == null || list2 == null){
             return list1 == null ? list2 : list1;

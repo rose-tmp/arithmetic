@@ -1,5 +1,7 @@
 package leetcode;
 
+import leetcode.pool.ListNode;
+
 /**
  * @author - ZwZ
  * @date - 2020/9/21 - 10:08

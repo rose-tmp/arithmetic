@@ -9,14 +9,6 @@ import java.util.Stack;
  * @Description:从尾到头打印链表
  * 输入一个链表，按链表从尾到头的顺序返回一个ArrayList。
  */
-class ListNode {
-    int value;
-    ListNode next = null;
-
-    ListNode(int value) {
-        this.value = value;
-    }
-}
 
 public class PrintListFromTailToHead {
     ArrayList<Integer> list1 = new ArrayList<>();
