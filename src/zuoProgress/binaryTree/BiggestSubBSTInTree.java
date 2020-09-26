@@ -18,7 +18,7 @@ public class BiggestSubBSTInTree {
         public TreeNode head;//最大二叉搜索树的头节点
         public int min;//整个子树的最小值
         public int max;//整个子树的最大值
-        public ReturnInfo(int size, TreeNode head,int min,int max) {
+        public ReturnInfo(int size, TreeNode head, int min, int max) {
             this.size =size;
             this.head = head;
             this.min = min;

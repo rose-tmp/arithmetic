@@ -43,6 +43,11 @@ public class FindMode {
         }
         return res;
     }
+
+    /**
+     * 中序遍历中，当前节点如果和上一个节点的值不相同时，则此时拿当前节点之前出现的节点的个数与max进行比较
+     * @param root
+     */
     public void inOrderTraversal(TreeNode root) {
         if (root == null)
             return;
