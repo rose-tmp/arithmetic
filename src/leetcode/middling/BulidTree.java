@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.middling;
 
 import leetcode.pool.TreeNode;
 
