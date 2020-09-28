@@ -26,7 +26,12 @@ public class BulidTree {
         return helper(0, inorder.length - 1);
     }
 
-    //创建存储中序遍历数组中<val,index>关系的map
+    /**
+     * 创建存储中序遍历数组中<val,index>关系的map
+     * @param inleft
+     * @param inRight
+     * @return
+     */
     public TreeNode helper(int inleft, int inRight) {
         if (inleft > inRight) {
             return null;
