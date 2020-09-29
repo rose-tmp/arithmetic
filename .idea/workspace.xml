@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。&#10;&#10;示例 1:&#10;&#10;输入: &quot;abcabcbb&quot;&#10;输出: 3 &#10;解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。&#10;示例 2:&#10;&#10;输入: &quot;bbbbb&quot;&#10;输出: 1&#10;解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。&#10;示例 3:&#10;&#10;输入: &quot;pwwkew&quot;&#10;输出: 3&#10;解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。&#10;     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/middling/Convert.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hrTsd5PY1sxdtj0jwm7ITJc1JC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager" selected="Application.LengthOfLongestSubstring">
+    <configuration name="BulidTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.middling.BulidTree" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Demo" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindMode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.easy.FindMode" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LengthOfLongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.middling.LengthOfLongestSubstring" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.middling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Manacher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zuoProgress.Manacher" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zuoProgress.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LengthOfLongestSubstring" />
+        <item itemvalue="Application.BulidTree" />
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.FindMode" />
+        <item itemvalue="Application.Manacher" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="" />
+      <created>1600768418860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600768418860</updated>
+      <workItem from="1600768420599" duration="2175000" />
+      <workItem from="1600772579915" duration="55000" />
+      <workItem from="1600772662541" duration="1330000" />
+      <workItem from="1600774127243" duration="686000" />
+      <workItem from="1600778147293" duration="1028000" />
+      <workItem from="1600779797594" duration="34539000" />
+      <workItem from="1601020085856" duration="29214000" />
+    </task>
+    <task id="LOCAL-00001" summary="leetcode三道题">
+      <created>1600768888673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600768888673</updated>
+    </task>
+    <task id="LOCAL-00002" summary="较为简单的关于硬币的dp问题">
+      <created>1600840910667</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600840910667</updated>
+    </task>
+    <task id="LOCAL-00003" summary="关于硬币的dp问题的修改">
+      <created>1600842632899</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600842632899</updated>
+    </task>
+    <task id="LOCAL-00004" summary="最长回文子串&#10;&#10;给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。&#10;&#10;示例 1：&#10;&#10;输入: &quot;babad&quot;&#10;输出: &quot;bab&quot;&#10;注意: &quot;aba&quot; 也是一个有效答案。&#10;示例 2：&#10;&#10;输入: &quot;cbbd&quot;&#10;输出: &quot;bb&quot;&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-palindromic-substring">
+      <created>1600868460559</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600868460559</updated>
+    </task>
+    <task id="LOCAL-00005" summary="给定一个有相同值的二叉搜索树（BST），找出 BST 中的所有众数（出现频率最高的元素）。">
+      <created>1600949042578</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600949042578</updated>
+    </task>
+    <task id="LOCAL-00006" summary="给定一个有相同值的二叉搜索树（BST），找出 BST 中的所有众数（出现频率最高的元素）。">
+      <created>1600950190891</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600950190891</updated>
+    </task>
+    <task id="LOCAL-00007" summary="给定一个二叉树和一个目标和，找到所有从根节点到叶子节点路径总和等于给定目标和的路径。&#10;说明: 叶子节点是指没有子节点的节点。&#10;示例:&#10;给定如下二叉树，以及目标和 sum = 22，&#10;&#10;              5&#10;             / \&#10;            4   8&#10;           /   / \&#10;          11  13  4&#10;         /  \    / \&#10;        7    2  5   1&#10;返回:&#10;&#10;[&#10;   [5,4,11,2],&#10;   [5,8,4,5]&#10;]&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/path-sum-ii">
+      <created>1601114421764</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601114421764</updated>
+    </task>
+    <task id="LOCAL-00008" summary="给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。&#10;百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”&#10;&#10;例如，给定如下二叉搜索树:root =[6,2,8,0,4,7,9,null,null,3,5]&#10;&#10;示例 1:&#10;&#10;输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8&#10;输出: 6 &#10;解释: 节点 2 和节点 8 的最近公共祖先是 6。&#10;示例 2:&#10;&#10;输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4&#10;输出: 2&#10;解释: 节点 2 和节点 4 的最近公共祖先是 2, 因为根据定义最近公共祖先节点可以为节点本身。&#10;说明:&#10;所有节点的值都是唯一的。&#10;p、q 为不同节点且均存在于给定的二叉搜索树中。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree&#10;&#10;&#10;并且整理了leetCode的相关代码，根据leetCode给出的难易程度对包结构进行了划分(dp问题除外，其被单独拉了出来)">
+      <created>1601218625960</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601218625961</updated>
+    </task>
+    <task id="LOCAL-00009" summary="给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。&#10;&#10;示例 1:&#10;&#10;输入: &quot;abcabcbb&quot;&#10;输出: 3 &#10;解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。&#10;示例 2:&#10;&#10;输入: &quot;bbbbb&quot;&#10;输出: 1&#10;解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。&#10;示例 3:&#10;&#10;输入: &quot;pwwkew&quot;&#10;输出: 3&#10;解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。&#10;     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters">
+      <created>1601277572537</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601277572537</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="leetcode三道题" />
+    <MESSAGE value="较为简单的关于硬币的dp问题" />
+    <MESSAGE value="关于硬币的dp问题的修改" />
+    <MESSAGE value="最长回文子串&#10;&#10;给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。&#10;&#10;示例 1：&#10;&#10;输入: &quot;babad&quot;&#10;输出: &quot;bab&quot;&#10;注意: &quot;aba&quot; 也是一个有效答案。&#10;示例 2：&#10;&#10;输入: &quot;cbbd&quot;&#10;输出: &quot;bb&quot;&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-palindromic-substring" />
+    <MESSAGE value="给定一个有相同值的二叉搜索树（BST），找出 BST 中的所有众数（出现频率最高的元素）。" />
+    <MESSAGE value="给定一个二叉树和一个目标和，找到所有从根节点到叶子节点路径总和等于给定目标和的路径。&#10;说明: 叶子节点是指没有子节点的节点。&#10;示例:&#10;给定如下二叉树，以及目标和 sum = 22，&#10;&#10;              5&#10;             / \&#10;            4   8&#10;           /   / \&#10;          11  13  4&#10;         /  \    / \&#10;        7    2  5   1&#10;返回:&#10;&#10;[&#10;   [5,4,11,2],&#10;   [5,8,4,5]&#10;]&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/path-sum-ii" />
+    <MESSAGE value="给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。&#10;百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”&#10;&#10;例如，给定如下二叉搜索树:root =[6,2,8,0,4,7,9,null,null,3,5]&#10;&#10;示例 1:&#10;&#10;输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8&#10;输出: 6 &#10;解释: 节点 2 和节点 8 的最近公共祖先是 6。&#10;示例 2:&#10;&#10;输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4&#10;输出: 2&#10;解释: 节点 2 和节点 4 的最近公共祖先是 2, 因为根据定义最近公共祖先节点可以为节点本身。&#10;说明:&#10;所有节点的值都是唯一的。&#10;p、q 为不同节点且均存在于给定的二叉搜索树中。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree&#10;&#10;&#10;并且整理了leetCode的相关代码，根据leetCode给出的难易程度对包结构进行了划分(dp问题除外，其被单独拉了出来)" />
+    <MESSAGE value="给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。&#10;&#10;示例 1:&#10;&#10;输入: &quot;abcabcbb&quot;&#10;输出: 3 &#10;解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。&#10;示例 2:&#10;&#10;输入: &quot;bbbbb&quot;&#10;输出: 1&#10;解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。&#10;示例 3:&#10;&#10;输入: &quot;pwwkew&quot;&#10;输出: 3&#10;解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。&#10;     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters" />
+    <option name="LAST_COMMIT_MESSAGE" value="给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。&#10;&#10;示例 1:&#10;&#10;输入: &quot;abcabcbb&quot;&#10;输出: 3 &#10;解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。&#10;示例 2:&#10;&#10;输入: &quot;bbbbb&quot;&#10;输出: 1&#10;解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。&#10;示例 3:&#10;&#10;输入: &quot;pwwkew&quot;&#10;输出: 3&#10;解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。&#10;     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="372" y="152" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1600909711379" />
+    <state x="411" y="246" width="544" height="258" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601047629778">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="411" y="246" width="544" height="258" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1601047629778" />
+    <state x="389" y="225" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601218110990">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="389" y="225" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.738@0.0.1366.738" timestamp="1601218110990" />
+    <state x="605" y="221" key="FileChooserDialogImpl" timestamp="1600772946193">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="605" y="221" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600772946193" />
+    <state width="1313" height="133" key="GridCell.Tab.0.bottom" timestamp="1601277826234">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1313" height="133" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601277826234" />
+    <state width="1313" height="133" key="GridCell.Tab.0.center" timestamp="1601277826234">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1313" height="133" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1601277826234" />
+    <state width="1313" height="133" key="GridCell.Tab.0.left" timestamp="1601277826234">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1313" height="133" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1601277826234" />
+    <state width="1313" height="133" key="GridCell.Tab.0.right" timestamp="1601277826234">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1313" height="133" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1601277826234" />
+    <state width="1313" height="274" key="GridCell.Tab.1.bottom" timestamp="1601277267406">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1313" height="274" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
+    <state width="1313" height="274" key="GridCell.Tab.1.center" timestamp="1601277267406">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1313" height="274" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
+    <state width="1313" height="274" key="GridCell.Tab.1.left" timestamp="1601277267406">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1313" height="274" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
+    <state width="1313" height="274" key="GridCell.Tab.1.right" timestamp="1601277267406">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1313" height="274" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
+    <state x="94" y="0" width="1141" height="728" key="SettingsEditor" timestamp="1601278586988">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="94" y="0" width="1141" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600774005388" />
+    <state x="94" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601278586988" />
+    <state x="275" y="75" key="Vcs.Push.Dialog.v2" timestamp="1601278611203">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600768901693" />
+    <state x="275" y="75" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1601278611203" />
+    <state x="409" y="194" width="618" height="408" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1600772954894">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="409" y="194" width="618" height="408" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1366.728@0.0.1366.728" timestamp="1600772954894" />
+    <state x="339" y="164" key="run.anything.popup" timestamp="1601264154410">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600769354733" />
+    <state x="339" y="164" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1601264154410" />
+  </component>
+</project>
