@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。&#10;&#10;示例 1:&#10;&#10;输入: &quot;abcabcbb&quot;&#10;输出: 3 &#10;解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。&#10;示例 2:&#10;&#10;输入: &quot;bbbbb&quot;&#10;输出: 1&#10;解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。&#10;示例 3:&#10;&#10;输入: &quot;pwwkew&quot;&#10;输出: 3&#10;解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。&#10;     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/middling/Convert.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="将一个给定字符串根据给定的行数，以从上往下、从左到右进行Z字形排列。&#10; * 比如输入字符串为 &quot;LEETCODEISHIRING&quot;行数为 3 时，排列如下：&#10; * L   C   I   R&#10; * E T O E S I I G&#10; * E   D   H   N&#10; * 之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如：&quot;LCIRETOESIIGEDHN&quot;。&#10; * 请你实现这个将字符串进行指定行数变换的函数：&#10; * string convert(string s, int numRows);&#10; * 示例1:&#10; *&#10; * 输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 3&#10; * 输出: &quot;LCIRETOESIIGEDHN&quot;&#10; * 示例2:&#10; *&#10; * 输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 4&#10; * 输出:&quot;LDREOEIIECIHNTSG&quot;&#10; * 解释:&#10; *&#10; * L     D     R&#10; * E   O E   I I&#10; * E C   I H   N&#10; * T     S     G&#10; *&#10; * 来源：力扣（LeetCode）&#10; * 链接：https://leetcode-cn.com/problems/zigzag-conversion">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.LengthOfLongestSubstring">
     <configuration name="BulidTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -162,7 +162,9 @@
       <workItem from="1600774127243" duration="686000" />
       <workItem from="1600778147293" duration="1028000" />
       <workItem from="1600779797594" duration="34539000" />
-      <workItem from="1601020085856" duration="29214000" />
+      <workItem from="1601020085856" duration="29918000" />
+      <workItem from="1602159413644" duration="1883000" />
+      <workItem from="1602244304458" duration="3424000" />
     </task>
     <task id="LOCAL-00001" summary="leetcode三道题">
       <created>1600768888673</created>
@@ -227,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601277572537</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="将一个给定字符串根据给定的行数，以从上往下、从左到右进行Z字形排列。&#10; * 比如输入字符串为 &quot;LEETCODEISHIRING&quot;行数为 3 时，排列如下：&#10; * L   C   I   R&#10; * E T O E S I I G&#10; * E   D   H   N&#10; * 之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如：&quot;LCIRETOESIIGEDHN&quot;。&#10; * 请你实现这个将字符串进行指定行数变换的函数：&#10; * string convert(string s, int numRows);&#10; * 示例1:&#10; *&#10; * 输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 3&#10; * 输出: &quot;LCIRETOESIIGEDHN&quot;&#10; * 示例2:&#10; *&#10; * 输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 4&#10; * 输出:&quot;LDREOEIIECIHNTSG&quot;&#10; * 解释:&#10; *&#10; * L     D     R&#10; * E   O E   I I&#10; * E C   I H   N&#10; * T     S     G&#10; *&#10; * 来源：力扣（LeetCode）&#10; * 链接：https://leetcode-cn.com/problems/zigzag-conversion">
+      <created>1601382010870</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601382010870</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +264,8 @@
     <MESSAGE value="给定一个二叉树和一个目标和，找到所有从根节点到叶子节点路径总和等于给定目标和的路径。&#10;说明: 叶子节点是指没有子节点的节点。&#10;示例:&#10;给定如下二叉树，以及目标和 sum = 22，&#10;&#10;              5&#10;             / \&#10;            4   8&#10;           /   / \&#10;          11  13  4&#10;         /  \    / \&#10;        7    2  5   1&#10;返回:&#10;&#10;[&#10;   [5,4,11,2],&#10;   [5,8,4,5]&#10;]&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/path-sum-ii" />
     <MESSAGE value="给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。&#10;百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”&#10;&#10;例如，给定如下二叉搜索树:root =[6,2,8,0,4,7,9,null,null,3,5]&#10;&#10;示例 1:&#10;&#10;输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8&#10;输出: 6 &#10;解释: 节点 2 和节点 8 的最近公共祖先是 6。&#10;示例 2:&#10;&#10;输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4&#10;输出: 2&#10;解释: 节点 2 和节点 4 的最近公共祖先是 2, 因为根据定义最近公共祖先节点可以为节点本身。&#10;说明:&#10;所有节点的值都是唯一的。&#10;p、q 为不同节点且均存在于给定的二叉搜索树中。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree&#10;&#10;&#10;并且整理了leetCode的相关代码，根据leetCode给出的难易程度对包结构进行了划分(dp问题除外，其被单独拉了出来)" />
     <MESSAGE value="给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。&#10;&#10;示例 1:&#10;&#10;输入: &quot;abcabcbb&quot;&#10;输出: 3 &#10;解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。&#10;示例 2:&#10;&#10;输入: &quot;bbbbb&quot;&#10;输出: 1&#10;解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。&#10;示例 3:&#10;&#10;输入: &quot;pwwkew&quot;&#10;输出: 3&#10;解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。&#10;     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters" />
-    <option name="LAST_COMMIT_MESSAGE" value="给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。&#10;&#10;示例 1:&#10;&#10;输入: &quot;abcabcbb&quot;&#10;输出: 3 &#10;解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。&#10;示例 2:&#10;&#10;输入: &quot;bbbbb&quot;&#10;输出: 1&#10;解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。&#10;示例 3:&#10;&#10;输入: &quot;pwwkew&quot;&#10;输出: 3&#10;解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。&#10;     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters" />
+    <MESSAGE value="将一个给定字符串根据给定的行数，以从上往下、从左到右进行Z字形排列。&#10; * 比如输入字符串为 &quot;LEETCODEISHIRING&quot;行数为 3 时，排列如下：&#10; * L   C   I   R&#10; * E T O E S I I G&#10; * E   D   H   N&#10; * 之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如：&quot;LCIRETOESIIGEDHN&quot;。&#10; * 请你实现这个将字符串进行指定行数变换的函数：&#10; * string convert(string s, int numRows);&#10; * 示例1:&#10; *&#10; * 输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 3&#10; * 输出: &quot;LCIRETOESIIGEDHN&quot;&#10; * 示例2:&#10; *&#10; * 输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 4&#10; * 输出:&quot;LDREOEIIECIHNTSG&quot;&#10; * 解释:&#10; *&#10; * L     D     R&#10; * E   O E   I I&#10; * E C   I H   N&#10; * T     S     G&#10; *&#10; * 来源：力扣（LeetCode）&#10; * 链接：https://leetcode-cn.com/problems/zigzag-conversion" />
+    <option name="LAST_COMMIT_MESSAGE" value="将一个给定字符串根据给定的行数，以从上往下、从左到右进行Z字形排列。&#10; * 比如输入字符串为 &quot;LEETCODEISHIRING&quot;行数为 3 时，排列如下：&#10; * L   C   I   R&#10; * E T O E S I I G&#10; * E   D   H   N&#10; * 之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如：&quot;LCIRETOESIIGEDHN&quot;。&#10; * 请你实现这个将字符串进行指定行数变换的函数：&#10; * string convert(string s, int numRows);&#10; * 示例1:&#10; *&#10; * 输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 3&#10; * 输出: &quot;LCIRETOESIIGEDHN&quot;&#10; * 示例2:&#10; *&#10; * 输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 4&#10; * 输出:&quot;LDREOEIIECIHNTSG&quot;&#10; * 解释:&#10; *&#10; * L     D     R&#10; * E   O E   I I&#10; * E C   I H   N&#10; * T     S     G&#10; *&#10; * 来源：力扣（LeetCode）&#10; * 链接：https://leetcode-cn.com/problems/zigzag-conversion" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
@@ -306,16 +316,17 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1313" height="274" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
-    <state x="94" y="0" width="1141" height="728" key="SettingsEditor" timestamp="1601278586988">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="0" y="0" width="1080" height="1865" key="SettingsEditor" timestamp="1602244239929">
+      <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state x="0" y="0" width="1080" height="1865" key="SettingsEditor/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602244239929" />
     <state x="94" y="0" width="1141" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600774005388" />
     <state x="94" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601278586988" />
-    <state x="275" y="75" key="Vcs.Push.Dialog.v2" timestamp="1601278611203">
+    <state x="275" y="75" key="Vcs.Push.Dialog.v2" timestamp="1601382008791">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600768901693" />
-    <state x="275" y="75" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1601278611203" />
+    <state x="275" y="75" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1601382008791" />
     <state x="409" y="194" width="618" height="408" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1600772954894">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
