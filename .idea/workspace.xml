@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="分割等和子集">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dp/MaxSubArray.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="最大子序和">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/GetMinimumDifference.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +168,7 @@
       <workItem from="1601020085856" duration="29918000" />
       <workItem from="1602159413644" duration="1883000" />
       <workItem from="1602244304458" duration="4188000" />
-      <workItem from="1602289038790" duration="9561000" />
+      <workItem from="1602289038790" duration="12460000" />
     </task>
     <task id="LOCAL-00001" summary="leetcode三道题">
       <created>1600768888673</created>
@@ -254,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602383616859</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="最大子序和">
+      <created>1602423295557</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602423295557</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +292,8 @@
     <MESSAGE value="将一个给定字符串根据给定的行数，以从上往下、从左到右进行Z字形排列。&#10; * 比如输入字符串为 &quot;LEETCODEISHIRING&quot;行数为 3 时，排列如下：&#10; * L   C   I   R&#10; * E T O E S I I G&#10; * E   D   H   N&#10; * 之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如：&quot;LCIRETOESIIGEDHN&quot;。&#10; * 请你实现这个将字符串进行指定行数变换的函数：&#10; * string convert(string s, int numRows);&#10; * 示例1:&#10; *&#10; * 输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 3&#10; * 输出: &quot;LCIRETOESIIGEDHN&quot;&#10; * 示例2:&#10; *&#10; * 输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 4&#10; * 输出:&quot;LDREOEIIECIHNTSG&quot;&#10; * 解释:&#10; *&#10; * L     D     R&#10; * E   O E   I I&#10; * E C   I H   N&#10; * T     S     G&#10; *&#10; * 来源：力扣（LeetCode）&#10; * 链接：https://leetcode-cn.com/problems/zigzag-conversion" />
     <MESSAGE value="给定一个链表，判断链表中是否有环" />
     <MESSAGE value="分割等和子集" />
-    <option name="LAST_COMMIT_MESSAGE" value="分割等和子集" />
+    <MESSAGE value="最大子序和" />
+    <option name="LAST_COMMIT_MESSAGE" value="最大子序和" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
@@ -343,13 +351,13 @@
     <state x="0" y="0" width="1080" height="1865" key="SettingsEditor/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602244239929" />
     <state x="94" y="0" width="1141" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600774005388" />
     <state x="94" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601278586988" />
-    <state x="-1285" y="197" key="Vcs.Push.Dialog.v2" timestamp="1602384387790">
-      <screen x="-1366" y="122" width="1366" height="738" />
+    <state x="275" y="75" key="Vcs.Push.Dialog.v2" timestamp="1602423314401">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="-1285" y="197" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@-1366.122.1366.738" timestamp="1602384387790" />
     <state x="64" y="192" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602253430430" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600768901693" />
-    <state x="275" y="75" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1601382008791" />
+    <state x="275" y="75" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602423314401" />
     <state x="409" y="194" width="618" height="408" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1600772954894">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
