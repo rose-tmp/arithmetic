@@ -14,16 +14,15 @@ public class Inorder {
             return;
         TreeNode node = root;//当前节点指针
         Stack<TreeNode> stack = new Stack<>();
-        //node != null用于一开始node指向根节点时
-        while (!stack.isEmpty() || node != null) {
+        while (node != null || !stack.isEmpty()) {
             if (node != null) {
                 stack.push(node);
                 node = node.left;
             } else {
-                TreeNode currentNode = stack.pop();
+                node = stack.pop();
                 //visit(currentNode);
-                System.out.println(currentNode.val);
-                node = currentNode.right;//向右子树走
+                System.out.println(node.val);
+                node = node.right;//向右子树走
             }
         }
     }
