@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="24. 两两交换链表中的节点">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/backtracking/backTrack" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="17. 电话号码的字母组合">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/SwapPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/SwapPairs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +60,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.middling" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.LengthOfLongestSubstring">
     <configuration name="BulidTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -169,7 +172,7 @@
       <workItem from="1601020085856" duration="29918000" />
       <workItem from="1602159413644" duration="1883000" />
       <workItem from="1602244304458" duration="4188000" />
-      <workItem from="1602289038790" duration="19591000" />
+      <workItem from="1602289038790" duration="21472000" />
     </task>
     <task id="LOCAL-00001" summary="leetcode三道题">
       <created>1600768888673</created>
@@ -290,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602573358959</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="17. 电话号码的字母组合">
+      <created>1602585815276</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1602585815276</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +335,8 @@
     <MESSAGE value="530. 二叉搜索树的最小绝对差" />
     <MESSAGE value="198. 打家劫舍" />
     <MESSAGE value="24. 两两交换链表中的节点" />
-    <option name="LAST_COMMIT_MESSAGE" value="24. 两两交换链表中的节点" />
+    <MESSAGE value="17. 电话号码的字母组合" />
+    <option name="LAST_COMMIT_MESSAGE" value="17. 电话号码的字母组合" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
@@ -387,11 +398,11 @@
     <state x="0" y="0" width="1080" height="1865" key="SettingsEditor/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602573326339" />
     <state x="94" y="0" width="1141" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600774005388" />
     <state x="94" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601278586988" />
-    <state x="41" y="610" key="Vcs.Push.Dialog.v2" timestamp="1602573367160">
+    <state x="41" y="610" key="Vcs.Push.Dialog.v2" timestamp="1602585821812">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
     <state x="-1285" y="197" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@-1366.122.1366.738" timestamp="1602384387790" />
-    <state x="41" y="610" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602573367160" />
+    <state x="41" y="610" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602585821812" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600768901693" />
     <state x="275" y="75" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602423314401" />
     <state x="409" y="194" width="618" height="408" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1600772954894">
