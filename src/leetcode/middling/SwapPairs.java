@@ -56,7 +56,7 @@ public class SwapPairs {
     public ListNode swapPairs2(ListNode head) {
         if(head == null || head.next == null) return head;
         ListNode newHead = head.next;
-        head.next = swapPairs(newHead.next);
+        head.next = swapPairs2(newHead.next);
         newHead.next = head;
         return newHead;
     }

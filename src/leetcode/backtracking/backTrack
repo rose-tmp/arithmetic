@@ -1,0 +1,208 @@
+转自：https://juejin.im/post/6855129007823061006
+
+1、什么是回溯算法（Back-Track Algorithm）
+
+1.1、思想
+回溯法从根节点出发，按照深度优先策略遍历解空间树，搜索满足约束条件的解。
+在搜索至树中任一节点时，先判断该节点对应的部分解是否满足约束条件/是否超出目标函数的限界，
+也就是判断该节点是否包含问题的（最优）解，如果肯定不包含，则跳过对以该节点为根的子树的搜索（即所谓的剪枝），
+逐层向其根节点回溯；否则，进入以该节点为根的子树，继续按照深度优先策略搜索。
+当回溯到根，且根节点的所有子树都已被访问过才结束。
+
+回溯算法通常使用最简单的递归方法来实现，在反复重复上述的步骤后可能出现两种情况：
+    ❝
+        找到一个可能存在的正确答案
+        在尝试了所有可能的分步方法后宣告失败该问题没有答案
+    ❞
+
+回溯法采用试错的思想，它尝试分步去解决一个问题，可以系统的找到一个问题的所有解或任意解。
+在最坏的情况下，回溯法将导致一次复杂度为指数级的计算。
+
+1.2、解决思路
+解决一个回溯问题，实际上就是一个决策树的遍历过程，你需要思考 3 个问题
+    ❝
+        路径：也就是已经做出的选择。
+        选择列表：也就是你当前可以做的选择。
+        结束条件：也就是到达决策树底层，无法再做选择的条件（约束条件/是否超出目标函数的界）。
+    ❞
+
+2、代码模板
+result = []
+def backtrack(路径, 选择列表):
+    if 满足结束条件:
+        result.add(路径)
+        return
+    for 选择 in 选择列表:
+        做选择 // 前序遍历位置
+        // 进入下一层决策树（explore）
+        backtrack(路径, 选择列表) // 中序遍历位置
+        撤销选择 // 后序遍历位置：回退上一节点
+
+其核心就是 for 循环里面的递归，在递归调用之前「做选择」，在递归调用之后「撤销选择」，
+类似二叉树的遍历，关键就是在前序遍历和后序遍历的位置做一些操作。
+
+3、实战分析
+3.1、全排列问题
+
+给定一个 没有重复 数字的序列，返回其所有可能的全排列。
+
+「示例:」
+
+输入: [1,2,3]
+输出:
+[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
+
+「代码：」
+
+class Solution {
+
+    List<List<Integer>> result = new ArrayList<>();
+    public List<List<Integer>> permute(int[] nums) {
+        backtrack(new ArrayList<>(), nums);
+        return result;
+    }
+
+    // 路径：记录在 track 中
+    // 选择列表：nums 中不存在于 track 的那些元素
+    // 结束条件：nums 中的元素全都在 track 中出现
+    private void backtrack(List<Integer> track, int [] nums){
+        if (track.size() == nums.length) {
+            // 满足基本条件
+            result.add(new ArrayList<>(track));
+            return;
+        }
+
+        for (int i = 0; i < nums.length; i++){
+            // 排除不合法的选择
+            if (track.contains(nums[i])) {
+                continue;
+            }
+            // 做选择
+            track.add(nums[i]);
+            // 进入下一层决策树
+            backtrack(track, nums);
+            // 撤销选择
+            track.remove(track.size() - 1);
+        }
+    }
+}
+
+3.2、N 皇后问题
+
+代码中使用三个boolean[]数组来跟踪皇后的位置，分别是当前列和两个对角线的位置（从左上角到右下角和从右上角到左下角）
+
+    boolean[n] cols跟踪列皇后位置
+    boolean[2*n] upleft跟踪左对角线皇后位置
+    boolean[2*n] upright跟踪右对角线皇后位置
+
+设棋盘上当前皇后的坐标位置为A (row, col)， 其中boolean[2*n] upleft的索引通过int iUpleft = col - row + n表达式计算，boolean[2*n] upright的索引通过int iUpright = col + row表达式计算。经计算之后会发现
+
+    与A在同一左对角线的值iUpleft相同
+    与A在同一右对角线的值iUpright相同
+
+class Solution {
+    List<List<String>> result = new ArrayList<>();
+    boolean[] upleft;
+    boolean[] upright;
+    boolean[] cols;
+    int n;
+    public List<List<String>> solveNQueens(int n) {
+        this.upleft = new boolean[2 * n];
+        this.upright = new boolean[2 * n];
+        this.cols = new boolean[n];
+        this.n = n;
+        backtrack(new ArrayList<String>(), 0);
+        return result;
+    }
+
+    // 路径：board 中小于 row 的那些行都已经成功放置了皇后
+    // 选择列表：第 row 行的所有列都是放置皇后的选择
+    // 结束条件：row = n
+    private void backtrack(List<String> board, int row){
+        if (row == n) {
+            // 满足结束条件
+            result.add(new ArrayList<String>(board));
+            return;
+        }
+        for (int col = 0; col < n; col++){
+            // 左对角线
+            int iUpleft = col - row + n;
+            // 右对角线
+            int iUpright = col + row;
+            // 校验
+            if (isValid(col, iUpleft, iUpright)) {
+                // 若两个对角线或当前列已经有过皇后，则不满足条件，进行剪枝操作
+                continue;
+            }
+            // 选择
+            choose(board, col, iUpleft, iUpright);
+            // 进入下一层决策树
+            backtrack(board, row + 1);
+            // 撤销选择
+            unchoose(board, col, iUpleft, iUpright);
+        }
+    }
+
+    // 校验
+    // 棋盘上当前皇后的坐标：A (row, col)
+    // 通过 col - row + n 表达式计算，与 A 在同一左对角线的值相同，即 iUpleft 相同
+    // 通过 col + row 表达式计算，与 A 在同一右对角线的值相同，即 iUpright 相同
+    private boolean isValid(int col, int iUpleft, int iUpright) {
+        return cols[col] || upleft[iUpleft] || upright[iUpright];
+    }
+
+    // 选择
+    private void choose(List<String> board, int col, int iUpleft, int iUpright) {
+        // 当前行
+        char[] currRow = new char[n];
+        // 初始化为 .
+        Arrays.fill(currRow, '.');
+        // 第 col 列，放置皇后，即数组 currRow 第 col 位置，设为 Q
+        currRow[col] = 'Q';
+        // 做选择
+        board.add(new String(currRow));
+        cols[col] = true;
+        upleft[iUpleft] = true;
+        upright[iUpright] = true;
+    }
+
+    // 撤销选择
+    private void unchoose(List<String> board, int col, int iUpleft, int iUpright) {
+        board.remove(board.size() - 1);
+        cols[col] = false;
+        upleft[iUpleft] = false;
+        upright[iUpright] = false;
+    }
+}
+
+4、总结
+
+回溯算法就是个多叉树的遍历问题，关键就是在前序遍历和后序遍历的位置做一些操作，
+应用约束条件、目标函数等剪枝函数实行剪枝。算法框架如下：
+
+def backtrack(路径, 选择列表):
+    for 选择 in 选择列表:
+        做选择 // 前序遍历位置
+        // 进入下一层决策树
+        backtrack(路径, 选择列表) // 中序遍历位置
+        撤销选择 // 后序遍历位置：回退上一节点
+
+写backtrack方法时，需要维护走过的「路径」和当前可以做的「选择列表」；
+当触发「结束条件」时，将「路径」记入结果集。
+
+def backtrack(路径, 选择列表):
+    if 满足结束条件:
+        result.add(路径)
+        return
+    for 选择 in 选择列表:
+        做选择 // 前序遍历位置
+        // 进入下一层决策树
+        backtrack(路径, 选择列表) // 中序遍历位置
+        撤销选择 // 后序遍历位置：回退上一节点

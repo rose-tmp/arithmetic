@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="24. 两两交换链表中的节点">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/backtracking/backTrack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/middling/SwapPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/SwapPairs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +169,7 @@
       <workItem from="1601020085856" duration="29918000" />
       <workItem from="1602159413644" duration="1883000" />
       <workItem from="1602244304458" duration="4188000" />
-      <workItem from="1602289038790" duration="17570000" />
+      <workItem from="1602289038790" duration="19591000" />
     </task>
     <task id="LOCAL-00001" summary="leetcode三道题">
       <created>1600768888673</created>
@@ -281,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602571995957</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="24. 两两交换链表中的节点">
+      <created>1602573358959</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1602573358959</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +332,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="372" y="152" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1600909711379" />
+    <state x="232" y="729" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602577856216">
+      <screen x="0" y="0" width="1080" height="1890" />
+    </state>
+    <state x="232" y="729" key="#com.intellij.fileTypes.FileTypeChooser/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602577856216" />
     <state x="411" y="246" width="544" height="258" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601047629778">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -374,11 +387,11 @@
     <state x="0" y="0" width="1080" height="1865" key="SettingsEditor/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602573326339" />
     <state x="94" y="0" width="1141" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600774005388" />
     <state x="94" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601278586988" />
-    <state x="41" y="610" key="Vcs.Push.Dialog.v2" timestamp="1602572085753">
+    <state x="41" y="610" key="Vcs.Push.Dialog.v2" timestamp="1602573367160">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
     <state x="-1285" y="197" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@-1366.122.1366.738" timestamp="1602384387790" />
-    <state x="41" y="610" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602572085753" />
+    <state x="41" y="610" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602573367160" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600768901693" />
     <state x="275" y="75" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602423314401" />
     <state x="409" y="194" width="618" height="408" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1600772954894">
@@ -390,9 +403,9 @@
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600769354733" />
     <state x="339" y="164" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1601264154410" />
-    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup" timestamp="1602304920646">
+    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup" timestamp="1602577885961">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
-    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602304920646" />
+    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602577885961" />
   </component>
 </project>
