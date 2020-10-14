@@ -20,13 +20,12 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:cZX" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="461. 两两交换链表中的节点  加入新思路">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/CommonChars.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="1002. 查找常用字符">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +44,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hrTsd5PY1sxdtj0jwm7ITJc1JC" />
@@ -153,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LengthOfLongestSubstring" />
-        <item itemvalue="Application.BulidTree" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.FindMode" />
         <item itemvalue="Application.Manacher" />
+        <item itemvalue="Application.LengthOfLongestSubstring" />
+        <item itemvalue="Application.FindMode" />
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.BulidTree" />
       </list>
     </recent_temporary>
   </component>
@@ -345,7 +349,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="cZX" />
                       </list>
                     </value>
                   </entry>
@@ -452,6 +456,10 @@
     <state x="41" y="610" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602644512113" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600768901693" />
     <state x="275" y="75" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602423314401" />
+    <state x="260" y="590" key="git4idea.branch.GitSmartOperationDialog" timestamp="1602654859575">
+      <screen x="0" y="0" width="1080" height="1890" />
+    </state>
+    <state x="260" y="590" key="git4idea.branch.GitSmartOperationDialog/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602654859575" />
     <state x="95" y="470" width="781" height="1060" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1602605898465">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
