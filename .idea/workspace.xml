@@ -20,12 +20,13 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:cZX" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="1002. 查找常用字符">
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="51. N 皇后 和 19. 删除链表的倒数第N个节点">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/BackspaceCompare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +65,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zhcg_0903" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -71,46 +73,22 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="proofread" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.difficult" />
+      <recent name="leetcode.backtracking" />
       <recent name="leetcode.middling" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LengthOfLongestSubstring">
-    <configuration name="BulidTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.middling.BulidTree" />
+  <component name="RunManager" selected="Application.SortedSquares">
+    <configuration name="CombinationSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.backtracking.CombinationSum" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.easy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.Demo" />
-      <module name="arithmetic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.easy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindMode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.easy.FindMode" />
-      <module name="arithmetic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.easy.*" />
+          <option name="PATTERN" value="leetcode.difficult.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,6 +122,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Permutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.backtracking.Permutation" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.difficult.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortedSquares" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.easy.SortedSquares" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -157,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortedSquares" />
+        <item itemvalue="Application.Permutation" />
+        <item itemvalue="Application.CombinationSum" />
         <item itemvalue="Application.Manacher" />
         <item itemvalue="Application.LengthOfLongestSubstring" />
-        <item itemvalue="Application.FindMode" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.BulidTree" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +188,8 @@
       <workItem from="1602244304458" duration="4188000" />
       <workItem from="1602289038790" duration="21472000" />
       <workItem from="1602637060393" duration="7176000" />
+      <workItem from="1602759913012" duration="31075000" />
+      <workItem from="1603070022850" duration="3520000" />
     </task>
     <task id="LOCAL-00001" summary="leetcode三道题">
       <created>1600768888673</created>
@@ -332,7 +338,56 @@
       <option name="project" value="LOCAL" />
       <updated>1602645071723</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary=",">
+      <created>1602655070593</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1602655070593</updated>
+    </task>
+    <task id="LOCAL-00023" summary="116. 填充每个节点的下一个右侧节点指针">
+      <created>1602726533422</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1602726533422</updated>
+    </task>
+    <task id="LOCAL-00024" summary="39. 组合总和">
+      <created>1602730633379</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1602730633379</updated>
+    </task>
+    <task id="LOCAL-00025" summary="977. 有序数组的平方&#10;剑指 Offer 38. 字符串的排列">
+      <created>1602861272341</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1602861272342</updated>
+    </task>
+    <task id="LOCAL-00026" summary="52. N皇后 II">
+      <created>1602900996251</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1602900996251</updated>
+    </task>
+    <task id="LOCAL-00027" summary="234. 回文链表">
+      <created>1602924837124</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1602924837124</updated>
+    </task>
+    <task id="LOCAL-00028" summary="51. N 皇后 和 19. 删除链表的倒数第N个节点">
+      <created>1602998326168</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1602998326168</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +404,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="cZX" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -382,7 +437,14 @@
     <MESSAGE value="17. 电话号码的字母组合" />
     <MESSAGE value="22. 括号生成  剪枝后的回溯" />
     <MESSAGE value="461. 两两交换链表中的节点  加入新思路" />
-    <option name="LAST_COMMIT_MESSAGE" value="461. 两两交换链表中的节点  加入新思路" />
+    <MESSAGE value="," />
+    <MESSAGE value="116. 填充每个节点的下一个右侧节点指针" />
+    <MESSAGE value="39. 组合总和" />
+    <MESSAGE value="977. 有序数组的平方&#10;剑指 Offer 38. 字符串的排列" />
+    <MESSAGE value="52. N皇后 II" />
+    <MESSAGE value="234. 回文链表" />
+    <MESSAGE value="51. N 皇后 和 19. 删除链表的倒数第N个节点" />
+    <option name="LAST_COMMIT_MESSAGE" value="51. N 皇后 和 19. 删除链表的倒数第N个节点" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
@@ -405,55 +467,63 @@
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
     <state x="92" y="92" width="896" height="1706" key="DiffContextDialog/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602605901937" />
-    <state x="478" y="574" key="FileChooserDialogImpl" timestamp="1602605895141">
+    <state x="478" y="574" key="FileChooserDialogImpl" timestamp="1602688761624">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
-    <state x="478" y="574" key="FileChooserDialogImpl/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602605895141" />
+    <state x="478" y="574" key="FileChooserDialogImpl/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602688761624" />
     <state x="605" y="221" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600772946193" />
-    <state width="1313" height="133" key="GridCell.Tab.0.bottom" timestamp="1601277826234">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1027" height="447" key="GridCell.Tab.0.bottom" timestamp="1602998342300">
+      <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="447" key="GridCell.Tab.0.bottom/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602998342300" />
     <state width="1313" height="133" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601277826234" />
-    <state width="1313" height="133" key="GridCell.Tab.0.center" timestamp="1601277826234">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1027" height="447" key="GridCell.Tab.0.center" timestamp="1602998342300">
+      <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="447" key="GridCell.Tab.0.center/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602998342300" />
     <state width="1313" height="133" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1601277826234" />
-    <state width="1313" height="133" key="GridCell.Tab.0.left" timestamp="1601277826234">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1027" height="447" key="GridCell.Tab.0.left" timestamp="1602998342299">
+      <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="447" key="GridCell.Tab.0.left/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602998342299" />
     <state width="1313" height="133" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1601277826234" />
-    <state width="1313" height="133" key="GridCell.Tab.0.right" timestamp="1601277826234">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1027" height="447" key="GridCell.Tab.0.right" timestamp="1602998342300">
+      <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="447" key="GridCell.Tab.0.right/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602998342300" />
     <state width="1313" height="133" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1601277826234" />
-    <state width="1313" height="274" key="GridCell.Tab.1.bottom" timestamp="1601277267406">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1027" height="623" key="GridCell.Tab.1.bottom" timestamp="1602861290317">
+      <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="623" key="GridCell.Tab.1.bottom/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602861290317" />
     <state width="1313" height="274" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
-    <state width="1313" height="274" key="GridCell.Tab.1.center" timestamp="1601277267406">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1027" height="623" key="GridCell.Tab.1.center" timestamp="1602861290316">
+      <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="623" key="GridCell.Tab.1.center/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602861290316" />
     <state width="1313" height="274" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
-    <state width="1313" height="274" key="GridCell.Tab.1.left" timestamp="1601277267406">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1027" height="623" key="GridCell.Tab.1.left" timestamp="1602861290316">
+      <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="623" key="GridCell.Tab.1.left/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602861290316" />
     <state width="1313" height="274" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
-    <state width="1313" height="274" key="GridCell.Tab.1.right" timestamp="1601277267406">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1027" height="623" key="GridCell.Tab.1.right" timestamp="1602861290317">
+      <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="623" key="GridCell.Tab.1.right/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602861290317" />
     <state width="1313" height="274" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
-    <state x="0" y="0" width="1366" height="738" key="SettingsEditor" timestamp="1602605900532">
+    <state x="0" y="0" width="1366" height="738" key="SettingsEditor" timestamp="1602718899623">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
     <state x="-1366" y="122" width="1366" height="738" key="SettingsEditor/-1366.122.1366.738/0.0.1080.1890@-1366.122.1366.738" timestamp="1602384384120" />
-    <state x="0" y="0" width="1080" height="1865" key="SettingsEditor/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602605900532" />
+    <state x="0" y="0" width="1080" height="1865" key="SettingsEditor/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602718899623" />
     <state x="94" y="0" width="1141" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600774005388" />
     <state x="94" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601278586988" />
-    <state x="41" y="610" key="Vcs.Push.Dialog.v2" timestamp="1602644512113">
+    <state x="41" y="610" key="Vcs.Push.Dialog.v2" timestamp="1602924845871">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
     <state x="-1285" y="197" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@-1366.122.1366.738" timestamp="1602384387790" />
-    <state x="41" y="610" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602644512113" />
+    <state x="41" y="610" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602924845871" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600768901693" />
     <state x="275" y="75" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602423314401" />
     <state x="260" y="590" key="git4idea.branch.GitSmartOperationDialog" timestamp="1602654859575">
@@ -465,9 +535,10 @@
     </state>
     <state x="95" y="470" width="781" height="1060" key="org.intellij.images.editor.actions.BackgroundImageDialog/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602605898465" />
     <state x="409" y="194" width="618" height="408" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1366.728@0.0.1366.728" timestamp="1600772954894" />
-    <state x="339" y="164" key="run.anything.popup" timestamp="1601264154410">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="240" y="420" key="run.anything.popup" timestamp="1602982783992">
+      <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state x="240" y="420" key="run.anything.popup/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602982783992" />
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600769354733" />
     <state x="339" y="164" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1601264154410" />
     <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup" timestamp="1602577885961">
