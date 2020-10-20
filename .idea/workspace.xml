@@ -25,8 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="51. N 皇后 和 19. 删除链表的倒数第N个节点">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/BackspaceCompare.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="844. 比较含退格的字符串">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/middling/ReorderList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,26 +82,13 @@
       <recent name="leetcode.middling" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SortedSquares">
+  <component name="RunManager" selected="Application.ReorderList">
     <configuration name="CombinationSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.backtracking.CombinationSum" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.difficult.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LengthOfLongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.middling.LengthOfLongestSubstring" />
-      <module name="arithmetic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.middling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,6 +122,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReorderList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.middling.ReorderList" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.middling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SortedSquares" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.easy.SortedSquares" />
       <module name="arithmetic" />
@@ -148,24 +148,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReorderList" />
         <item itemvalue="Application.SortedSquares" />
         <item itemvalue="Application.Permutation" />
         <item itemvalue="Application.CombinationSum" />
         <item itemvalue="Application.Manacher" />
-        <item itemvalue="Application.LengthOfLongestSubstring" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +191,8 @@
       <workItem from="1602289038790" duration="21472000" />
       <workItem from="1602637060393" duration="7176000" />
       <workItem from="1602759913012" duration="31075000" />
-      <workItem from="1603070022850" duration="3520000" />
+      <workItem from="1603070022850" duration="4554000" />
+      <workItem from="1603159643984" duration="4054000" />
     </task>
     <task id="LOCAL-00001" summary="leetcode三道题">
       <created>1600768888673</created>
@@ -387,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602998326168</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="844. 比较含退格的字符串">
+      <created>1603075786658</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1603075786659</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +429,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode三道题" />
     <MESSAGE value="较为简单的关于硬币的dp问题" />
     <MESSAGE value="关于硬币的dp问题的修改" />
     <MESSAGE value="最长回文子串&#10;&#10;给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。&#10;&#10;示例 1：&#10;&#10;输入: &quot;babad&quot;&#10;输出: &quot;bab&quot;&#10;注意: &quot;aba&quot; 也是一个有效答案。&#10;示例 2：&#10;&#10;输入: &quot;cbbd&quot;&#10;输出: &quot;bb&quot;&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-palindromic-substring" />
@@ -444,7 +453,8 @@
     <MESSAGE value="52. N皇后 II" />
     <MESSAGE value="234. 回文链表" />
     <MESSAGE value="51. N 皇后 和 19. 删除链表的倒数第N个节点" />
-    <option name="LAST_COMMIT_MESSAGE" value="51. N 皇后 和 19. 删除链表的倒数第N个节点" />
+    <MESSAGE value="844. 比较含退格的字符串" />
+    <option name="LAST_COMMIT_MESSAGE" value="844. 比较含退格的字符串" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
@@ -472,44 +482,52 @@
     </state>
     <state x="478" y="574" key="FileChooserDialogImpl/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602688761624" />
     <state x="605" y="221" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600772946193" />
-    <state width="1027" height="447" key="GridCell.Tab.0.bottom" timestamp="1602998342300">
+    <state width="1027" height="515" key="GridCell.Tab.0.bottom" timestamp="1603200989482">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="515" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1603200989482" />
     <state width="1027" height="447" key="GridCell.Tab.0.bottom/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602998342300" />
     <state width="1313" height="133" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601277826234" />
-    <state width="1027" height="447" key="GridCell.Tab.0.center" timestamp="1602998342300">
+    <state width="1027" height="515" key="GridCell.Tab.0.center" timestamp="1603200989481">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="515" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1603200989481" />
     <state width="1027" height="447" key="GridCell.Tab.0.center/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602998342300" />
     <state width="1313" height="133" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1601277826234" />
-    <state width="1027" height="447" key="GridCell.Tab.0.left" timestamp="1602998342299">
+    <state width="1027" height="515" key="GridCell.Tab.0.left" timestamp="1603200989481">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="515" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1603200989481" />
     <state width="1027" height="447" key="GridCell.Tab.0.left/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602998342299" />
     <state width="1313" height="133" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1601277826234" />
-    <state width="1027" height="447" key="GridCell.Tab.0.right" timestamp="1602998342300">
+    <state width="1027" height="515" key="GridCell.Tab.0.right" timestamp="1603200989482">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="515" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1603200989482" />
     <state width="1027" height="447" key="GridCell.Tab.0.right/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602998342300" />
     <state width="1313" height="133" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1601277826234" />
-    <state width="1027" height="623" key="GridCell.Tab.1.bottom" timestamp="1602861290317">
+    <state width="1027" height="515" key="GridCell.Tab.1.bottom" timestamp="1603200989998">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="515" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1603200989998" />
     <state width="1027" height="623" key="GridCell.Tab.1.bottom/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602861290317" />
     <state width="1313" height="274" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
-    <state width="1027" height="623" key="GridCell.Tab.1.center" timestamp="1602861290316">
+    <state width="1027" height="515" key="GridCell.Tab.1.center" timestamp="1603200989998">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="515" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1603200989998" />
     <state width="1027" height="623" key="GridCell.Tab.1.center/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602861290316" />
     <state width="1313" height="274" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
-    <state width="1027" height="623" key="GridCell.Tab.1.left" timestamp="1602861290316">
+    <state width="1027" height="515" key="GridCell.Tab.1.left" timestamp="1603200989997">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="515" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1603200989997" />
     <state width="1027" height="623" key="GridCell.Tab.1.left/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602861290316" />
     <state width="1313" height="274" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
-    <state width="1027" height="623" key="GridCell.Tab.1.right" timestamp="1602861290317">
+    <state width="1027" height="515" key="GridCell.Tab.1.right" timestamp="1603200989998">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state width="1027" height="515" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1603200989998" />
     <state width="1027" height="623" key="GridCell.Tab.1.right/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602861290317" />
     <state width="1313" height="274" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1601277267406" />
     <state x="0" y="0" width="1366" height="738" key="SettingsEditor" timestamp="1602718899623">
@@ -541,9 +559,21 @@
     <state x="240" y="420" key="run.anything.popup/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602982783992" />
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600769354733" />
     <state x="339" y="164" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1601264154410" />
-    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup" timestamp="1602577885961">
+    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup" timestamp="1603196074426">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
+    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1603196074426" />
     <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602577885961" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/middling/ReorderList.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
