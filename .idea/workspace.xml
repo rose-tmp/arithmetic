@@ -25,12 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="763. 划分字母区间">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dp/VideoStitching.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dp/dp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/greedy/VideoStitching.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="1024. 视频拼接">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/CanPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/CanPartition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +192,7 @@
       <workItem from="1602759913012" duration="31075000" />
       <workItem from="1603070022850" duration="4554000" />
       <workItem from="1603159643984" duration="16381000" />
-      <workItem from="1603525916651" duration="13097000" />
+      <workItem from="1603525916651" duration="14325000" />
     </task>
     <task id="LOCAL-00001" summary="leetcode三道题">
       <created>1600768888673</created>
@@ -422,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603335419412</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="1024. 视频拼接">
+      <created>1603546842323</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1603546842323</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +457,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="给定一个有相同值的二叉搜索树（BST），找出 BST 中的所有众数（出现频率最高的元素）。" />
     <MESSAGE value="给定一个二叉树和一个目标和，找到所有从根节点到叶子节点路径总和等于给定目标和的路径。&#10;说明: 叶子节点是指没有子节点的节点。&#10;示例:&#10;给定如下二叉树，以及目标和 sum = 22，&#10;&#10;              5&#10;             / \&#10;            4   8&#10;           /   / \&#10;          11  13  4&#10;         /  \    / \&#10;        7    2  5   1&#10;返回:&#10;&#10;[&#10;   [5,4,11,2],&#10;   [5,8,4,5]&#10;]&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/path-sum-ii" />
     <MESSAGE value="给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。&#10;百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”&#10;&#10;例如，给定如下二叉搜索树:root =[6,2,8,0,4,7,9,null,null,3,5]&#10;&#10;示例 1:&#10;&#10;输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8&#10;输出: 6 &#10;解释: 节点 2 和节点 8 的最近公共祖先是 6。&#10;示例 2:&#10;&#10;输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4&#10;输出: 2&#10;解释: 节点 2 和节点 4 的最近公共祖先是 2, 因为根据定义最近公共祖先节点可以为节点本身。&#10;说明:&#10;所有节点的值都是唯一的。&#10;p、q 为不同节点且均存在于给定的二叉搜索树中。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree&#10;&#10;&#10;并且整理了leetCode的相关代码，根据leetCode给出的难易程度对包结构进行了划分(dp问题除外，其被单独拉了出来)" />
     <MESSAGE value="给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。&#10;&#10;示例 1:&#10;&#10;输入: &quot;abcabcbb&quot;&#10;输出: 3 &#10;解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。&#10;示例 2:&#10;&#10;输入: &quot;bbbbb&quot;&#10;输出: 1&#10;解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。&#10;示例 3:&#10;&#10;输入: &quot;pwwkew&quot;&#10;输出: 3&#10;解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。&#10;     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters" />
@@ -479,7 +481,8 @@
     <MESSAGE value="143. 重排链表" />
     <MESSAGE value="925. 长按键入" />
     <MESSAGE value="763. 划分字母区间" />
-    <option name="LAST_COMMIT_MESSAGE" value="763. 划分字母区间" />
+    <MESSAGE value="1024. 视频拼接" />
+    <option name="LAST_COMMIT_MESSAGE" value="1024. 视频拼接" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
@@ -563,10 +566,10 @@
     <state x="0" y="0" width="1080" height="1865" key="SettingsEditor/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602718899623" />
     <state x="94" y="0" width="1141" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600774005388" />
     <state x="94" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601278586988" />
-    <state x="42" y="543" key="Vcs.Push.Dialog.v2" timestamp="1603335443120">
+    <state x="42" y="543" key="Vcs.Push.Dialog.v2" timestamp="1603546844873">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
-    <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1603335443120" />
+    <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1603546844873" />
     <state x="-1285" y="197" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@-1366.122.1366.738" timestamp="1602384387790" />
     <state x="41" y="610" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602924845871" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600768901693" />
