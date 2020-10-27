@@ -13,6 +13,8 @@ package BiTreeOrder;
  *      2.1）如果mostRight的right指针指向null,则让其指向cur,然后cur = cur.left
  *      2.2）如果mostRight的right指向了cur,让其指回空，cur = cur.right
  * Morris遍历中，如果某节点有左子树，则会整个过程会来到这个节点两次，如果它没有那么只会来到一次
+ * 总结：Morris遍历中，使用该节点的左子树的最右节点来指向当前节点  用于遍历过程中的返回
+ * 从而省去创建栈的空间，将空间复杂度由O(N)降到O(1)
  */
 public class Morris {
     public static class TreeNode {
@@ -51,7 +53,7 @@ public class Morris {
                     mostRight.right = cur;
                     cur = cur.left;
                     continue;
-                } else {//mostRight.right == cur即第二次来到mostRight
+                } else {//mostRight.right != cur即第二次来到mostRight
                     mostRight.right = null;
                 }
             }
@@ -177,7 +179,9 @@ public class Morris {
         System.out.println();
         morrisPre(head);
         System.out.println();*/
-        morrisPos(head);
+        //morrisPos(head);
+        //morrisIn(head);
+        morrisPre(head);
     }
 
 }
