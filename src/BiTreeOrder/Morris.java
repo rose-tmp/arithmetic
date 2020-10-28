@@ -53,7 +53,7 @@ public class Morris {
                     mostRight.right = cur;
                     cur = cur.left;
                     continue;
-                } else {//mostRight.right != cur即第二次来到mostRight
+                } else {//mostRight.right != cur即第二次来到mostRight和cur   此时要复原节点的右指针
                     mostRight.right = null;
                 }
             }
