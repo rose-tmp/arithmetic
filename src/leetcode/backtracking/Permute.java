@@ -31,7 +31,9 @@ public class Permute {
         return res;
     }
     /**
-     *
+     * res : 存储最终的结果
+     * list: 存储每次的数字序列
+     * count: 记录list中存储的序列的长度，如果到了指定长度，则加入res
      * */
     public void backTrack(List<List<Integer>> res, List<Integer> list,
                           int[] nums, int count) {
