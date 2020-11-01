@@ -52,14 +52,22 @@ public class WordBreak {
      */
     public List<String> wordBreak1(String s, List<String> wordDict) {
         List<String> res = new ArrayList<>();
-        Set<String> wordSet = new HashSet<>();
-        for (String word : wordDict) {
-            wordSet.add(word);
-        }
         if (s.length() == 0) {
             return res;
         }
-        backTrack(res, new StringBuilder(), s, wordSet, 0, 0);
+        //剪枝 s中出现的字符必须在wordDict中出现 否则直接返回false  set集合中不存储重复元素
+        Set<Character> set = new HashSet<>();
+        for (String str : wordDict) {
+            for (int i = 0; i < str.length(); i++) {
+                set.add(str.charAt(i));
+            }
+        }
+        for (int i = 0; i < s.length(); i++) {
+            if(!set.contains(s.charAt(i))){
+                return res;
+            }
+        }
+        backTrack(res, new StringBuilder(), s, wordDict, 0, 0);
         return res;
     }
 
@@ -68,7 +76,7 @@ public class WordBreak {
      * countBlankSpace:加入的空格的数量，作为删除某个单词时的偏移量
      */
     public void backTrack(List<String> res, StringBuilder sb, String s,
-                          Set<String> wordSet, int begin, int countBlankSpace) {
+                          List<String> wordDict, int begin, int countBlankSpace) {
         //以遍历完字符串s作为base case
         if (begin == s.length()) {
             sb.deleteCharAt(sb.length() - 1);//删除末尾添加的空字符
@@ -78,9 +86,9 @@ public class WordBreak {
         //在单词字典中查找是否有当前word
         for (int i = begin; i < s.length(); i++) {
             String temp = s.substring(begin, i + 1);
-            if (wordSet.contains(temp)) {
+            if (wordDict.contains(temp)) {
                 sb.append(temp + ' ');
-                backTrack(res, sb, s, wordSet, i + 1, countBlankSpace + 1);
+                backTrack(res, sb, s, wordDict, i + 1, countBlankSpace + 1);
                 //i在countBlankSpace后又加2是为了将要删除的此单词后面加入的空字符也删除还有一个原因是delete()前包后不包含
                 sb.delete(begin + countBlankSpace, i + 2 + countBlankSpace);
             } else {
@@ -88,43 +96,39 @@ public class WordBreak {
             }
         }
     }
+
     /**
      * 完全看不懂这个方法是什么意思，，，，，，，
-     * */
-    public List<String> wordBreak2(String s, List<String> wordDict)
-    {
+     */
+    public List<String> wordBreak2(String s, List<String> wordDict) {
         Map<String, List<String>> map = new HashMap<>(); //该哈希表用来存储字符串对应的句子列表
         Set<String> dict = new HashSet<>();
-        for(String str : wordDict) //将词典转换为哈希表，也可以直接用词典的contains方法
+        for (String str : wordDict) //将词典转换为哈希表，也可以直接用词典的contains方法
         {
             dict.add(str);
         }
         return helper(s, map, dict);
     }
 
-    public List<String> helper(String s, Map<String, List<String>> map, Set<String> dict)
-    {
-        if(map.containsKey(s)) //首先，看一下字符串s是否已经存在在Map中，如果存在，直接返回对应的值也就是句子列表
+    public List<String> helper(String s, Map<String, List<String>> map, Set<String> dict) {
+        if (map.containsKey(s)) //首先，看一下字符串s是否已经存在在Map中，如果存在，直接返回对应的值也就是句子列表
         {
             return map.get(s);
         }
         List<String> cur = new ArrayList<>();
-        if(dict.contains(s)) //这一步很重要，对应着递归的最底层
+        if (dict.contains(s)) //这一步很重要，对应着递归的最底层
         {
             cur.add(s);
         }
-        for(int i = 0; i < s.length(); i++)
-        {
+        for (int i = 0; i < s.length(); i++) {
             String subRight = s.substring(i); //找子串
-            if(!dict.contains(subRight))
-            {
+            if (!dict.contains(subRight)) {
                 continue;
             }
             // 如果右边的字符串在字典里面
             List<String> subLeft = helper(s.substring(0, i), map, dict); //递归找左边的子串对应的句子列表
             List<String> tmpp = append(subLeft, subRight); //将左边的子串返回的句子列表跟右边的单词一一拼接
-            for(String tt : tmpp)
-            {
+            for (String tt : tmpp) {
                 cur.add(tt); //将所有句子加入到结果中
             }
         }
@@ -132,10 +136,9 @@ public class WordBreak {
         return map.get(s); //返回该字符串对应的句子列表
     }
 
-    public List<String> append(List<String> tmp, String str)
-    {
+    public List<String> append(List<String> tmp, String str) {
         List<String> build = new ArrayList<>();
-        for(String ss : tmp) //将句子列表中的每一个句子跟单词拼接，然后生成一个新的句子列表
+        for (String ss : tmp) //将句子列表中的每一个句子跟单词拼接，然后生成一个新的句子列表
         {
             StringBuilder sb = new StringBuilder();
             sb.append(ss).append(" ").append(str);
