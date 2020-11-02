@@ -48,7 +48,6 @@ import java.util.*;
 public class WordBreak {
     /**
      * 完全使用回溯算法解决
-     * 参考 https://leetcode-cn.com/problems/word-break-ii/solution/hui-su-fa-he-ji-yi-hua-sou-suo-by-si-zhai-bu-tai-f/
      */
     public List<String> wordBreak1(String s, List<String> wordDict) {
         List<String> res = new ArrayList<>();
