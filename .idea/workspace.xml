@@ -25,8 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="322. 零钱兑换">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/ValidMoucntainArray.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="0-1背包问题">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/difficult/Insert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,17 +150,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Exist" />
@@ -197,21 +186,8 @@
       <workItem from="1603713324594" duration="1333000" />
       <workItem from="1603716830642" duration="86575000" />
       <workItem from="1604284015409" duration="689000" />
-      <workItem from="1604370490800" duration="3691000" />
-    </task>
-    <task id="LOCAL-00004" summary="最长回文子串&#10;&#10;给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。&#10;&#10;示例 1：&#10;&#10;输入: &quot;babad&quot;&#10;输出: &quot;bab&quot;&#10;注意: &quot;aba&quot; 也是一个有效答案。&#10;示例 2：&#10;&#10;输入: &quot;cbbd&quot;&#10;输出: &quot;bb&quot;&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-palindromic-substring">
-      <created>1600868460559</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1600868460559</updated>
-    </task>
-    <task id="LOCAL-00005" summary="给定一个有相同值的二叉搜索树（BST），找出 BST 中的所有众数（出现频率最高的元素）。">
-      <created>1600949042578</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1600949042578</updated>
+      <workItem from="1604370490800" duration="7937000" />
+      <workItem from="1604488464634" duration="5980000" />
     </task>
     <task id="LOCAL-00006" summary="给定一个有相同值的二叉搜索树（BST），找出 BST 中的所有众数（出现频率最高的元素）。">
       <created>1600950190891</created>
@@ -542,7 +518,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604283579709</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="941. 有效的山脉数组">
+      <created>1604403977336</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1604403977336</updated>
+    </task>
+    <task id="LOCAL-00054" summary="0-1背包问题">
+      <created>1604409642070</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1604409642070</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,8 +564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="977. 有序数组的平方&#10;剑指 Offer 38. 字符串的排列" />
-    <MESSAGE value="52. N皇后 II" />
     <MESSAGE value="234. 回文链表" />
     <MESSAGE value="51. N 皇后 和 19. 删除链表的倒数第N个节点" />
     <MESSAGE value="844. 比较含退格的字符串" />
@@ -599,7 +587,9 @@
     <MESSAGE value="62. 不同路径" />
     <MESSAGE value="140. 单词拆分 II" />
     <MESSAGE value="322. 零钱兑换" />
-    <option name="LAST_COMMIT_MESSAGE" value="322. 零钱兑换" />
+    <MESSAGE value="941. 有效的山脉数组" />
+    <MESSAGE value="0-1背包问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="0-1背包问题" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
@@ -707,10 +697,10 @@
     <state x="240" y="420" key="run.anything.popup/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602982783992" />
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600769354733" />
     <state x="339" y="164" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1604370499851" />
-    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup" timestamp="1604230917034">
+    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup" timestamp="1604488352256">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
-    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1604230917034" />
+    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1604488352256" />
     <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602577885961" />
   </component>
 </project>
