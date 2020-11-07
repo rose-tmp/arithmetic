@@ -25,9 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="57. 插入区间">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/BFS/LadderLength.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="127. 单词接龙">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/difficult/CountRangeSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/SortByBits.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/stream/Demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/stream/Demo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/stream/Demo3.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +78,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="proofread" />
+  </component>
+  <component name="ReadonlyStatusHandler">
+    <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -200,14 +207,7 @@
       <workItem from="1603716830642" duration="86575000" />
       <workItem from="1604284015409" duration="689000" />
       <workItem from="1604370490800" duration="7937000" />
-      <workItem from="1604488464634" duration="14617000" />
-    </task>
-    <task id="LOCAL-00007" summary="给定一个二叉树和一个目标和，找到所有从根节点到叶子节点路径总和等于给定目标和的路径。&#10;说明: 叶子节点是指没有子节点的节点。&#10;示例:&#10;给定如下二叉树，以及目标和 sum = 22，&#10;&#10;              5&#10;             / \&#10;            4   8&#10;           /   / \&#10;          11  13  4&#10;         /  \    / \&#10;        7    2  5   1&#10;返回:&#10;&#10;[&#10;   [5,4,11,2],&#10;   [5,8,4,5]&#10;]&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/path-sum-ii">
-      <created>1601114421764</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1601114421764</updated>
+      <workItem from="1604488464634" duration="19288000" />
     </task>
     <task id="LOCAL-00008" summary="给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。&#10;百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”&#10;&#10;例如，给定如下二叉搜索树:root =[6,2,8,0,4,7,9,null,null,3,5]&#10;&#10;示例 1:&#10;&#10;输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8&#10;输出: 6 &#10;解释: 节点 2 和节点 8 的最近公共祖先是 6。&#10;示例 2:&#10;&#10;输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4&#10;输出: 2&#10;解释: 节点 2 和节点 4 的最近公共祖先是 2, 因为根据定义最近公共祖先节点可以为节点本身。&#10;说明:&#10;所有节点的值都是唯一的。&#10;p、q 为不同节点且均存在于给定的二叉搜索树中。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree&#10;&#10;&#10;并且整理了leetCode的相关代码，根据leetCode给出的难易程度对包结构进行了划分(dp问题除外，其被单独拉了出来)">
       <created>1601218625960</created>
@@ -545,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604539355299</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="127. 单词接龙">
+      <created>1604646618209</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1604646618214</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="51. N 皇后 和 19. 删除链表的倒数第N个节点" />
     <MESSAGE value="844. 比较含退格的字符串" />
     <MESSAGE value="143. 重排链表" />
     <MESSAGE value="925. 长按键入" />
@@ -602,7 +608,8 @@
     <MESSAGE value="941. 有效的山脉数组" />
     <MESSAGE value="0-1背包问题" />
     <MESSAGE value="57. 插入区间" />
-    <option name="LAST_COMMIT_MESSAGE" value="57. 插入区间" />
+    <MESSAGE value="127. 单词接龙" />
+    <option name="LAST_COMMIT_MESSAGE" value="127. 单词接龙" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
@@ -716,5 +723,9 @@
     </state>
     <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1604546647657" />
     <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602577885961" />
+    <state x="257" y="841" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1604647554160">
+      <screen x="0" y="0" width="1080" height="1890" />
+    </state>
+    <state x="257" y="841" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1604647554160" />
   </component>
 </project>
