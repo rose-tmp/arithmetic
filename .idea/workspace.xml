@@ -25,13 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="127. 单词接龙">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/difficult/CountRangeSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/SortByBits.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="1356. 根据数字二进制下 1 的数目排序">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dp/stockProblems/MaxProfit2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/stream/Demo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/stream/Demo2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/stream/Demo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/difficult/CountRangeSum.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,15 +154,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -207,14 +202,8 @@
       <workItem from="1603716830642" duration="86575000" />
       <workItem from="1604284015409" duration="689000" />
       <workItem from="1604370490800" duration="7937000" />
-      <workItem from="1604488464634" duration="19288000" />
-    </task>
-    <task id="LOCAL-00008" summary="给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。&#10;百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”&#10;&#10;例如，给定如下二叉搜索树:root =[6,2,8,0,4,7,9,null,null,3,5]&#10;&#10;示例 1:&#10;&#10;输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8&#10;输出: 6 &#10;解释: 节点 2 和节点 8 的最近公共祖先是 6。&#10;示例 2:&#10;&#10;输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4&#10;输出: 2&#10;解释: 节点 2 和节点 4 的最近公共祖先是 2, 因为根据定义最近公共祖先节点可以为节点本身。&#10;说明:&#10;所有节点的值都是唯一的。&#10;p、q 为不同节点且均存在于给定的二叉搜索树中。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree&#10;&#10;&#10;并且整理了leetCode的相关代码，根据leetCode给出的难易程度对包结构进行了划分(dp问题除外，其被单独拉了出来)">
-      <created>1601218625960</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1601218625961</updated>
+      <workItem from="1604488464634" duration="20465000" />
+      <workItem from="1604720317306" duration="3487000" />
     </task>
     <task id="LOCAL-00009" summary="给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。&#10;&#10;示例 1:&#10;&#10;输入: &quot;abcabcbb&quot;&#10;输出: 3 &#10;解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。&#10;示例 2:&#10;&#10;输入: &quot;bbbbb&quot;&#10;输出: 1&#10;解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。&#10;示例 3:&#10;&#10;输入: &quot;pwwkew&quot;&#10;输出: 3&#10;解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。&#10;     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。&#10;&#10;来源：力扣（LeetCode）&#10;链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters">
       <created>1601277572537</created>
@@ -552,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604646618214</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="1356. 根据数字二进制下 1 的数目排序">
+      <created>1604713000539</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1604713000542</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +580,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="844. 比较含退格的字符串" />
     <MESSAGE value="143. 重排链表" />
     <MESSAGE value="925. 长按键入" />
     <MESSAGE value="763. 划分字母区间" />
@@ -609,7 +604,8 @@
     <MESSAGE value="0-1背包问题" />
     <MESSAGE value="57. 插入区间" />
     <MESSAGE value="127. 单词接龙" />
-    <option name="LAST_COMMIT_MESSAGE" value="127. 单词接龙" />
+    <MESSAGE value="1356. 根据数字二进制下 1 的数目排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="1356. 根据数字二进制下 1 的数目排序" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
@@ -693,11 +689,11 @@
     <state x="0" y="0" width="1080" height="1865" key="SettingsEditor/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602718899623" />
     <state x="94" y="0" width="1141" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600774005388" />
     <state x="94" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601278586988" />
-    <state x="42" y="543" key="Vcs.Push.Dialog.v2" timestamp="1604234151645">
+    <state x="42" y="543" key="Vcs.Push.Dialog.v2" timestamp="1604713008879">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
     <state x="-1313" y="75" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@-1366.0.1366.738" timestamp="1603807172645" />
-    <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1604234151645" />
+    <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1604713008879" />
     <state x="-1285" y="197" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@-1366.122.1366.738" timestamp="1602384387790" />
     <state x="41" y="610" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602924845871" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600768901693" />
