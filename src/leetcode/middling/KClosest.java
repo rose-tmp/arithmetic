@@ -1,15 +1,12 @@
 package leetcode.middling;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author - ZwZ
  * @date - 2020/11/9 - 9:31
  * @Description:973. 最接近原点的 K 个点
- * 我们有一个由平面上的点组成的列表 points。需要从中找出 K 个距离原点 (0, 0) 最近的点。
+ * 我们有一个由平面上的点组成的列表 points。需要-从中找出 K 个距离原点 (0, 0) 最近的点。
  * （这里，平面上两点之间的距离是欧几里德距离。）
  * 你可以按任何顺序返回答案。除了点坐标的顺序之外，答案确保是唯一的。
  * <p>
@@ -34,7 +31,7 @@ public class KClosest {
     /**
      * 思路：借助堆排序将前k个距离短的位置找出
      */
-    public int[][] kClosest(int[][] points, int K) {
+    public int[][] kClosest1(int[][] points, int K) {
         //记录每个位置距原点的距离(因为开不开根号最终的结果都是一样的，所以这里没有开根号)
         int[] distance = new int[points.length];
         for (int i = 0; i < points.length; i++) {
@@ -55,7 +52,7 @@ public class KClosest {
             }
         }
         //建立小根堆
-        List<Integer> list = heapSort(distance,K, map);
+        List<Integer> list = heapSort(distance, K, map);
         int[][] res = new int[list.size()][2];
         for (int i = 0; i < res.length; i++) {
             res[i] = points[list.get(i)];
@@ -127,9 +124,48 @@ public class KClosest {
         arr[p2] = temp;
     }
 
+    /**
+     * 不自己建立堆
+     * 而是使用JDK自带得优先队列(底层也是使用堆数据结构来实现的)完成
+     */
+    public int[][] kClosest2(int[][] points, int K) {
+        /*
+        * PriorityQueue默认的是根据自然顺序排序也就是从小到大，此时其建立的堆为小根堆
+        * 如果我们想建立大根堆(这里我们要创建大根堆)，则要重写Comparator接口中的compare()让其o2 - o1
+        * 可以查看PriorityQueue中siftUpUsingComparator方法得知原理(顺着offer方法去寻找此方法)
+        * 这个不是什么玄学，只是在siftUpUsingComparator中判断的时候通过compare()返回值的正负写死了的
+        * 顺便提一句：siftUpUsingComparator()就是在加入新元素时创建(更新)堆结构
+        * */
+        PriorityQueue<int[]> queue = new PriorityQueue<>(new Comparator<int[]>() {
+            @Override
+            //o1[0]与o2[0]表示的是距离   o[1]与o[2]表示的是此距离在points数组中对应的下标
+            public int compare(int[] o1, int[] o2) {
+                return o2[0] - o1[0];
+            }
+        });
+        //不管3721先将前K个距离加入优先队列
+        for (int i = 0; i < K; i++) {
+            queue.offer(new int[]{points[i][0] * points[i][0] + points[i][1] * points[i][1], i});
+        }
+        //更新优先队列中的元素，使其只保存距离前K小的元素
+        for (int i = K; i < points.length; i++) {
+            int distance = points[i][0] * points[i][0] + points[i][1] * points[i][1];
+            //当前distance小于前K小元素中最大的元素
+            if (distance < queue.peek()[0]) {
+                queue.poll();
+                queue.offer(new int[]{distance, i});
+            }
+        }
+        int[][] res = new int[K][2];
+        for (int i = 0; i < K; i++) {
+            res[i] = points[queue.poll()[1]];
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
         KClosest kc = new KClosest();
         int[][] points = {{3, 3}, {5, -1}, {-2, 4}};
-        kc.kClosest(points, 2);
+        kc.kClosest1(points, 2);
     }
 }

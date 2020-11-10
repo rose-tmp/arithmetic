@@ -25,10 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="122. 买卖股票的最佳时机 II">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/middling/KClosest.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="973. 最接近原点的 K 个点">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/sort/HeapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/sort/HeapSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/KClosest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/KClosest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,14 +206,7 @@
       <workItem from="1604370490800" duration="7937000" />
       <workItem from="1604488464634" duration="20465000" />
       <workItem from="1604720317306" duration="6656000" />
-      <workItem from="1604886732957" duration="15568000" />
-    </task>
-    <task id="LOCAL-00010" summary="将一个给定字符串根据给定的行数，以从上往下、从左到右进行Z字形排列。&#10; * 比如输入字符串为 &quot;LEETCODEISHIRING&quot;行数为 3 时，排列如下：&#10; * L   C   I   R&#10; * E T O E S I I G&#10; * E   D   H   N&#10; * 之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如：&quot;LCIRETOESIIGEDHN&quot;。&#10; * 请你实现这个将字符串进行指定行数变换的函数：&#10; * string convert(string s, int numRows);&#10; * 示例1:&#10; *&#10; * 输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 3&#10; * 输出: &quot;LCIRETOESIIGEDHN&quot;&#10; * 示例2:&#10; *&#10; * 输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 4&#10; * 输出:&quot;LDREOEIIECIHNTSG&quot;&#10; * 解释:&#10; *&#10; * L     D     R&#10; * E   O E   I I&#10; * E C   I H   N&#10; * T     S     G&#10; *&#10; * 来源：力扣（LeetCode）&#10; * 链接：https://leetcode-cn.com/problems/zigzag-conversion">
-      <created>1601382010870</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1601382010870</updated>
+      <workItem from="1604886732957" duration="19198000" />
     </task>
     <task id="LOCAL-00011" summary="给定一个链表，判断链表中是否有环">
       <created>1602253418953</created>
@@ -551,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604821323429</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="973. 最接近原点的 K 个点">
+      <created>1604929639282</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1604929639283</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="925. 长按键入" />
     <MESSAGE value="763. 划分字母区间" />
     <MESSAGE value="1024. 视频拼接" />
     <MESSAGE value="845. 数组中的最长山脉" />
@@ -608,7 +607,8 @@
     <MESSAGE value="127. 单词接龙" />
     <MESSAGE value="1356. 根据数字二进制下 1 的数目排序" />
     <MESSAGE value="122. 买卖股票的最佳时机 II" />
-    <option name="LAST_COMMIT_MESSAGE" value="122. 买卖股票的最佳时机 II" />
+    <MESSAGE value="973. 最接近原点的 K 个点" />
+    <option name="LAST_COMMIT_MESSAGE" value="973. 最接近原点的 K 个点" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
@@ -692,11 +692,11 @@
     <state x="0" y="0" width="1080" height="1865" key="SettingsEditor/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602718899623" />
     <state x="94" y="0" width="1141" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600774005388" />
     <state x="94" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601278586988" />
-    <state x="75" y="302" key="Vcs.Push.Dialog.v2" timestamp="1604821337589">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="42" y="543" key="Vcs.Push.Dialog.v2" timestamp="1604929651936">
+      <screen x="0" y="0" width="1080" height="1890" />
     </state>
     <state x="-1313" y="75" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@-1366.0.1366.738" timestamp="1603807172645" />
-    <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1604713008879" />
+    <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1604929651936" />
     <state x="75" y="302" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1604821337589" />
     <state x="-1285" y="197" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@-1366.122.1366.738" timestamp="1602384387790" />
     <state x="41" y="610" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602924845871" />
