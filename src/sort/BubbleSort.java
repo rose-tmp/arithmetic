@@ -25,12 +25,11 @@ import zuoPrimary.Swap;
  */
 public class BubbleSort {
     /**
-     *  
      *
      * @Author: ZwZ
      * @Description:最原始的冒泡排序
-     * @Param: [arr] 
-     * @return: void 
+     * @Param: [arr]
+     * @return: void
      * @Date: 2020/2/18-16:19
      */
     public void bubbleSort1(int[] arr) {
@@ -48,9 +47,9 @@ public class BubbleSort {
 
     /**
      * @Author: ZwZ
-     * @Description:优化后冒泡排序 
-     * @Param: [arr] 
-     * @return: void 
+     * @Description:优化后冒泡排序
+     * @Param: [arr]
+     * @return: void
      * @Date: 2020/2/18-16:19
      */
     public void bubbleSort2(int[] arr) {
