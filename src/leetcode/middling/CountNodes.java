@@ -32,14 +32,14 @@ public class CountNodes {
             return 0;
         }
         int high = getHigh(root);
-        int highR = getHigh(root.right) + 1;
+        int highR = getHigh(root.right) + 1;//加1加的是root的那个高度  为了if(highR == high)成立   当然也可以不加，然后if中修改成(highR + 1 == high)
         //此时根节点的左子树为满二叉树
         if(highR == high){
-            return (1 << (high - 1)) + count(root.right);
+            return (1 << (high - 1)) + count(root.right);//1 << (high - 1) - 1 + 1   其中1 << (high - 1) - 1是root的左子树的节点个数 1则为root
         }
         //右子树为满二叉树
         else{
-            return (1 << (highR - 1)) + count(root.left);
+            return (1 << (highR - 1)) + count(root.left); //1 << (highR - 1) - 1 + 1
         }
     }
     /**
