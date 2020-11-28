@@ -55,22 +55,25 @@ public class InversePairs {
     }
 
     private void inverseMerge(int[] arr, int low, int mid, int high) {
-        int[] arrTemp = new int[arr.length];
-        //将arr中的元素复制到arrTemp中
-        for (int i = low; i <= high; i++)
-            arrTemp[i] = arr[i];
-        int i, j, k;//i,j作为数组两部分的指针
-        for (i = low, j = mid + 1, k = i; i <= mid && j <= high; k++) {
-            if (arrTemp[i] > arrTemp[j]) {
-                count += (mid - i + 1);//两块合并的数据都是有序的
-                arr[k] = arrTemp[j++];
-            } else
-                arr[k] = arrTemp[i++];
+        int[] arrTemp = new int[high - low + 1];
+        int i,j,k;
+        for(i = low,j = mid + 1,k = 0;i <= mid && j <= high;k++){
+            if(arr[i] > arr[j]){
+                arrTemp[k] = arr[j++];
+                count += (mid - i + 1);//下标i~mid的元素与arr[j]都构成了逆序对
+            }else{
+                arrTemp[k] = arr[i++];
+            }
         }
-        while (i <= mid)
-            arr[k++] = arrTemp[i++];
-        while (j <= high)
-            arr[k++] = arrTemp[j++];
+        while(i <= mid){
+            arrTemp[k++] = arr[i++];
+        }
+        while(j <= high){
+            arrTemp[k++] = arr[j++];
+        }
+        for (i = 0; i < arrTemp.length; i++){
+            arr[low++] = arrTemp[i];
+        }
     }
     public static void main(String[] args) {
         InversePairs inversePairs = new InversePairs();
