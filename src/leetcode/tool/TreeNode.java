@@ -1,4 +1,4 @@
-package leetcode.pool;
+package leetcode.tool;
 
 /**
  * @author - ZwZ

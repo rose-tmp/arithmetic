@@ -1,6 +1,6 @@
 package leetcode.middling;
 
-import leetcode.pool.TreeNode;
+import leetcode.tool.TreeNode;
 
 /**
  * @author - ZwZ

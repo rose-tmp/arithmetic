@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-import leetcode.pool.ListNode;
+import leetcode.tool.ListNode;
 
 /**
  * @author - ZwZ

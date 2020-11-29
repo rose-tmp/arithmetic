@@ -1,6 +1,6 @@
 package leetcode.middling;
 
-import leetcode.pool.Node;
+import leetcode.tool.Node;
 
 import java.util.LinkedList;
 import java.util.Queue;

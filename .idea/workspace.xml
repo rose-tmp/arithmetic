@@ -28,10 +28,35 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="1370. 上升下降字符串">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/difficult/ReversePairs.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="493. 翻转对">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/FenwickTree/FenwickTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/LargestPerimeter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jianZhi/InversePairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jianZhi/InversePairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/MinCameraCover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/MinCameraCover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/FindMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/easy/FindMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/GetMinimumDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/easy/GetMinimumDifference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/HasCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/easy/HasCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/IsPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/easy/IsPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/LowestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/easy/LowestCommonAncestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/MergeTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/easy/MergeTrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/MergeTwoLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/easy/MergeTwoLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/AddTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/BulidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/BulidTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/Connect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/ConnectTeeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/ConnectTeeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/CountNodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/CountNodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/DetectCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/DetectCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/OddEvenList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/OddEvenList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/PathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/PathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/RemoveNthFromEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/RemoveNthFromEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/ReorderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/ReorderList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/SumNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/SumNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/SwapPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/middling/SwapPairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/pool/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tool/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/pool/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tool/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/pool/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tool/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/sortList/InsertionSortList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/sortList/InsertionSortList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/sortList/MergeSortList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/sortList/MergeSortList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,14 +233,7 @@
       <workItem from="1604488464634" duration="20465000" />
       <workItem from="1604720317306" duration="6656000" />
       <workItem from="1604886732957" duration="133459000" />
-      <workItem from="1606365366281" duration="9750000" />
-    </task>
-    <task id="LOCAL-00028" summary="51. N 皇后 和 19. 删除链表的倒数第N个节点">
-      <created>1602998326168</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1602998326168</updated>
+      <workItem from="1606365366281" duration="16211000" />
     </task>
     <task id="LOCAL-00029" summary="844. 比较含退格的字符串">
       <created>1603075786658</created>
@@ -553,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606304921483</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="493. 翻转对">
+      <created>1606553941288</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1606553941289</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +610,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="62. 不同路径" />
     <MESSAGE value="140. 单词拆分 II" />
     <MESSAGE value="322. 零钱兑换" />
     <MESSAGE value="941. 有效的山脉数组" />
@@ -610,7 +634,8 @@
     <MESSAGE value="452. 用最少数量的箭引爆气球" />
     <MESSAGE value="222. 完全二叉树的节点个数" />
     <MESSAGE value="1370. 上升下降字符串" />
-    <option name="LAST_COMMIT_MESSAGE" value="1370. 上升下降字符串" />
+    <MESSAGE value="493. 翻转对" />
+    <option name="LAST_COMMIT_MESSAGE" value="493. 翻转对" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
