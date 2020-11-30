@@ -1,4 +1,4 @@
-package leetcode.difficult;
+package leetcode.MergeSortTopic;
 
 /**
  * @author - ZwZ
