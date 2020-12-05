@@ -1,4 +1,4 @@
-package leetcode.middling;
+package leetcode.tree;
 
 import leetcode.tool.TreeNode;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package leetcode.middling;
+package leetcode.tree;
 
 import zuoPrimary.shu.TreeNode;
 
