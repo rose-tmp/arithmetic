@@ -28,23 +28,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="题目分类汇总">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/greedy/LeastInterval.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/tool/ErgodicMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/NIODemo/SocketClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/NIODemo/SocketNIOServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/NIODemo/SocketServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/easy/FindMode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/easy/LowestCommonAncestor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/easy/MergeTrees.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/easy/MergeTwoLists.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/middling/AddTwoNumbers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/middling/BulidTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/middling/Connect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/middling/ConvertBST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/middling/LengthOfLongestSubstring.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/leetcode/middling/PathSum.class" beforeDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="621. 任务调度器">
+      <change beforePath="$PROJECT_DIR$/src/zuoPrimary/Sercih.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +67,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zhcg_0903" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/leetcode/greedy" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -102,6 +87,9 @@
       <recent name="leetcode.difficult" />
       <recent name="leetcode.backtracking" />
       <recent name="leetcode.middling" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JetBrains\IntelliJ IDEA\IDEProjects\arithmetic\src\leetcode\greedy" />
     </key>
   </component>
   <component name="RunManager" selected="Application.LeastInterval">
@@ -221,14 +209,7 @@
       <workItem from="1604488464634" duration="20465000" />
       <workItem from="1604720317306" duration="6656000" />
       <workItem from="1604886732957" duration="133459000" />
-      <workItem from="1606365366281" duration="82714000" />
-    </task>
-    <task id="LOCAL-00037" summary="1207. 独一无二的出现次数">
-      <created>1603852388425</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1603852388425</updated>
+      <workItem from="1606365366281" duration="83105000" />
     </task>
     <task id="LOCAL-00038" summary="309. 最佳买卖股票时机含冷冻期">
       <created>1603871131034</created>
@@ -566,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607156087329</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="621. 任务调度器">
+      <created>1607168430289</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1607168430290</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +586,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="973. 最接近原点的 K 个点" />
     <MESSAGE value="31. 下一个排列" />
     <MESSAGE value="922. 按奇偶排序数组 II" />
     <MESSAGE value="328. 奇偶链表" />
@@ -623,17 +610,19 @@
     <MESSAGE value="659. 分割数组为连续子序列" />
     <MESSAGE value="96. 不同的二叉搜索树" />
     <MESSAGE value="题目分类汇总" />
-    <option name="LAST_COMMIT_MESSAGE" value="题目分类汇总" />
+    <MESSAGE value="621. 任务调度器" />
+    <option name="LAST_COMMIT_MESSAGE" value="621. 任务调度器" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="372" y="152" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1600909711379" />
-    <state x="232" y="729" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606885124120">
-      <screen x="0" y="0" width="1080" height="1890" />
+    <state x="412" y="405" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607168335728">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="232" y="729" key="#com.intellij.fileTypes.FileTypeChooser/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1606885124120" />
+    <state x="412" y="405" key="#com.intellij.fileTypes.FileTypeChooser/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1607168335727" />
     <state x="232" y="729" key="#com.intellij.fileTypes.FileTypeChooser/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602577856216" />
     <state x="578" y="350" width="544" height="258" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607155160140">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -759,16 +748,5 @@
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
     <state x="257" y="841" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1604647554160" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/greedy/LeastInterval.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
