@@ -1,4 +1,4 @@
-package leetcode.easy;
+package leetcode.greedy;
 
 import leetcode.tool.ListNode;
 

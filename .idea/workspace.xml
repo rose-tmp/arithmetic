@@ -28,20 +28,26 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="659. 分割数组为连续子序列">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/tree/NumTrees.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="96. 不同的二叉搜索树">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/FindMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/FindMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/GetMinimumDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/GetMinimumDifference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/LowestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/LowestCommonAncestor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/MergeTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/MergeTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/BulidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/BulidTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/Connect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/ConnectTeeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/ConnectTeeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/ConvertBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/ConvertBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/CountNodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/CountNodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/PathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/PathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/SumNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/SumNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NIODemo/SocketClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NIODemo/SocketNIOServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NIODemo/SocketServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/difficult/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/Insert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/CanFormArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/CanFormArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/HasCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/HasCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/Intersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/Intersection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/IsPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/greedy/IsPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/MergeTwoLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/MergeTwoLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/MoveZeroes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/MoveZeroes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/SmallerNumbersThanCurrent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/SmallerNumbersThanCurrent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/SortedSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/SortedSquares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/easy/UniqueOccurrences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/UniqueOccurrences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/DetectCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/DetectCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/OddEvenList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/OddEvenList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/RemoveNthFromEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/RemoveNthFromEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/ReorderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/ReorderList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/middling/SwapPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/SwapPairs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +161,7 @@
       </method>
     </configuration>
     <configuration name="SortString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.easy.SortString" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.string.SortString" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
@@ -218,14 +224,7 @@
       <workItem from="1604488464634" duration="20465000" />
       <workItem from="1604720317306" duration="6656000" />
       <workItem from="1604886732957" duration="133459000" />
-      <workItem from="1606365366281" duration="75236000" />
-    </task>
-    <task id="LOCAL-00035" summary="1365. 有多少小于当前数字的数字">
-      <created>1603800198640</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1603800198641</updated>
+      <workItem from="1606365366281" duration="76059000" />
     </task>
     <task id="LOCAL-00036" summary="144. 二叉树的前序遍历  (新加入一个非递归实现的代码)">
       <created>1603807165363</created>
@@ -563,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607066340683</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="96. 不同的二叉搜索树">
+      <created>1607155069223</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1607155069223</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="1356. 根据数字二进制下 1 的数目排序" />
     <MESSAGE value="122. 买卖股票的最佳时机 II" />
     <MESSAGE value="973. 最接近原点的 K 个点" />
     <MESSAGE value="31. 下一个排列" />
@@ -620,7 +625,8 @@
     <MESSAGE value="26. 删除排序数组中的重复项&#10;80. 删除排序数组中的重复项 II" />
     <MESSAGE value="204. 计数质数" />
     <MESSAGE value="659. 分割数组为连续子序列" />
-    <option name="LAST_COMMIT_MESSAGE" value="659. 分割数组为连续子序列" />
+    <MESSAGE value="96. 不同的二叉搜索树" />
+    <option name="LAST_COMMIT_MESSAGE" value="96. 不同的二叉搜索树" />
   </component>
   <component name="WindowStateProjectService">
     <state x="372" y="152" key="#Notifications" timestamp="1600909711379">
@@ -632,9 +638,10 @@
     </state>
     <state x="232" y="729" key="#com.intellij.fileTypes.FileTypeChooser/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1606885124120" />
     <state x="232" y="729" key="#com.intellij.fileTypes.FileTypeChooser/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602577856216" />
-    <state x="411" y="246" width="544" height="258" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601047629778">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="578" y="350" width="544" height="258" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607155160140">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="578" y="350" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1607155160140" />
     <state x="411" y="246" width="544" height="258" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1601047629778" />
     <state x="389" y="225" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601218110990">
       <screen x="0" y="0" width="1366" height="738" />
@@ -718,12 +725,12 @@
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
     <state width="623" height="498" key="SwitcherDM/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1606301109520" />
-    <state x="75" y="302" key="Vcs.Push.Dialog.v2" timestamp="1607066352672">
+    <state x="75" y="302" key="Vcs.Push.Dialog.v2" timestamp="1607155079087">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="-1313" y="75" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@-1366.0.1366.738" timestamp="1605596755143" />
     <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1606897099417" />
-    <state x="75" y="302" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1607066352672" />
+    <state x="75" y="302" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1607155079087" />
     <state x="-1285" y="197" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@-1366.122.1366.738" timestamp="1602384387790" />
     <state x="41" y="610" key="Vcs.Push.Dialog.v2/-1366.122.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1602924845871" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600768901693" />

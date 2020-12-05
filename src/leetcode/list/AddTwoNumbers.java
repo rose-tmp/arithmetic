@@ -1,4 +1,4 @@
-package leetcode.middling;
+package leetcode.list;
 
 import leetcode.tool.ListNode;
 
@@ -17,12 +17,6 @@ import leetcode.tool.ListNode;
  * 链接：https://leetcode-cn.com/problems/add-two-numbers
  */
 public class AddTwoNumbers {
-    /**
-     *  
-     *
-     * @Description:  
-     * @Param: [l1, l2] 
-     */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int temp = 0;//进位
         ListNode head = new ListNode(1);//假想的头结点

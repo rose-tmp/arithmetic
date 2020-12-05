@@ -1,4 +1,4 @@
-package leetcode.middling;
+package leetcode.string;
 
 import java.util.ArrayList;
 import java.util.List;

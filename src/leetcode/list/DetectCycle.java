@@ -1,4 +1,4 @@
-package leetcode.middling;
+package leetcode.list;
 
 import leetcode.tool.ListNode;
 

@@ -1,4 +1,4 @@
-package leetcode.easy;
+package leetcode.list;
 
 import leetcode.tool.ListNode;
 
@@ -9,8 +9,8 @@ import leetcode.tool.ListNode;
  */
 public class MergeTwoLists {
     /** 
-    * @Description: 递归 
-    * @return: leetcode.pool.ListNode 
+    * @Description: 递归
+    * @return: leetcode.pool.ListNode
     * @Date: 2020/9/21-8:13
     */
     public ListNode mergeTwoLists(ListNode list1, ListNode list2){
