@@ -38,6 +38,7 @@ import java.util.Arrays;
 public class CoinChange {
     /**
      * 动态规划
+     * dp(i) : 可以凑成总金额 i 所需的最少的硬币个数
      * dp(amount) = min{dp(amount - coin1),dp(amount - coin2)......}
      * 其中要保证(amount - coin)大于0
      */

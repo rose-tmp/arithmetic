@@ -1,6 +1,6 @@
 dp相关内容：
 https://www.zhihu.com/question/39948290
-
+https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=100000768&idx=1&sn=86d496e4a1e65c72cddca36977c61eb4&chksm=1bd7fa082ca0731ebc5021cacfb1def56b4c057f8c6debb79253deac7de9687dfa17a6662fae&scene=18#wechat_redirect
 第一步要明确两点，「状态」和「选择」
 第二步要明确dp数组的定义
 第三步，根据「选择」，思考状态转移的逻辑
