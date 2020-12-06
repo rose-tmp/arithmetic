@@ -1,4 +1,4 @@
-package leetcode.dp.CommonSubsequence;
+package leetcode.dp.dpOnString;
 
 /**
  * @author - ZwZ
