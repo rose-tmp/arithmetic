@@ -22,9 +22,9 @@ import java.util.List;
  */
 public class Generate {
     public List<List<Integer>> generate(int numRows) {
-        List<List<Integer>> ret = new ArrayList<List<Integer>>();
+        List<List<Integer>> ret = new ArrayList<>();
         for (int i = 0; i < numRows; ++i) {
-            List<Integer> row = new ArrayList<Integer>();
+            List<Integer> row = new ArrayList<>();
             //为每一行的list赋值
             for (int j = 0; j <= i; ++j) {
                 if (j == 0 || j == i) {
