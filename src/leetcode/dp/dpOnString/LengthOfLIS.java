@@ -28,7 +28,9 @@ public class LengthOfLIS {
         }
         return dp(nums);
     }
-
+    /**
+     * https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484498&idx=1&sn=df58ef249c457dd50ea632f7c2e6e761&source=41#wechat_redirect
+     * */
     private int dp(int[] nums) {
         //前i个元素，上升子序列中以第i个数字作为结尾的最长上升子序列的长度，注意nums[i]必须被选取
         int[] dp = new int[nums.length];
