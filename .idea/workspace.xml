@@ -28,9 +28,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="673. 最长递增子序列的个数&#10;300. 最长上升子序列">
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="删除了一些与算法题目无关的包">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classLoaderDemo/MyClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classLoaderDemo/MyClassLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,17 +159,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.LengthOfLIS" />
@@ -213,14 +201,7 @@
       <workItem from="1604886732957" duration="133459000" />
       <workItem from="1606365366281" duration="110434000" />
       <workItem from="1608092948166" duration="1765000" />
-      <workItem from="1609168278684" duration="471000" />
-    </task>
-    <task id="LOCAL-00044" summary="78. 子集">
-      <created>1604127090871</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1604127090871</updated>
+      <workItem from="1609168278684" duration="1745000" />
     </task>
     <task id="LOCAL-00045" summary="5554. 能否连接形成数组(第213场leetcode周赛第一题)">
       <created>1604212309560</created>
@@ -558,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607347613936</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="删除了一些与算法题目无关的包">
+      <created>1609169010740</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1609169010740</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +578,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="406. 根据身高重建队列" />
     <MESSAGE value="1030. 距离顺序排列矩阵单元格" />
     <MESSAGE value="134. 加油站" />
     <MESSAGE value="283. 移动零" />
@@ -615,6 +602,7 @@
     <MESSAGE value="72. 编辑距离 [2019腾讯笔试]" />
     <MESSAGE value="118. 杨辉三角" />
     <MESSAGE value="673. 最长递增子序列的个数&#10;300. 最长上升子序列" />
-    <option name="LAST_COMMIT_MESSAGE" value="673. 最长递增子序列的个数&#10;300. 最长上升子序列" />
+    <MESSAGE value="删除了一些与算法题目无关的包" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除了一些与算法题目无关的包" />
   </component>
 </project>
