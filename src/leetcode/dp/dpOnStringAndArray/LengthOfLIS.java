@@ -1,4 +1,4 @@
-package leetcode.dp.dpOnString;
+package leetcode.dp.dpOnStringAndArray;
 
 import java.util.Arrays;
 
