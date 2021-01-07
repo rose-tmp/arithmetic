@@ -11,45 +11,86 @@ import java.util.Arrays;
  * 示例:
  * 输入: [10,9,2,5,3,7,101,18]
  * 输出: 4
- * 解释: 最长的上升子序列是[2                                                                                                                                                       ,3,7,101]，它的长度是 4
+ * 解释: 最长的上升子序列是[2,5,7,101]                                                                                                                                                       ,3,7,101]，它的长度是 4
  * 说明:
  * <p>
  * 可能会有多种最长上升子序列的组合，你只需要输出对应的长度即可
- * 你算法的时间复杂度应该为O(n2)
+ * 你算法的时间复杂度应该为O(n^2)
  * 进阶:你能将算法的时间复杂度降低到O(nlogn)吗?
  * <p>
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/longest-increasing-subsequence
  */
 public class LengthOfLIS {
-    public int lengthOfLIS(int[] nums) {
+    /**
+     * 动态规划 即自下而上为dp表赋值
+     */
+    public int lengthOfLIS1(int[] nums) {
+        if (nums == null || nums.length == 0) return 0;
+        //dp[i] 以nums[i]结尾的字符序列中最长上升子序列的长度
+        int[] dp = new int[nums.length];
+        Arrays.fill(dp, 1);
+        //赋值dp table
+        for (int i = 1; i < dp.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (nums[j] < nums[i])
+                    dp[i] = Math.max(dp[j] + 1, dp[i]);
+            }
+        }
+        int res = Integer.MIN_VALUE;
+        //寻找最长上升子序列
+        for (int i = 0; i < dp.length; i++) {
+            res = Math.max(res, dp[i]);
+        }
+        return res;
+    }
+
+    /**
+     * 带备忘录的递归 即自顶向下去为dp表赋值
+     */
+    public int lengthOfLIS2(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
         }
-        return dp(nums);
-    }
-    /**
-     * https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484498&idx=1&sn=df58ef249c457dd50ea632f7c2e6e761&source=41#wechat_redirect
-     * */
-    private int dp(int[] nums) {
-        //前i个元素，上升子序列中以第i个数字作为结尾的最长上升子序列的长度，注意nums[i]必须被选取
-        int[] dp = new int[nums.length];
-        Arrays.fill(dp,1);
-        int res = 1;
-        for (int i = 1; i < dp.length; i++) {
-            for (int j = 0; j < i; j++) {
-                if (nums[j] < nums[i]) {
-                    dp[i] = Math.max(dp[i], dp[j] + 1);
-                }
-            }
-            res = Math.max(res,dp[i]);
+        //memo[i] 以nums[i]结尾的字符序列中最长上升子序列的长度
+        int[] memo = new int[nums.length];
+        Arrays.fill(memo, 1);
+
+        for (int i = nums.length - 1; i >= 0; i--) {
+            dp(nums, memo, i);
         }
+        int res = 0;
+        for (int i = 0; i < memo.length; i++) {
+            res = Math.max(res, memo[i]);
+        }
+        return res;
+    }
+
+    /**
+     * 为index下标处的memo赋值
+     */
+    public int dp(int[] nums, int[] memo, int index) {
+        if (index == 0) {
+            return 1;
+        }
+        //之前计算过
+        if (memo[index] > 1) {
+            return memo[index];
+        }
+        int res = 1;
+        for (int i = index - 1; i >= 0; i--) {
+            if (nums[i] < nums[index]) {
+                res = Math.max(res, 1 + dp(nums, memo, i));
+            }
+        }
+        //计算出结果之后先不着急返回 而是存入备忘录
+        memo[index] = res;
         return res;
     }
 
     public static void main(String[] args) {
         LengthOfLIS lis = new LengthOfLIS();
-        int[] arr = new int[]{4,10,4,3,8,9};
-        System.out.println(lis.lengthOfLIS(arr));
+        int[] arr = new int[]{1, 3, 6, 7, 9, 4, 10, 5, 6};
+        System.out.println(lis.lengthOfLIS2(arr));
     }
 }
