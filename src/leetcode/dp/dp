@@ -39,4 +39,4 @@ https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=100000768&idx=1&sn=86d496e
         两个字符串类型的题目：
             1. 最长公共子序列LongestCommonSubsequence:介绍了暴力递归,带备忘录的递归,以及动态规划的不同解法和区别
             2. 两个字符串的删除操作MinDistance:是最长公共子序列LongestCommonSubsequence同类型的题目,会前者就会MinDistance  介绍了暴力递归,带备忘录的递归,以及动态规划的不同解法
-            3. 两个字符串的最小ASCII删除和MinimumDeleteSum: 和两个字符串的删除操作MinDistance几乎是同一道题
+            3. 两个字符串的最小ASCII删除和MinimumDeleteSum: 和两个字符串的删除操作MinDistance几乎是同一道题 但是在这道题里面介绍了两种动态规划的方法
