@@ -86,6 +86,20 @@ public class MinDistance {
     }
 
     /**
+     * 思路：
+     *   求出两个字符串的最长公共子序列长度为n
+     *   然后word1.length + word2.length - 2 * n则为本题想要的答案
+     * @param word1
+     * @param word2
+     * @return
+     */
+    public int minDistance4(String word1,String word2){
+
+        //......
+
+        return 0;
+    }
+    /**
      * 暴力递归函数
      *
      *
