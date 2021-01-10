@@ -2,112 +2,156 @@ package leetcode.dp.dpOnStringAndArray;
 
 /**
  * @author - ZwZ
- * @date - 2020/12/6 - 15:13
- * @Description:72. 编辑距离 [2019腾讯笔试]
- * 给定两个字符串s1和s2，计算出将s1转换成s2所使用的最少操作数。你可以对一个字符串进行如下三种操作︰
- * 1.插入一个字符
- * 2.删除一个字符
- * 3.替换一个字符
- * 示例1:
- * 输入: s1 = "horse", s2 = "ros"输出:3
- * 解释:
- * horse -> rorse(将'h′替换为'r')
- * rorse -> rose(删除'r')
- * rose -> ros(删除'e')
+ * @date - 2021/1/10 - 16:18
+ * @Description:583. 两个字符串的删除操作
+ * 给定两个单词word1和word2，找到使得word1和word2相同所需的最小步数，
+ * 每步可以删除任意一个字符串中的一个字符。
  * <p>
- * 示例2:
- * 输入:s1 = "intention", s2 = "execution"输出:5
- * 解释:
- * intention -> inention(删除't')
- * inention -> enention(将'i′替换为'e' )
- * enention -> exention(将'n'替换为'x')
- * exention -> exection(将'n’替换为'c')
- * exection -> execution(插入'u')
+ * 示例：
+ * 输入: "sea", "eat"
+ * 输出: 2
+ * 解释: 第一步将"sea"变为"ea"，第二步将"eat"变为"ea"
+ * <p>
+ * 提示：
+ * 给定单词的长度不超过500。
+ * 给定单词中的字符只含有小写字母。
+ * <p>
+ * 来源：力扣（LeetCode）
+ * 链接：https://leetcode-cn.com/problems/delete-operation-for-two-strings
  */
 public class MinDistance {
     /**
-     * https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484731&idx=3&sn=aa642cbf670feee73e20428775dff0b5&chksm=9bd7fb33aca0722568ab71ead8d23e3a9422515800f0587ff7c6ef93ad45b91b9e9920d8728e&scene=21#wechat_redirect
      * 暴力递归
+     * 思路：
+     * 用两个指针i,j从头开始比较两个字符串，word1[i]和word2[j]一共有两种情况：
+     * 1. word1[i] == word2[j],此时这个位置上得元素对于最终的结果没有任何贡献，跳过
+     * 2. word1[i] != word2[j],此时有三种情况：
+     * 1) word1[i]在,word2[j]不在两个单词的最终构成的相同字符串里
+     * 此时就要让j+1之后继续比较  (变成了一个子问题)
+     * 2) word1[i]不在,word2[j]在  此时让i+1然后继续比较(又变成了一个子问题)
+     * 3) word1[i]和word2[j]都不在  此时i+1,j+1
+     *
+     * @param word1
+     * @param word2
+     * @return
      */
-    public int minDistance(String s1, String s2) {
-        if (s2 == null || s1 == null) {
-            return -1;
+    public int minDistance1(String word1, String word2) {
+        if (word1 == null || word2 == null) {
+            return 0;
         }
-        return soultion(s1.length() - 1, s2.length() - 1, s1, s2);
+        return dp1(word1, word2, 0, 0);
     }
 
     /**
-     * 暴力递归的方法中存在着大量的重复计算 即重叠子问题
-     * 我们可以使用 带备忘录的递归 或者是 动态规划 对其进行优化
+     * 对暴力递归进行改进
+     *
+     * @param word1
+     * @param word2
+     * @return
      */
-    public int minDistanceDp(String s1, String s2) {
-        return dp(s1, s2);
+    public int minDistance2(String word1, String word2) {
+        if (word1 == null || word2 == null) {
+            return 0;
+        }
+        int[][] memo = new int[word1.length()][word2.length()];
+        return dp2(word1, word2, memo, 0, 0);
     }
 
-    private int dp(String s1, String s2) {
-        //dp[i - 1][j - 1] s1[0...i]转换成s2[0...j]所用的最小操作数
-        /*没有使用dp[i][j]表示s1[0...i]转换成s2[0...j]所用的最小操作数
-        是因为这样才可以翻译出暴力递归的逻辑  即当j = -1时 最小操作数为s1的长度
-        当i = -1时 最小操作数为s2的长度*/
-        int[][] dp = new int[s1.length() + 1][s2.length() + 1];
-        //初始化
+    /**
+     * 动态规划
+     *
+     * @param word1
+     * @param word2
+     * @return
+     */
+    public int minDistance3(String word1, String word2) {
+        if (word1 == null || word2 == null) {
+            return 0;
+        }
+        //dp[i][j]:word1[0...i-1]和word2[0...i-2]相同所需的最小步数
+        int[][] dp = new int[word1.length() + 1][word2.length() + 1];
         for (int i = 0; i < dp.length; i++) {
-            dp[i][0] = i;
-        }
-        for (int j = 0; j < dp[0].length; j++) {
-            dp[0][j] = j;
-        }
-        for (int i = 1; i < dp.length; i++) {
-            for (int j = 1; j < dp[0].length; j++) {
-                if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
+            for (int j = 0; j < dp[0].length; j++) {
+                //初值
+                if (i == 0 || j == 0) {
+                    dp[i][j] = i + j;
+                } else if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
                     dp[i][j] = dp[i - 1][j - 1];
                 } else {
-                    dp[i][j] = Math.min(dp[i - 1][j], Math.min(dp[i][j - 1], dp[i - 1][j - 1])) + 1;
+                    dp[i][j] = 1 + Math.min(dp[i][j - 1], dp[i - 1][j]);
                 }
             }
         }
-        return dp[s1.length()][s2.length()];
+        return dp[word1.length()][word2.length()];
     }
 
     /**
-     * 将字符串s1[0...i]转换成s2[0...j]所用的最小操作数
-     * i 作为指针遍历s1
-     * j 作为指针遍历s2
+     * 暴力递归函数
+     *
+     *
+     * @param word1
+     * @param word2
+     * @param i     word1的下标
+     * @param j     word2的下标
+     * @return word1[0...i]和word2[0...j]使得word1和word2相同所需的最小步数
      */
-    private int soultion(int i, int j, String s1, String s2) {
-        /*
-         * 此时s1先遍历完成
-         * 那么s2剩余的字符只能添加到s1上
-         * 所以返回s2剩余的字符的长度[0...i长度是i+1]  即为剩余的操作数
-         * */
-        if (i == -1) {
-            return j + 1;
+    public int dp1(String word1, String word2, int i, int j) {
+        //base case
+        if (i == word1.length() && j == word2.length()) {
+            return 0;
         }
-        /*
-         * 此时s2先遍历完成
-         * 那么s1剩余的字符只能全部删除  即返回s1剩余的字符的长度
-         * */
-        if (j == -1) {
-            return i + 1;
+        if (i == word1.length()) {
+            return word2.length() - j;
         }
-        if (s1.charAt(i) == s2.charAt(j)) {
-            return soultion(i - 1, j - 1, s1, s2);
+        if (j == word2.length()) {
+            return word1.length() - i;
+        }
+        if (word1.charAt(i) == word2.charAt(j)) {
+            return dp1(word1, word2, i + 1, j + 1);
         } else {
-            //每个位置上可以执行三种操作  删除 替换 插入   返回其中操作数最小的那一个
-            return Math.min(soultion(i - 1, j, s1, s2),
-                    Math.min(soultion(i, j - 1, s1, s2), soultion(i - 1, j - 1, s1, s2))) + 1;
+            int res1 = dp1(word1, word2, i + 1, j) + 1;
+            int res2 = dp1(word1, word2, i, j + 1) + 1;
+            return Math.min(res1, res2);
         }
+    }
+
+    /**
+     * 带备忘录的递归
+     * 暴力递归中存在重复计算
+     * dp(i,j)会在dp(i,j+1)和dp(i+1,j)两个过程中都计算一遍
+     * @param word1
+     * @param word2
+     * @param memo
+     * @param i
+     * @param j
+     * @return
+     */
+    public int dp2(String word1, String word2, int[][] memo, int i, int j) {
+        //base case
+        if (i == word1.length() && j == word2.length()) {
+            return 0;
+        }
+        if (i == word1.length()) {
+            return word2.length() - j;
+        }
+        if (j == word2.length()) {
+            return word1.length() - i;
+        }
+        if (memo[i][j] != 0) {
+            return memo[i][j];
+        }
+        if (word1.charAt(i) == word2.charAt(j)) {
+            memo[i][j] = dp2(word1, word2, memo, i + 1, j + 1);
+        } else {
+            int res1 = dp2(word1, word2, memo, i + 1, j) + 1;
+            int res2 = dp2(word1, word2, memo, i, j + 1) + 1;
+            memo[i][j] = Math.min(res1, res2);
+        }
+        return memo[i][j];
     }
 
     public static void main(String[] args) {
         MinDistance distance = new MinDistance();
-        String s1 = "horse";
-        String s2 = "ros";
-        String s3 = "intention";
-        String s4 = "execution";
-        System.out.println(distance.minDistance(s1,s2));
-        System.out.println(distance.minDistanceDp(s1,s2));
-        System.out.println(distance.minDistance(s3,s4));
-        System.out.println(distance.minDistanceDp(s3,s4));
+        System.out.println(distance.minDistance1("sea", "eat"));
     }
 }

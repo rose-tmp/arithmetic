@@ -20,6 +20,12 @@ https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=100000768&idx=1&sn=86d496e
             for ...
                 dp[状态1][状态2][...] = 择优(选择1，选择2...)
 
+
+
+
+这些题目大致的写题顺序：先写出来暴力递归，然后根据暴力递归中是否存在重复子问题这一现象，存在就改成带备忘录的递归。
+                     而能写出来带备忘录的递归的话就可以写出来动态规划解法，因为memo和dp table的含义是相同的
+
 题目摘要：
     一维dp table:
         1. 零钱兑换 CoinChange: 介绍了暴力递归，带备忘录的递归，以及动态规划的不同解法和区别
@@ -28,5 +34,7 @@ https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=100000768&idx=1&sn=86d496e
         2.2 俄罗斯套娃信封问题 MaxEnvelopes:是最长上升子序列问题LengthOfLIS的加强版
 
         3. 最大子序和MaxSubArray:当dp[i]的含义定义错时无法由dp[0...i-1]推出dp[i]的情况
+
     二维dp table:
-        1. 最长公共子序列LongestCommonSubsequence:介绍了暴力递归，带备忘录的递归，以及动态规划的不同解法和区别
+        1. 最长公共子序列LongestCommonSubsequence:介绍了暴力递归,带备忘录的递归,以及动态规划的不同解法和区别
+        2. 两个字符串的删除操作MinDistance:是最长公共子序列同类型的题目,会前者就会MinDistance  介绍了暴力递归,带备忘录的递归,以及动态规划的不同解法

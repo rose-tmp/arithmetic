@@ -106,7 +106,7 @@ public class LongestCommonSubsequence {
             return memo[i][j];
         }
         if (text1.charAt(i) == text2.charAt(j)) {
-            return 1 + dp2(text1, text2, memo, i + 1, j + 1);
+            memo[i][j] = 1 + dp2(text1, text2, memo, i + 1, j + 1);
         } else {
             /*
              * dp(text1, text2, i, j + 1):text2[j]没有在最终的最长公共子序列
@@ -114,11 +114,9 @@ public class LongestCommonSubsequence {
              * dp(text1, text2, i + 1, j + 1):text1[i]和text2[j]都没有在最终的最长公共子序列中
              * */
             //Math.max(dp(text1, text2, i, j + 1), Math.max(dp(text1, text2, i + 1, j), dp(text1, text2, i + 1, j + 1)));
-            int res = Math.max(dp2(text1, text2, memo, i, j + 1), dp2(text1, text2, memo, i + 1, j));
-            //返回之前先给memo赋值
-            memo[i][j] = res;
-            return res;
+            memo[i][j] = Math.max(dp2(text1, text2, memo, i, j + 1), dp2(text1, text2, memo, i + 1, j));
         }
+        return memo[i][j];
     }
 
     /**
