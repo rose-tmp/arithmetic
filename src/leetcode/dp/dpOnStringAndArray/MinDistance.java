@@ -16,6 +16,10 @@ package leetcode.dp.dpOnStringAndArray;
  * 给定单词的长度不超过500。
  * 给定单词中的字符只含有小写字母。
  * <p>
+ *
+ *  相似题目：
+ *      1143. 最长公共子序列LongestCommonSubsequence
+ *      712. 两个字符串的最小ASCII删除和MinimumDeleteSum
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/delete-operation-for-two-strings
  */

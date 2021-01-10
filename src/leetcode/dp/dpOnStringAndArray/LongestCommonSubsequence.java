@@ -24,6 +24,10 @@ package leetcode.dp.dpOnStringAndArray;
  * 输出：0
  * 解释：两个字符串没有公共子序列，返回 0。
  * <p>
+ *
+ * 相似题目：
+ *      712. 两个字符串的最小ASCII删除和MinimumDeleteSum
+ *      583. 两个字符串的删除操作MinDistance
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/longest-common-subsequence
  * <p>
