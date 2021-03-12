@@ -6,7 +6,8 @@ import java.util.Map;
 /**
  * @author - ZwZ
  * @date - 2020/1/25 - 20:31
- * @Description:复杂链表的复制 输入一个复杂链表（每个节点中有节点值，以及两个指针，一个指向下一个节点，另一个特殊指针指向任意一个节点）
+ * @Description:复杂链表的复制
+ * 输入一个复杂链表（每个节点中有节点值，以及两个指针，一个指向下一个节点，另一个特殊指针指向任意一个节点）
  * 返回结果为复制后复杂链表的head
  * （注意，输出结果中请不要返回参数中的节点引用，否则判题程序会直接返回空）
  */
@@ -21,7 +22,7 @@ class RandomListNode {
 }
 
 public class Clone {
-    /*** 
+    /***
      * @Author: ZwZ
      * @Description: 暴力赋值新链表中每个节点的random
      * @Param: [pHead] 
@@ -108,7 +109,7 @@ public class Clone {
         return newHead;
     }
 
-    /*** 
+    /***
      * @Author: ZwZ
      * @Description: 在不使用辅助空间的情况下实现o(n) 《剑指OFFER》
      * 方法2得到一个节点的拷贝节点的方式是查hash表

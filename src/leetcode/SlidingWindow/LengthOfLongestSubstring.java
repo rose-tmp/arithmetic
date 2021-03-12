@@ -1,4 +1,4 @@
-package leetcode.string;
+package leetcode.SlidingWindow;
 
 import java.util.HashSet;
 
@@ -25,7 +25,34 @@ import java.util.HashSet;
  * 链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters
  */
 public class LengthOfLongestSubstring {
-    public int lengthOfLongestSubstring(String s) {
+    /**
+     * 本题目两种方法都是用的滑动窗口的思想只不过方法1中没有使用HashSet
+     *
+     * 不遇见重复元素right就一直向右走
+     * 遇到重复元素之后通过改变Left将重复元素剔除
+     *
+     * 根本原则：滑动窗口中每时每刻所存储的元素都是不重复的
+     * @param s
+     * @return
+     */
+    public int lengthOfLongestSubstring1(String s) {
+        if (s == null || s.length() == 0) return 0;
+        if (s.length() == 1) return 1;
+        int left = 0;
+        int ans = 1;
+        for (int right = 1; right < s.length(); right++) {
+            for (int i = left; i < right; i++) {
+                if (s.charAt(i) == s.charAt(right)) {
+                    //剔除重复元素
+                    left = i + 1;
+                    break;
+                }
+            }
+            ans = Math.max(ans, right - left + 1);
+        }
+        return ans;
+    }
+    public int lengthOfLongestSubstring2(String s) {
         int len = s.length();//字符串长度
         if(len == 0 || len == 1)
             return len;
@@ -52,11 +79,5 @@ public class LengthOfLongestSubstring {
             res = Math.max(res,right - left +1);
         }
         return res;
-    }
-
-    public static void main(String[] args) {
-        LengthOfLongestSubstring substring = new LengthOfLongestSubstring();
-        String str = "aab";
-        System.out.println(substring.lengthOfLongestSubstring(str));
     }
 }

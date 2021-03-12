@@ -35,6 +35,8 @@ package leetcode.dp.dpOnStringAndArray;
  */
 public class LongestCommonSubsequence {
     /**
+     * 对于两个字符串求子序列的问题，都是用两个指针i和j分别在两个字符串上移动，大概率是动态规划思路
+     *
      * 暴力递归
      * 从前向后匹配字符串的每一个位置上的字符
      * 每一个位置上的字符只会有两种情况：相同和不相同

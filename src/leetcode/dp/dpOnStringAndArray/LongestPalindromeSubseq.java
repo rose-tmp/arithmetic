@@ -1,7 +1,5 @@
 package leetcode.dp.dpOnStringAndArray;
 
-import java.util.Arrays;
-
 /**
  * @author - ZwZ
  * @date - 2020/12/6 - 12:16
@@ -36,29 +34,27 @@ public class LongestPalindromeSubseq {
      * 参考 https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484666&idx=1&sn=e3305be9513eaa16f7f1568c0892a468&chksm=9bd7faf2aca073e4f08332a706b7c10af877fee3993aac4dae86d05783d3d0df31844287104e&scene=21#wechat_redirect
      */
     public int longestPalindromeSubseq(String s) {
-        if (s == null || s.length() == 0) {
+        if(s == null)
             return 0;
-        }
-        //dp[i][j]:s[i...j]所形成的字符串的最大回文子序列
+        /*dp[i][j]:s[i...j]中最长回文子序列的长度
+        * s[i] == s[j]时: dp[i][j] = dp[i + 1][j - 1] + 2
+        * s[i] != s[j]时: dp[i][j] = Max(dp[i][j - 1],dp[i + 1][j]) 即此时s[i]和s[j]不同时出现在s[i...j]的最长回文子序列中
+        * 由上方的式子可知: dp[i][j]和dp[i + 1][j - 1],dp[i][j - 1],dp[i + 1][j]有关
+        * 而dp table初始时只有主对角线及其下方的位置有初始值
+        * 所以在为dp table赋值的时候要注意遍历的顺序
+        * */
         int[][] dp = new int[s.length()][s.length()];
-        //所有位置初始化为0
-        for (int[] arr : dp) {
-            Arrays.fill(arr, 0);
-        }
-        //对角线赋初值
-        for (int i = 0; i < s.length(); i++) {
+        //赋初值 对角线上值为1 对角线以下即i>j的位置初值为0
+        for (int i = 0; i < dp.length; i++) {
             dp[i][i] = 1;
         }
-        //赋值 注意遍历顺序
-        for (int i = s.length() - 2; i >= 0; i--) {
-            for (int j = i + 1; j < s.length(); j++) {
-                if (s.charAt(i) == s.charAt(j)) {
-                    dp[i][j] = dp[i + 1][j - 1] + 2;
-                } else {
-                    dp[i][j] = Math.max(dp[i + 1][j], dp[i][j - 1]);
-                }
+        //第一种赋值dp table的方法:平行于主对角线从上到下 斜着遍历
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 1; j < dp[0].length; j++) {
+
             }
         }
-        return dp[0][s.length() - 1];
+        //第二种赋值dp table的方法:从下到上逐行赋值
+        return 0;
     }
 }

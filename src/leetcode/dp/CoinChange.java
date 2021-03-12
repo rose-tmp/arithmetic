@@ -37,25 +37,36 @@ import java.util.Arrays;
  */
 public class CoinChange {
     /**
-     * 暴力递归
+     * 暴力递归 把所有的组合都枚举出来(画出递归树便于理解)
+     *                 11
+     *          /      |     \
+     *         10      9      6
+     *       / | \   / | \   / | \
+     *     9  8  5  8  7 4  1  4  1
+     *       ...      ...     ...
      */
     public int coinChange1(int[] coins, int amount) {
         //base case
         if (amount == 0) return 0;
         if (amount < 0) return -1;
-        int res = Integer.MAX_VALUE - 1;
+        int ans = Integer.MAX_VALUE - 1;
         for (int i = 0; i < coins.length; i++) {
+            //子问题的结果
             int sub = coinChange1(coins, amount - coins[i]);
-            //选coins[i]后 子问题无解
-            if (sub == -1) continue;
-            res = Math.min(res, sub + 1);
+            //子问题有解  也就是留下coins[i]这个硬币之后 剩下的硬币可以凑够数量amount - coins[i]
+            if (sub != -1) {
+                ans = Math.min(ans, sub + 1);
+            }
         }
-        return res == Integer.MAX_VALUE - 1 ? -1 : res;
+        //for循环遍历完毕之后ans==Integert.MAX_VALUE说明coins中的硬币根本凑不出amount
+        return ans == Integer.MAX_VALUE ? -1 : ans;
     }
 
     /**
-     * 改进成 带备忘录的递归
+     * 方法1的暴力递归画出递归树之后就可以很直观的发现存在大量的重复计算
+     * 使用备忘录就可以完美的解决掉暴力递归中重复计算的问题
      * 做法：
+     * <p>
      * 每次计算出某个子问题的答案之后不着急返回，而是先存入备忘录
      * 每次遇到一个子问题的时候先不着急计算，而是先去备忘录中查一下看看之前有没有计算过这个问题
      * <p>
@@ -96,7 +107,7 @@ public class CoinChange {
      * dp(i) : 可以凑成总金额 i 所需的最少的硬币个数
      * dp(amount) = min{dp(amount - coin1),dp(amount - coin2)......}
      * 其中要保证(amount - coin)大于0
-     *
+     * <p>
      * 动态规划的本质就是穷举 带备忘录的递归和动态规划中的dp table做到了聪明穷举
      */
     public int coinChange3(int[] coins, int amount) {

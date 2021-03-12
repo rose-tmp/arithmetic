@@ -117,4 +117,26 @@ public class CountPrimes {
         }
         return ans;
     }
+
+    /**
+     * 暴力
+     *
+     * @param n
+     * @return
+     */
+    public int demo(int n) {
+        int ans = 0;
+        for (int i = 2; i < n; i++) {
+            int temp = 0;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    temp++;
+                }
+            }
+            if (temp == 0) {
+                ans++;
+            }
+        }
+        return ans;
+    }
 }

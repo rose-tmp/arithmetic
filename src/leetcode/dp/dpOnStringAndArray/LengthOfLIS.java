@@ -27,7 +27,7 @@ public class LengthOfLIS {
      */
     public int lengthOfLIS1(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
-        //dp[i] 以nums[i]结尾的字符序列中最长上升子序列的长度
+        //dp[i] 以nums[i]为结尾处字符的字符序列中最长上升子序列的长度
         int[] dp = new int[nums.length];
         Arrays.fill(dp, 1);
         //赋值dp table
@@ -52,7 +52,7 @@ public class LengthOfLIS {
         if (nums == null || nums.length == 0) {
             return 0;
         }
-        //memo[i] 以nums[i]结尾的字符序列中最长上升子序列的长度
+        //memo[i] 以nums[i]为结尾处字符的字符序列中最长上升子序列的长度
         int[] memo = new int[nums.length];
         Arrays.fill(memo, 1);
 
