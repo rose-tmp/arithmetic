@@ -93,17 +93,23 @@ public class ReverseKGroup {
         ListNode pre = null;
         ListNode cur = head;
         ListNode temp;
-        ListNode[] res = new ListNode[2];
-        while (cur != null) {
+        while (pre != tail) {
             temp = cur.next;
             cur.next = pre;
             pre = cur;
             cur = temp;
         }
-        //头
-        res[0] = tail;
-        //尾
-        res[1] = head;
-        return res;
+        return new ListNode[]{tail,head};
+    }
+
+    public static void main(String[] args) {
+        ReverseKGroup group = new ReverseKGroup();
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+        System.out.println(group.reverseKGroup(head,2).value);
+
     }
 }

@@ -56,8 +56,8 @@ public class HeapSort {
      * @Description:向下调整
      * 当某一处元素变小时，要向下调整 即将此元素与其左右子节点中的最大的一个交换
      * 然后再将index指向交换了的位置继续向下重复此过程
-     * @Param: [arr, index, heapSize] [待调整的数组，变小了的元素的数组下标，堆大小]
-     * @return: void 
+     * @Param: [arr, index, heapSize][待调整的数组，变小了的元素的数组下标，堆大小]
+     * @return: void
      * @Date: 2020/3/23-17:16
      */
     private void adjustDown(int[] arr, int index, int heapSize) {

@@ -18,7 +18,7 @@ public class Singleton5 {
                 if(instance == null)
                     instance = new Singleton5();
             }
-        }//输入一个字符串，判断是否是合法的IP
+        }
         return instance;
     }
 }

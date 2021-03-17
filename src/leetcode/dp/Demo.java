@@ -6,27 +6,21 @@ package leetcode.dp;
  * @Description:
  */
 public class Demo {
-    public int lengthOfLongestSubstring(String s) {
-        if (s == null || s.length() == 0) return 0;
-        if (s.length() == 1) return 1;
-        int left = 0;
-        int ans = 1;
-        for (int right = 1; right < s.length(); right++) {
-            for (int i = left; i < right; i++) {
-                if (s.charAt(i) == s.charAt(right)) {
-                    //剔除重复元素
-                    left = i + 1;
-                    break;
-                }
-            }
-            ans = Math.max(ans, right - left + 1);
+    public String demo(String IPV4) {
+        String[] strNums = IPV4.split(".");
+        if (strNums.length != 4) {
+            return "no";
         }
-        return ans;
+        for (int i = 0; i < strNums.length; i++) {
+            if (strNums[i].length() == 0 || strNums[i].length() > 3) return "no";
+            if (strNums[i].charAt(0) == '0' && strNums[i].length() != 1) return "no";
+            for (char ch : strNums[i].toCharArray()) {
+                //判断是否为数字
+                if (!Character.isDigit(ch)) return "no";
+            }
+            if (Integer.parseInt(strNums[i]) > 255) return "no";
+        }
+        return "IPV4";
     }
-
-    public static void main(String[] args) {
-        String str = "abcabcbb";
-        Demo demo = new Demo();
-        demo.lengthOfLongestSubstring(str);
-    }
+    public
 }

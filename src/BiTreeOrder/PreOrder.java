@@ -22,12 +22,11 @@ class TreeNode {
 public class PreOrder {
 
     /**
-     *  
      *
      * @Author: ZwZ
      * @Description:先让节点的右节点先进栈在将左节点进栈 从而达到出栈顺序是先左后右
-     * @Param: [root] 
-     * @return: void 
+     * @Param: [root]
+     * @return: void
      * @Date: 2020/2/12-20:13
      */
     public void preOrder1(TreeNode root) {
