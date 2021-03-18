@@ -28,24 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="25. K 个一组翻转链表">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/SlidingWindow/MinWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/MergeArr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/backtracking/RestoreIpAddresses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/middling/EvalRPN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/RemoveDuplicates.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="无">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/string/DeleteForPalindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiTreeOrder/PreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiTreeOrder/PreOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/designPattern/singletonPattern/Singleton5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/designPattern/singletonPattern/Singleton5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/CanFormArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/CanFormArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/Insert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/LargeGroupPositions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/LargeGroupPositions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/list/DetectCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/DetectCycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/list/HasCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/HasCycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/list/ReverseKGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/ReverseKGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/RemoveDuplicates2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/RemoveDuplicates2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +164,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.EvalRPN" />
@@ -225,14 +224,7 @@
       <workItem from="1614785801307" duration="60887000" />
       <workItem from="1615522381108" duration="20491000" />
       <workItem from="1615803120413" duration="19184000" />
-      <workItem from="1615956791080" duration="2184000" />
-    </task>
-    <task id="LOCAL-00057" summary="1356. 根据数字二进制下 1 的数目排序">
-      <created>1604713000539</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1604713000542</updated>
+      <workItem from="1615956791080" duration="9547000" />
     </task>
     <task id="LOCAL-00058" summary="122. 买卖股票的最佳时机 II">
       <created>1604821323428</created>
@@ -570,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615535785287</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="无">
+      <created>1615987576737</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1615987576738</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="493. 翻转对" />
     <MESSAGE value="976. 三角形的最大周长   &#10;树形数组" />
     <MESSAGE value="315. 计算右侧小于当前元素的个数" />
     <MESSAGE value="34. 在排序数组中查找元素的第一个和最后一个位置" />
@@ -627,13 +625,10 @@
     <MESSAGE value="72. 编辑距离" />
     <MESSAGE value="152. 乘积最大子数组" />
     <MESSAGE value="25. K 个一组翻转链表" />
-    <option name="LAST_COMMIT_MESSAGE" value="25. K 个一组翻转链表" />
+    <MESSAGE value="无" />
+    <option name="LAST_COMMIT_MESSAGE" value="无" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="412" y="405" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607303168210">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="412" y="405" key="#com.intellij.fileTypes.FileTypeChooser/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1607303168210" />
     <state x="664" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1615890882919">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -687,20 +682,20 @@
     </state>
     <state x="0" y="0" key="SettingsEditor/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1610267547284" />
     <state x="0" y="0" width="1920" height="883" key="SettingsEditor/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1615191484354" />
-    <state x="279" y="282" key="Vcs.Push.Dialog.v2" timestamp="1615535792030">
+    <state x="279" y="282" key="Vcs.Push.Dialog.v2" timestamp="1615987589252">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1610441743732" />
-    <state x="279" y="282" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1615535792030" />
+    <state x="279" y="282" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1615987589252" />
     <state x="169" y="261" width="771" height="340" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1615191482920">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="95" y="0" width="781" height="1890" key="org.intellij.images.editor.actions.BackgroundImageDialog/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1610267545596" />
     <state x="169" y="261" width="771" height="340" key="org.intellij.images.editor.actions.BackgroundImageDialog/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1615191482920" />
-    <state x="212" y="239" width="1494" height="575" key="search.everywhere.popup" timestamp="1615535132453">
+    <state x="212" y="239" width="1494" height="575" key="search.everywhere.popup" timestamp="1615989367874">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1610441799443" />
-    <state x="212" y="239" width="1494" height="575" key="search.everywhere.popup/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1615535132453" />
+    <state x="212" y="239" width="1494" height="575" key="search.everywhere.popup/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1615989367874" />
   </component>
 </project>

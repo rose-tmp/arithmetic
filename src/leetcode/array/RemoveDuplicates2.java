@@ -54,6 +54,7 @@ public class RemoveDuplicates2 {
                 nums[end] = nums[i];
             }
         }
+        //end表示的是下标 返回个数的话要end+1
         return end + 1;
     }
 }
