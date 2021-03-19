@@ -28,10 +28,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="无">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/DeleteForPalindrome.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="快手效率工程部门后端实习生一面第二题">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/tree/SeeTreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/RemoveDuplicates2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/RemoveDuplicates2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/LongestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/LongestPalindrome.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,14 +225,7 @@
       <workItem from="1614785801307" duration="60887000" />
       <workItem from="1615522381108" duration="20491000" />
       <workItem from="1615803120413" duration="19184000" />
-      <workItem from="1615956791080" duration="9547000" />
-    </task>
-    <task id="LOCAL-00058" summary="122. 买卖股票的最佳时机 II">
-      <created>1604821323428</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1604821323429</updated>
+      <workItem from="1615956791080" duration="15211000" />
     </task>
     <task id="LOCAL-00059" summary="973. 最接近原点的 K 个点">
       <created>1604929639282</created>
@@ -569,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615987576738</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="快手效率工程部门后端实习生一面第二题">
+      <created>1616064526514</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1616064526516</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="976. 三角形的最大周长   &#10;树形数组" />
     <MESSAGE value="315. 计算右侧小于当前元素的个数" />
     <MESSAGE value="34. 在排序数组中查找元素的第一个和最后一个位置" />
     <MESSAGE value="26. 删除排序数组中的重复项&#10;80. 删除排序数组中的重复项 II" />
@@ -626,7 +626,8 @@
     <MESSAGE value="152. 乘积最大子数组" />
     <MESSAGE value="25. K 个一组翻转链表" />
     <MESSAGE value="无" />
-    <option name="LAST_COMMIT_MESSAGE" value="无" />
+    <MESSAGE value="快手效率工程部门后端实习生一面第二题" />
+    <option name="LAST_COMMIT_MESSAGE" value="快手效率工程部门后端实习生一面第二题" />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1615890882919">
@@ -682,11 +683,11 @@
     </state>
     <state x="0" y="0" key="SettingsEditor/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1610267547284" />
     <state x="0" y="0" width="1920" height="883" key="SettingsEditor/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1615191484354" />
-    <state x="279" y="282" key="Vcs.Push.Dialog.v2" timestamp="1615987589252">
+    <state x="279" y="282" key="Vcs.Push.Dialog.v2" timestamp="1616064533782">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1610441743732" />
-    <state x="279" y="282" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1615987589252" />
+    <state x="279" y="282" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616064533782" />
     <state x="169" y="261" width="771" height="340" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1615191482920">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
