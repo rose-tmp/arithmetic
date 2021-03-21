@@ -1,10 +1,10 @@
-package leetcode.string;
+package interview;
 
 /**
  * @author - ZwZ
  * @date - 2021/3/18 - 18:37
  * @Description:判断字符串中删除一个字符后可否构成一个回文串
- * 快手效率工程部门后端实习生一面第二题(二面又让写一遍这道题,TMD)
+ * 快手效率工程部门后端实习生一面第二题(第一道题是反转链表 二面又让写一遍这道题,TMD)
  */
 public class DeleteForPalindrome {
     /*

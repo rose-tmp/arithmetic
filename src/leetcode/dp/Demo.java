@@ -22,5 +22,4 @@ public class Demo {
         }
         return "IPV4";
     }
-    public
 }

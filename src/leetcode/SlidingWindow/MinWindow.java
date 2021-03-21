@@ -28,6 +28,6 @@ public class MinWindow {
      * @return
      */
     public String minWindow(String s, String t) {
-
+        return null;
     }
 }

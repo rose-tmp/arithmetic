@@ -1,4 +1,4 @@
-package leetcode.tree;
+package interview;
 
 import leetcode.tool.TreeNode;
 
@@ -10,7 +10,8 @@ import java.util.Queue;
 /**
  * @author - ZwZ
  * @date - 2021/3/19 - 14:44
- * @Description:返回一颗二叉树站在右边可以看得到的节点 (瓜子后端实习一面算法题)
+ * @Description:返回一颗二叉树站在右边可以看得到的节点
+ * (瓜子后端实习一面算法题)
  */
 public class SeeTreeNode {
     public List<TreeNode> getList(TreeNode root) {
