@@ -28,9 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="73. 矩阵置零">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/MaxArea.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="11. 盛最多水的容器">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/FizzBuzz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/HammingWeight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,15 +164,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -224,14 +222,8 @@
       <workItem from="1614785801307" duration="60887000" />
       <workItem from="1615522381108" duration="20491000" />
       <workItem from="1615803120413" duration="19184000" />
-      <workItem from="1615956791080" duration="31178000" />
-    </task>
-    <task id="LOCAL-00061" summary="31. 下一个排列">
-      <created>1605017636161</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1605017636161</updated>
+      <workItem from="1615956791080" duration="32960000" />
+      <workItem from="1616400761708" duration="3853000" />
     </task>
     <task id="LOCAL-00062" summary="922. 按奇偶排序数组 II">
       <created>1605184587219</created>
@@ -569,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616313116971</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="11. 盛最多水的容器">
+      <created>1616315780358</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1616315780358</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="26. 删除排序数组中的重复项&#10;80. 删除排序数组中的重复项 II" />
     <MESSAGE value="204. 计数质数" />
     <MESSAGE value="659. 分割数组为连续子序列" />
     <MESSAGE value="96. 不同的二叉搜索树" />
@@ -626,7 +624,8 @@
     <MESSAGE value="快手效率工程部门后端实习生一面第二题" />
     <MESSAGE value="返回一颗二叉树站在右边可以看得到的节点 (瓜子后端实习一面算法题)" />
     <MESSAGE value="73. 矩阵置零" />
-    <option name="LAST_COMMIT_MESSAGE" value="73. 矩阵置零" />
+    <MESSAGE value="11. 盛最多水的容器" />
+    <option name="LAST_COMMIT_MESSAGE" value="11. 盛最多水的容器" />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1615890882919">
