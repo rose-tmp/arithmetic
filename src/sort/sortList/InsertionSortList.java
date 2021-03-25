@@ -18,13 +18,13 @@ public class InsertionSortList {
         ListNode node = head.next;
         while (node != null) {
             //直接插入到有序序列的最后一个位置
-            if (lastNode.value <= node.value) {
+            if (lastNode.val <= node.val) {
                 lastNode = lastNode.next;
             }
             //从有序序列的头部开始遍历 直到找到node的位置
             else {
                 ListNode temp = dummyNode;
-                while (temp.next.value <= node.value) {
+                while (temp.next.val <= node.val) {
                     temp = temp.next;
                 }
                 lastNode.next = node.next;

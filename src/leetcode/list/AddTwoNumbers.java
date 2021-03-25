@@ -22,8 +22,8 @@ public class AddTwoNumbers {
         ListNode head = new ListNode(1);//假想的头结点
         ListNode cur = head;
         while (l1 != null || l2 != null) {
-            int x = (l1 != null) ? l1.value : 0;
-            int y = (l2 != null) ? l2.value : 0;
+            int x = (l1 != null) ? l1.val : 0;
+            int y = (l2 != null) ? l2.val : 0;
             int sum = temp + x + y;
             temp = sum / 10;
             cur.next = new ListNode(sum % 10);

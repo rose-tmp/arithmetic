@@ -32,7 +32,7 @@ public class IsPalindrome {
                 node = node.next;
             }
             while (head != null) {
-                if (head.value != stack.pop().value) {
+                if (head.val != stack.pop().val) {
                     return false;
                 }
                 head = head.next;
@@ -59,7 +59,7 @@ public class IsPalindrome {
             }
             len = len >> 1;//len = len / 2;
             while (len-- >= 0) {
-                if (head.value != stack.pop().value) {
+                if (head.val != stack.pop().val) {
                     return false;
                 }
                 head = head.next;
@@ -89,7 +89,7 @@ public class IsPalindrome {
             fast = head;
             while (slow != null) {
                 //然后比较，判断节点值是否相等
-                if (fast.value != slow.value)
+                if (fast.val != slow.val)
                     return false;
                 fast = fast.next;
                 slow = slow.next;
@@ -128,7 +128,7 @@ public class IsPalindrome {
             if(head == null){
                 return true;
             }
-            res = palindrome(head.next) && head.value == temp.value;
+            res = palindrome(head.next) && head.val == temp.val;
             //temp扮演的角色是从头部出发的指针 当一次递归返回执行到这一行代码的时候，temp就要向后移动一次
             temp = temp.next;
             return res;

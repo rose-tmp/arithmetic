@@ -28,11 +28,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="412. Fizz Buzz">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/ThreeSum.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="15. 三数之和">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/LongestValidParentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/list/DeleteDuplicates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/greedy/IsPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/greedy/IsPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/list/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/AddTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/list/MergeTwoLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/MergeTwoLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/list/ReverseKGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/ReverseKGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/tool/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tool/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/sortList/InsertionSortList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/sortList/InsertionSortList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/sortList/MergeSortList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/sortList/MergeSortList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,14 +231,7 @@
       <workItem from="1615522381108" duration="20491000" />
       <workItem from="1615803120413" duration="19184000" />
       <workItem from="1615956791080" duration="32960000" />
-      <workItem from="1616400761708" duration="10884000" />
-    </task>
-    <task id="LOCAL-00063" summary="328. 奇偶链表">
-      <created>1605267767625</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1605267767625</updated>
+      <workItem from="1616400761708" duration="28173000" />
     </task>
     <task id="LOCAL-00064" summary="1122. 数组的相对排序">
       <created>1605339969973</created>
@@ -569,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616503047843</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="15. 三数之和">
+      <created>1616552967584</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1616552967584</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="659. 分割数组为连续子序列" />
     <MESSAGE value="96. 不同的二叉搜索树" />
     <MESSAGE value="题目分类汇总" />
     <MESSAGE value="621. 任务调度器" />
@@ -626,13 +632,18 @@
     <MESSAGE value="73. 矩阵置零" />
     <MESSAGE value="11. 盛最多水的容器" />
     <MESSAGE value="412. Fizz Buzz" />
-    <option name="LAST_COMMIT_MESSAGE" value="412. Fizz Buzz" />
+    <MESSAGE value="15. 三数之和" />
+    <option name="LAST_COMMIT_MESSAGE" value="15. 三数之和" />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1615890882919">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="664" y="153" key="#com.intellij.ide.util.MemberChooser/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1615890882919" />
+    <state x="744" y="215" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1616660160742">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="744" y="215" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616660160742" />
     <state x="687" y="221" key="FileChooserDialogImpl" timestamp="1615598752382">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -686,31 +697,20 @@
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
     <state width="623" height="498" key="SwitcherDM/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616550173368" />
-    <state x="42" y="543" key="Vcs.Push.Dialog.v2" timestamp="1616503074988">
+    <state x="42" y="543" key="Vcs.Push.Dialog.v2" timestamp="1616552975549">
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
-    <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616503074988" />
+    <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552975549" />
     <state x="279" y="282" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616313128610" />
     <state x="169" y="261" width="771" height="340" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1615191482920">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="95" y="0" width="781" height="1890" key="org.intellij.images.editor.actions.BackgroundImageDialog/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1610267545596" />
     <state x="169" y="261" width="771" height="340" key="org.intellij.images.editor.actions.BackgroundImageDialog/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1615191482920" />
-    <state x="212" y="239" width="1494" height="575" key="search.everywhere.popup" timestamp="1615989367874">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup" timestamp="1616556375948">
+      <screen x="0" y="0" width="1080" height="1890" />
     </state>
-    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1610441799443" />
+    <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616556375948" />
     <state x="212" y="239" width="1494" height="575" key="search.everywhere.popup/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1615989367874" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/array/ThreeSum.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

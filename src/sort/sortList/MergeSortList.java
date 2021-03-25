@@ -60,7 +60,7 @@ public class MergeSortList {
         ListNode dummyNode = new ListNode(-1);
         ListNode node = dummyNode;
         while (head1 != null && head2 != null) {
-            if (head1.value < head2.value) {
+            if (head1.val < head2.val) {
                 node.next = head1;
                 head1 = head1.next;
             } else {
@@ -85,6 +85,6 @@ public class MergeSortList {
         head.next.next = new ListNode(1);
         head.next.next.next = new ListNode(3);
         ListNode temp = sortList.mergeSortList(head);
-        System.out.println(temp.value);
+        System.out.println(temp.val);
     }
 }

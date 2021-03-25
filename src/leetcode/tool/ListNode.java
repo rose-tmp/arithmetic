@@ -7,10 +7,10 @@ package leetcode.tool;
  */
 public class ListNode {
     public ListNode next = null;
-    public int value;
+    public int val;
 
-    public ListNode(int value) {
-        this.value = value;
+    public ListNode(int val) {
+        this.val = val;
     }
 
 }
