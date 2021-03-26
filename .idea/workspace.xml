@@ -28,9 +28,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="82. 删除排序链表中的重复元素 II">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/Search.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="33. 搜索旋转排序数组">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/list/DeleteDuplicates2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/middling/Rotate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/list/DeleteDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/list/DeleteDuplicates.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,20 +99,7 @@
       <recent name="D:\JetBrains\IntelliJ IDEA\IDEProjects\arithmetic\src\leetcode\greedy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ThreeSum">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dp.Demo" />
-      <module name="arithmetic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Rotate">
     <configuration name="EvalRPN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.middling.EvalRPN" />
       <module name="arithmetic" />
@@ -130,6 +119,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rotate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.middling.Rotate" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.middling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Rotate" />
         <item itemvalue="Application.ThreeSum" />
         <item itemvalue="Application.SetZeroes" />
         <item itemvalue="Application.EvalRPN" />
         <item itemvalue="Application.MergeArr" />
-        <item itemvalue="Application.Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -222,14 +224,7 @@
       <workItem from="1615522381108" duration="20491000" />
       <workItem from="1615803120413" duration="19184000" />
       <workItem from="1615956791080" duration="32960000" />
-      <workItem from="1616400761708" duration="31805000" />
-    </task>
-    <task id="LOCAL-00065" summary="402. 移掉K位数字">
-      <created>1605444151293</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1605444151293</updated>
+      <workItem from="1616400761708" duration="39772000" />
     </task>
     <task id="LOCAL-00066" summary="406. 根据身高重建队列">
       <created>1605523555541</created>
@@ -567,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616661969524</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="33. 搜索旋转排序数组">
+      <created>1616675948531</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1616675948531</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="题目分类汇总" />
     <MESSAGE value="621. 任务调度器" />
     <MESSAGE value="整理" />
     <MESSAGE value="516. 最长回文子序列" />
@@ -624,7 +625,8 @@
     <MESSAGE value="412. Fizz Buzz" />
     <MESSAGE value="15. 三数之和" />
     <MESSAGE value="82. 删除排序链表中的重复元素 II" />
-    <option name="LAST_COMMIT_MESSAGE" value="82. 删除排序链表中的重复元素 II" />
+    <MESSAGE value="33. 搜索旋转排序数组" />
+    <option name="LAST_COMMIT_MESSAGE" value="33. 搜索旋转排序数组" />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1615890882919">
@@ -639,46 +641,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="687" y="221" key="FileChooserDialogImpl/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1615598752382" />
-    <state width="1027" height="170" key="GridCell.Tab.0.bottom" timestamp="1616552413000">
-      <screen x="0" y="0" width="1080" height="1890" />
+    <state width="1867" height="198" key="GridCell.Tab.0.bottom" timestamp="1616727029291">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="147" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616313138943" />
-    <state width="1027" height="170" key="GridCell.Tab.0.center" timestamp="1616552413000">
-      <screen x="0" y="0" width="1080" height="1890" />
+    <state width="1867" height="198" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029291" />
+    <state width="1867" height="198" key="GridCell.Tab.0.center" timestamp="1616727029291">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="147" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616313138943" />
-    <state width="1027" height="170" key="GridCell.Tab.0.left" timestamp="1616552413000">
-      <screen x="0" y="0" width="1080" height="1890" />
+    <state width="1867" height="198" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029291" />
+    <state width="1867" height="198" key="GridCell.Tab.0.left" timestamp="1616727029291">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="147" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616313138943" />
-    <state width="1027" height="170" key="GridCell.Tab.0.right" timestamp="1616552413000">
-      <screen x="0" y="0" width="1080" height="1890" />
+    <state width="1867" height="198" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029291" />
+    <state width="1867" height="198" key="GridCell.Tab.0.right" timestamp="1616727029291">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="147" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616313138943" />
-    <state width="1027" height="170" key="GridCell.Tab.1.bottom" timestamp="1616552413000">
-      <screen x="0" y="0" width="1080" height="1890" />
+    <state width="1867" height="198" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029291" />
+    <state width="1867" height="198" key="GridCell.Tab.1.bottom" timestamp="1616727029292">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="147" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616313138944" />
-    <state width="1027" height="170" key="GridCell.Tab.1.center" timestamp="1616552413000">
-      <screen x="0" y="0" width="1080" height="1890" />
+    <state width="1867" height="198" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029292" />
+    <state width="1867" height="198" key="GridCell.Tab.1.center" timestamp="1616727029292">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="147" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616313138943" />
-    <state width="1027" height="170" key="GridCell.Tab.1.left" timestamp="1616552413000">
-      <screen x="0" y="0" width="1080" height="1890" />
+    <state width="1867" height="198" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029292" />
+    <state width="1867" height="198" key="GridCell.Tab.1.left" timestamp="1616727029291">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="147" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616313138943" />
-    <state width="1027" height="170" key="GridCell.Tab.1.right" timestamp="1616552413000">
-      <screen x="0" y="0" width="1080" height="1890" />
+    <state width="1867" height="198" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029291" />
+    <state width="1867" height="198" key="GridCell.Tab.1.right" timestamp="1616727029292">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="147" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616313138943" />
+    <state width="1867" height="198" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029292" />
     <state x="0" y="0" width="1920" height="883" key="SettingsEditor" timestamp="1615191484354">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -688,11 +690,11 @@
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
     <state width="623" height="498" key="SwitcherDM/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616550173368" />
-    <state x="279" y="282" key="Vcs.Push.Dialog.v2" timestamp="1616661980127">
+    <state x="279" y="282" key="Vcs.Push.Dialog.v2" timestamp="1616676995164">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552975549" />
-    <state x="279" y="282" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616661980127" />
+    <state x="279" y="282" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616676995164" />
     <state x="169" y="261" width="771" height="340" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1615191482920">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
