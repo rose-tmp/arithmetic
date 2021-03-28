@@ -44,6 +44,7 @@ public class Merge {
                 }
             }
         });
+        //i是前一个指针  j是后一个指针
         for (int i = 0, j = 1; j < intervals.length; i++, j++) {
             if (intervals[i][1] >= intervals[j][0]) {
                 intervals[j][0] = intervals[i][0];
@@ -52,6 +53,7 @@ public class Merge {
                 list.add(intervals[i]);
             }
         }
+        //for结束后，intervals中最后一处的一维数组是j指向的，并没有被加入到list中
         list.add(intervals[intervals.length - 1]);
         int[][] res = new int[list.size()][2];
         for (int i = 0; i < list.size(); i++) {

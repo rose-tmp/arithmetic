@@ -28,9 +28,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="61. 旋转链表">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/Merge.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="56. 合并区间">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/tree/BSTIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/tree/LevelOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/tree/LowestCommonAncestor2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interview/SeeTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview/SeeTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/Merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/Merge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/tree/LowestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/LowestCommonAncestor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +102,7 @@
       <recent name="D:\JetBrains\IntelliJ IDEA\IDEProjects\arithmetic\src\leetcode\greedy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Rotate">
+  <component name="RunManager" selected="Application.LowestCommonAncestor2">
     <configuration name="EvalRPN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.middling.EvalRPN" />
       <module name="arithmetic" />
@@ -111,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeArr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.MergeArr" />
+    <configuration name="LowestCommonAncestor2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.tree.LowestCommonAncestor2" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.array.*" />
+          <option name="PATTERN" value="leetcode.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LowestCommonAncestor2" />
         <item itemvalue="Application.Rotate" />
         <item itemvalue="Application.ThreeSum" />
         <item itemvalue="Application.SetZeroes" />
         <item itemvalue="Application.EvalRPN" />
-        <item itemvalue="Application.MergeArr" />
       </list>
     </recent_temporary>
   </component>
@@ -222,14 +227,7 @@
       <workItem from="1615522381108" duration="20491000" />
       <workItem from="1615803120413" duration="19184000" />
       <workItem from="1615956791080" duration="32960000" />
-      <workItem from="1616400761708" duration="56081000" />
-    </task>
-    <task id="LOCAL-00070" summary="147. 对链表进行插入排序">
-      <created>1605859670482</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1605859670482</updated>
+      <workItem from="1616400761708" duration="64551000" />
     </task>
     <task id="LOCAL-00071" summary="2路归并排序的非递归版本&#10;147. 对链表进行插入排序&#10;148. 排序链表 (对链表进行归并排序)">
       <created>1606013500427</created>
@@ -567,7 +565,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616914252249</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="56. 合并区间">
+      <created>1616916133155</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1616916133156</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,7 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="118. 杨辉三角" />
     <MESSAGE value="673. 最长递增子序列的个数&#10;300. 最长上升子序列" />
     <MESSAGE value="322. 零钱兑换" />
     <MESSAGE value="300. 最长上升子序列" />
@@ -624,7 +628,8 @@
     <MESSAGE value="101. 对称二叉树" />
     <MESSAGE value="64. 最小路径和" />
     <MESSAGE value="61. 旋转链表" />
-    <option name="LAST_COMMIT_MESSAGE" value="61. 旋转链表" />
+    <MESSAGE value="56. 合并区间" />
+    <option name="LAST_COMMIT_MESSAGE" value="56. 合并区间" />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1615890882919">
@@ -639,46 +644,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="687" y="221" key="FileChooserDialogImpl/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616755551632" />
-    <state width="1867" height="198" key="GridCell.Tab.0.bottom" timestamp="1616727029291">
+    <state width="1867" height="100" key="GridCell.Tab.0.bottom" timestamp="1616940176869">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="198" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029291" />
-    <state width="1867" height="198" key="GridCell.Tab.0.center" timestamp="1616727029291">
+    <state width="1867" height="100" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176869" />
+    <state width="1867" height="100" key="GridCell.Tab.0.center" timestamp="1616940176869">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="198" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029291" />
-    <state width="1867" height="198" key="GridCell.Tab.0.left" timestamp="1616727029291">
+    <state width="1867" height="100" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176869" />
+    <state width="1867" height="100" key="GridCell.Tab.0.left" timestamp="1616940176868">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="198" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029291" />
-    <state width="1867" height="198" key="GridCell.Tab.0.right" timestamp="1616727029291">
+    <state width="1867" height="100" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176868" />
+    <state width="1867" height="100" key="GridCell.Tab.0.right" timestamp="1616940176869">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="198" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029291" />
-    <state width="1867" height="198" key="GridCell.Tab.1.bottom" timestamp="1616727029292">
+    <state width="1867" height="100" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176869" />
+    <state width="1867" height="100" key="GridCell.Tab.1.bottom" timestamp="1616940176870">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="198" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029292" />
-    <state width="1867" height="198" key="GridCell.Tab.1.center" timestamp="1616727029292">
+    <state width="1867" height="100" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176870" />
+    <state width="1867" height="100" key="GridCell.Tab.1.center" timestamp="1616940176870">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="198" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029292" />
-    <state width="1867" height="198" key="GridCell.Tab.1.left" timestamp="1616727029291">
+    <state width="1867" height="100" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176870" />
+    <state width="1867" height="100" key="GridCell.Tab.1.left" timestamp="1616940176870">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="198" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029291" />
-    <state width="1867" height="198" key="GridCell.Tab.1.right" timestamp="1616727029292">
+    <state width="1867" height="100" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176870" />
+    <state width="1867" height="100" key="GridCell.Tab.1.right" timestamp="1616940176870">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="198" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616727029292" />
+    <state width="1867" height="100" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176870" />
     <state x="0" y="0" width="1920" height="883" key="SettingsEditor" timestamp="1616756103861">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -698,10 +703,10 @@
     </state>
     <state x="95" y="0" width="781" height="1890" key="org.intellij.images.editor.actions.BackgroundImageDialog/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1610267545596" />
     <state x="450" y="329" width="781" height="589" key="org.intellij.images.editor.actions.BackgroundImageDialog/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616756103025" />
-    <state x="212" y="239" width="1494" height="575" key="search.everywhere.popup" timestamp="1616760537904">
+    <state x="212" y="239" width="1494" height="575" key="search.everywhere.popup" timestamp="1616940437406">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616556375948" />
-    <state x="212" y="239" width="1494" height="575" key="search.everywhere.popup/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616760537904" />
+    <state x="212" y="239" width="1494" height="575" key="search.everywhere.popup/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940437406" />
   </component>
 </project>
