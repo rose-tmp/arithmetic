@@ -28,14 +28,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="56. 合并区间">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/tree/BSTIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/tree/LevelOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/tree/LowestCommonAncestor2.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="236. 二叉树的最近公共祖先">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/Solve.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interview/SeeTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview/SeeTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/Merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/Merge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/tree/LowestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/tree/LowestCommonAncestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtracking/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/CombinationSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtracking/Exist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/Exist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtracking/GenerateParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/GenerateParenthesis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtracking/LetterCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/LetterCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtracking/NQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/NQueens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtracking/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/Permutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtracking/Permute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/Permute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtracking/RestoreIpAddresses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/RestoreIpAddresses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtracking/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/Subsets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtracking/TotalNQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/TotalNQueens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtracking/WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/WordBreak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtracking/backTrack" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/backTrack" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,14 +234,7 @@
       <workItem from="1615522381108" duration="20491000" />
       <workItem from="1615803120413" duration="19184000" />
       <workItem from="1615956791080" duration="32960000" />
-      <workItem from="1616400761708" duration="64551000" />
-    </task>
-    <task id="LOCAL-00071" summary="2路归并排序的非递归版本&#10;147. 对链表进行插入排序&#10;148. 排序链表 (对链表进行归并排序)">
-      <created>1606013500427</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1606013500427</updated>
+      <workItem from="1616400761708" duration="65556000" />
     </task>
     <task id="LOCAL-00072" summary="242. 有效的字母异位词">
       <created>1606015516961</created>
@@ -572,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616916133156</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="236. 二叉树的最近公共祖先">
+      <created>1616940791871</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1616940791871</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,7 +611,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="673. 最长递增子序列的个数&#10;300. 最长上升子序列" />
     <MESSAGE value="322. 零钱兑换" />
     <MESSAGE value="300. 最长上升子序列" />
     <MESSAGE value="354. 俄罗斯套娃信封问题" />
@@ -629,7 +635,8 @@
     <MESSAGE value="64. 最小路径和" />
     <MESSAGE value="61. 旋转链表" />
     <MESSAGE value="56. 合并区间" />
-    <option name="LAST_COMMIT_MESSAGE" value="56. 合并区间" />
+    <MESSAGE value="236. 二叉树的最近公共祖先" />
+    <option name="LAST_COMMIT_MESSAGE" value="236. 二叉树的最近公共祖先" />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1615890882919">
@@ -693,11 +700,11 @@
       <screen x="0" y="0" width="1080" height="1890" />
     </state>
     <state width="623" height="498" key="SwitcherDM/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616550173368" />
-    <state x="279" y="282" key="Vcs.Push.Dialog.v2" timestamp="1616914304590">
+    <state x="279" y="282" key="Vcs.Push.Dialog.v2" timestamp="1616940796888">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="42" y="543" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552975549" />
-    <state x="279" y="282" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616914304590" />
+    <state x="279" y="282" key="Vcs.Push.Dialog.v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940796888" />
     <state x="450" y="329" width="781" height="589" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1616756103025">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

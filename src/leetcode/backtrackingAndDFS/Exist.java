@@ -1,4 +1,4 @@
-package leetcode.backtracking;
+package leetcode.backtrackingAndDFS;
 
 /**
  * @author - ZwZ
