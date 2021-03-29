@@ -1,4 +1,4 @@
-package leetcode.dp.dpOnStringAndArray;
+package leetcode.dp;
 
 /**
  * @author - ZwZ

@@ -32,16 +32,24 @@ public class Partition {
     /**
      * 首先這道題很明顯可以選擇枚舉出來所有的子串 然後判斷他們每一個子串是不是回文串
      * 而且題目上邊有告訴：1 <= s.length <= 16 可見用回溯去暴力解的話應該是可以通過所有的示例的
-     *
+     * 并且题目让返回s所有可能的分割方案 也就是在枚舉的過程中要去記錄你之前所枚舉過得子串
+     * 所以很明顯這道題就是去使用回溯去做
+     * 而至於回溯樹如何畫，拿aab舉例：
+     *           a    aa  aab
+     *          /\    |
+     *        a  ab   b
+     *       /
+     *      b
+     *  也就是包含了所有的情況： a,a,b ; a,ab ; aa,b ; aab
      * @param s
      * @return
      */
     public List<List<String>> partition(String s) {
-        dfs(new ArrayList<>(), s);
+        backTrack(new ArrayList<>(), s);
         return res;
     }
 
-    public void dfs(List<String> list, String s) {
+    public void backTrack(List<String> list, String s) {
         if (s.equals("")) {
             res.add(new ArrayList<>(list));
             return;
@@ -50,14 +58,15 @@ public class Partition {
             String temp = s.substring(0, i);
             if (judge(temp)) {
                 list.add(s.substring(0, i));
-                dfs(list, s.substring(i));
+                backTrack(list, s.substring(i));
                 list.remove(list.size() - 1);
             }
         }
     }
 
     /**
-     * 判斷一個字符串是不是回文串
+     * 判斷一個字符串是不是回文串  这个judge会造成重复计算
+     * 可以优化：使用boolean[][]优化，arr[i][j]意思为：s[i...j]此子串是否为回文子串
      *
      * @param str
      * @return

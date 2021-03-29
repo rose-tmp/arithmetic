@@ -28,9 +28,25 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="130. 被围绕的区域">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/Partition.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="131. 分割回文串">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dp/MinCut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/Partition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/backtrackingAndDFS/Partition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/Distance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/Distance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/FindNumberOfLIS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/FindNumberOfLIS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/LengthOfLIS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/LengthOfLIS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/LongestCommonSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/LongestCommonSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/LongestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/LongestPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/LongestPalindromeSubseq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/LongestPalindromeSubseq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/LongestValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/LongestValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/MaxEnvelopes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/MaxEnvelopes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/MaxProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/MaxProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/MaxSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/MaxSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/MinDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/MinDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/MinPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/MinPathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/MinimumDeleteSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/MinimumDeleteSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/WordBreak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/dpOnStringAndArray/string" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/string" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +102,9 @@
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JetBrains\IntelliJ IDEA\IDEProjects\arithmetic\src\leetcode\dp" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="interview" />
       <recent name="leetcode.dp" />
@@ -97,13 +116,13 @@
       <recent name="D:\JetBrains\IntelliJ IDEA\IDEProjects\arithmetic\src\leetcode\greedy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LowestCommonAncestor2">
-    <configuration name="EvalRPN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.middling.EvalRPN" />
+  <component name="RunManager" selected="Application.MinCut">
+    <configuration name="LowestCommonAncestor2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.tree.LowestCommonAncestor2" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.middling.*" />
+          <option name="PATTERN" value="leetcode.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LowestCommonAncestor2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.tree.LowestCommonAncestor2" />
+    <configuration name="MinCut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dp.MinCut" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.tree.*" />
+          <option name="PATTERN" value="leetcode.dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MinCut" />
         <item itemvalue="Application.LowestCommonAncestor2" />
         <item itemvalue="Application.Rotate" />
         <item itemvalue="Application.ThreeSum" />
         <item itemvalue="Application.SetZeroes" />
-        <item itemvalue="Application.EvalRPN" />
       </list>
     </recent_temporary>
   </component>
@@ -222,14 +241,7 @@
       <workItem from="1615522381108" duration="20491000" />
       <workItem from="1615803120413" duration="19184000" />
       <workItem from="1615956791080" duration="32960000" />
-      <workItem from="1616400761708" duration="67957000" />
-    </task>
-    <task id="LOCAL-00073" summary="452. 用最少数量的箭引爆气球">
-      <created>1606132384112</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1606132384114</updated>
+      <workItem from="1616400761708" duration="73151000" />
     </task>
     <task id="LOCAL-00074" summary="222. 完全二叉树的节点个数">
       <created>1606190396389</created>
@@ -567,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617020582430</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="131. 分割回文串">
+      <created>1617022807266</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1617022807269</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,7 +618,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="300. 最长上升子序列" />
     <MESSAGE value="354. 俄罗斯套娃信封问题" />
     <MESSAGE value="53. 最大子序和" />
     <MESSAGE value="1143. 最长公共子序列" />
@@ -624,7 +642,8 @@
     <MESSAGE value="56. 合并区间" />
     <MESSAGE value="236. 二叉树的最近公共祖先" />
     <MESSAGE value="130. 被围绕的区域" />
-    <option name="LAST_COMMIT_MESSAGE" value="130. 被围绕的区域" />
+    <MESSAGE value="131. 分割回文串" />
+    <option name="LAST_COMMIT_MESSAGE" value="131. 分割回文串" />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1615890882919">
@@ -639,46 +658,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="687" y="221" key="FileChooserDialogImpl/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616755551632" />
-    <state width="1867" height="100" key="GridCell.Tab.0.bottom" timestamp="1616940176869">
+    <state width="1867" height="326" key="GridCell.Tab.0.bottom" timestamp="1617027974303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="100" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176869" />
-    <state width="1867" height="100" key="GridCell.Tab.0.center" timestamp="1616940176869">
+    <state width="1867" height="326" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617027974303" />
+    <state width="1867" height="326" key="GridCell.Tab.0.center" timestamp="1617027974303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="100" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176869" />
-    <state width="1867" height="100" key="GridCell.Tab.0.left" timestamp="1616940176868">
+    <state width="1867" height="326" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617027974303" />
+    <state width="1867" height="326" key="GridCell.Tab.0.left" timestamp="1617027974303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="100" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176868" />
-    <state width="1867" height="100" key="GridCell.Tab.0.right" timestamp="1616940176869">
+    <state width="1867" height="326" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617027974303" />
+    <state width="1867" height="326" key="GridCell.Tab.0.right" timestamp="1617027974303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="100" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176869" />
-    <state width="1867" height="100" key="GridCell.Tab.1.bottom" timestamp="1616940176870">
+    <state width="1867" height="326" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617027974303" />
+    <state width="1867" height="326" key="GridCell.Tab.1.bottom" timestamp="1617027974303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="100" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176870" />
-    <state width="1867" height="100" key="GridCell.Tab.1.center" timestamp="1616940176870">
+    <state width="1867" height="326" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617027974303" />
+    <state width="1867" height="326" key="GridCell.Tab.1.center" timestamp="1617027974303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="100" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176870" />
-    <state width="1867" height="100" key="GridCell.Tab.1.left" timestamp="1616940176870">
+    <state width="1867" height="326" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617027974303" />
+    <state width="1867" height="326" key="GridCell.Tab.1.left" timestamp="1617027974303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="100" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176870" />
-    <state width="1867" height="100" key="GridCell.Tab.1.right" timestamp="1616940176870">
+    <state width="1867" height="326" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617027974303" />
+    <state width="1867" height="326" key="GridCell.Tab.1.right" timestamp="1617027974303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="100" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616940176870" />
+    <state width="1867" height="326" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617027974303" />
     <state x="0" y="0" width="1920" height="883" key="SettingsEditor" timestamp="1616756103861">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -703,5 +722,19 @@
     </state>
     <state x="119" y="430" width="840" height="1034" key="search.everywhere.popup/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616556375948" />
     <state x="212" y="239" width="1494" height="575" key="search.everywhere.popup/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617020440570" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/leetcode/dp/MinCut.java</url>
+          <line>38</line>
+          <properties class="leetcode.dp.MinCut" method="minCut">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
