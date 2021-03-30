@@ -28,9 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="74. 搜索二维矩阵">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/tree/IsValidBST.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="98. 验证二叉搜索树">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/SingleNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/Demo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +101,7 @@
       <recent name="D:\JetBrains\IntelliJ IDEA\IDEProjects\arithmetic\src\leetcode\greedy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SearchMatrix">
+  <component name="RunManager" selected="Application.SingleNumber">
     <configuration name="LowestCommonAncestor2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.tree.LowestCommonAncestor2" />
       <module name="arithmetic" />
@@ -153,12 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreeSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.ThreeSum" />
+    <configuration name="SingleNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.easy.SingleNumber" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.array.*" />
+          <option name="PATTERN" value="leetcode.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SingleNumber" />
         <item itemvalue="Application.SearchMatrix" />
         <item itemvalue="Application.MinCut" />
         <item itemvalue="Application.LowestCommonAncestor2" />
         <item itemvalue="Application.Rotate" />
-        <item itemvalue="Application.ThreeSum" />
       </list>
     </recent_temporary>
   </component>
@@ -225,14 +226,7 @@
       <workItem from="1615522381108" duration="20491000" />
       <workItem from="1615803120413" duration="19184000" />
       <workItem from="1615956791080" duration="32960000" />
-      <workItem from="1616400761708" duration="77043000" />
-    </task>
-    <task id="LOCAL-00076" summary="1370. 上升下降字符串">
-      <created>1606304921483</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1606304921483</updated>
+      <workItem from="1616400761708" duration="79179000" />
     </task>
     <task id="LOCAL-00077" summary="493. 翻转对">
       <created>1606553941288</created>
@@ -570,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617085017837</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="98. 验证二叉搜索树">
+      <created>1617087711886</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1617087711893</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="1143. 最长公共子序列" />
     <MESSAGE value="583. 两个字符串的删除操作" />
     <MESSAGE value="712. 两个字符串的最小ASCII删除和" />
     <MESSAGE value="72. 编辑距离" />
@@ -627,7 +627,8 @@
     <MESSAGE value="131. 分割回文串" />
     <MESSAGE value="132. 分割回文串 II" />
     <MESSAGE value="74. 搜索二维矩阵" />
-    <option name="LAST_COMMIT_MESSAGE" value="74. 搜索二维矩阵" />
+    <MESSAGE value="98. 验证二叉搜索树" />
+    <option name="LAST_COMMIT_MESSAGE" value="98. 验证二叉搜索树" />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1615890882919">
@@ -642,46 +643,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="687" y="221" key="FileChooserDialogImpl/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1616755551632" />
-    <state width="1867" height="121" key="GridCell.Tab.0.bottom" timestamp="1617085022701">
+    <state width="1867" height="379" key="GridCell.Tab.0.bottom" timestamp="1617088806989">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="121" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617085022701" />
-    <state width="1867" height="121" key="GridCell.Tab.0.center" timestamp="1617085022701">
+    <state width="1867" height="379" key="GridCell.Tab.0.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617088806989" />
+    <state width="1867" height="379" key="GridCell.Tab.0.center" timestamp="1617088806989">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="121" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617085022701" />
-    <state width="1867" height="121" key="GridCell.Tab.0.left" timestamp="1617085022701">
+    <state width="1867" height="379" key="GridCell.Tab.0.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617088806989" />
+    <state width="1867" height="379" key="GridCell.Tab.0.left" timestamp="1617088806989">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="121" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617085022701" />
-    <state width="1867" height="121" key="GridCell.Tab.0.right" timestamp="1617085022701">
+    <state width="1867" height="379" key="GridCell.Tab.0.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617088806989" />
+    <state width="1867" height="379" key="GridCell.Tab.0.right" timestamp="1617088806989">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="121" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617085022701" />
-    <state width="1867" height="121" key="GridCell.Tab.1.bottom" timestamp="1617085022702">
+    <state width="1867" height="379" key="GridCell.Tab.0.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617088806989" />
+    <state width="1867" height="379" key="GridCell.Tab.1.bottom" timestamp="1617088806990">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="121" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617085022702" />
-    <state width="1867" height="121" key="GridCell.Tab.1.center" timestamp="1617085022701">
+    <state width="1867" height="379" key="GridCell.Tab.1.bottom/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617088806990" />
+    <state width="1867" height="379" key="GridCell.Tab.1.center" timestamp="1617088806989">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="121" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617085022701" />
-    <state width="1867" height="121" key="GridCell.Tab.1.left" timestamp="1617085022701">
+    <state width="1867" height="379" key="GridCell.Tab.1.center/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617088806989" />
+    <state width="1867" height="379" key="GridCell.Tab.1.left" timestamp="1617088806989">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="121" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617085022701" />
-    <state width="1867" height="121" key="GridCell.Tab.1.right" timestamp="1617085022702">
+    <state width="1867" height="379" key="GridCell.Tab.1.left/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617088806989" />
+    <state width="1867" height="379" key="GridCell.Tab.1.right" timestamp="1617088806990">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1027" height="170" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1080.1890@0.0.1080.1890" timestamp="1616552413000" />
-    <state width="1867" height="121" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617085022702" />
+    <state width="1867" height="379" key="GridCell.Tab.1.right/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1617088806990" />
     <state x="0" y="0" width="1920" height="883" key="SettingsEditor" timestamp="1616756103861">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -717,6 +718,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/leetcode/easy/SingleNumber.java</url>
+          <line>46</line>
+          <properties class="leetcode.easy.SingleNumber" method="singleNumber2">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

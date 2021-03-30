@@ -6,4 +6,7 @@ package leetcode;
  * @Description:
  */
 public class Demo {
+    public int[] topKFrequent(int[] nums, int k) {
+
+    }
 }
