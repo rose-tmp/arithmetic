@@ -55,15 +55,15 @@ package leetcode.dp;
  * <p>
  * <p>
  * 思路和dp文件中提到的思路一样。暴力递归：
- * adceb *a*b
- * *用来匹配空/         \*用来匹配掉a
- * adceb a*b       dceb *a*b
- * /                /      \
- * dceb *b        ceb *a*b  dceb a*b
- * *用来匹配掉d/     \          /   \
- * ceb *b   dceb b  eb *a*b  ceb a*b   ...
+ *                 adceb *a*b
+ *       *用来匹配空/          \*用来匹配掉a
+ *         adceb a*b        dceb *a*b
+ *            /               /      \
+ *        dceb *b        ceb *a*b   dceb a*b
+ * *用来匹配掉d/   \        /   \
+ *     ceb *b   dceb b eb *a*b ceb a*b   ...
  */
-public class IsMatch {
+public class IsMatch44 {
     /**
      * 动态规划
      */

@@ -42,7 +42,11 @@ https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=100000768&idx=1&sn=86d496e
             1.2 两个字符串的删除操作MinDistance:是最长公共子序列LongestCommonSubsequence同类型的题目,会前者就会MinDistance  介绍了暴力递归,带备忘录的递归,以及动态规划的不同解法
             1.3 两个字符串的最小ASCII删除和MinimumDeleteSum: 和两个字符串的删除操作MinDistance几乎是同一道题 但是在这道题里面介绍了两种动态规划的方法
             1.4 编辑距离Distance 和1.1 1.2 1.3同类型，只不过理解上比1.1 1.2 1.3困难一些 自己同样写了三种方法：暴力递归-->带备忘录的递归-->动态规划
-            1.5 通配符匹配IsMatch.
+
+            1.5 通配符匹配IsMatch44
+            1.6 正则表达式匹配IsMatch10.在1.5更加困难
 
         一个字符串中的回文子序列类型题目：
             1.1 最长回文子序列LongestPalindromeSubseq: 只有指定的遍历顺序才可以将dp table顺利的填满
+
+        62. 不同路径UniquePaths是一个dp数组倒着赋值的典型例题
