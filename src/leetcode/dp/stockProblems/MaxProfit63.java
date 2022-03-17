@@ -3,7 +3,7 @@ package leetcode.dp.stockProblems;
 /**
  * @author - ZwZ
  * @date - 2022/3/17-18:46 - 周四
- * @Description:剑指 Offer 63. 股票的最大利润
+ * @Description:剑指 Offer 63. 股票的最大利润 与 121. 买卖股票的最佳时机 是同一道题目
  * 假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？
  * <p>
  * <p>

@@ -31,11 +31,11 @@ package leetcode.dp.stockProblems;
  */
 public class MaxProfit2 {
     public int maxProfit(int[] prices) {
-        if (prices.length == 0 || prices == null) {
+        if (prices.length == 0) {
             return 0;
         }
-        //dp[i][0]:第i+1天持有股票 此时获得的最大收益
-        //dp[i][1]:第i+1天不持股票 此时获得的最大收益
+        //dp[i][0]:第i天持有股票 此时获得的最大收益
+        //dp[i][1]:第i天不持股票 此时获得的最大收益
         int[][] dp = new int[prices.length][2];
         dp[0][0] = -prices[0];
         dp[0][1] = 0;
