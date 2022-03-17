@@ -24,6 +24,7 @@ import java.util.Arrays;
 public class LengthOfLIS {
     /**
      * 动态规划 即自下而上为dp表赋值
+     * 时间复杂度O(N^2)
      */
     public int lengthOfLIS1(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
@@ -44,7 +45,14 @@ public class LengthOfLIS {
         }
         return res;
     }
+    /**
+     * 贪心+二分查找
+     * 时间复杂度O(nlogn)
+     * */
+    public int lengthOfLIS3(int[] nums) {
 
+        return 0;
+    }
     /**
      * 带备忘录的递归 即自顶向下去为dp表赋值
      */

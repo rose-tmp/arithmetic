@@ -30,7 +30,7 @@ public class UniquePaths {
      * m:列
      * n:行
      */
-    public int uniquePaths(int m, int n) {
+    public int uniquePaths1(int m, int n) {
         int[][] dp = new int[n][m]; //dp[i][j]表示从[0,0]到[i,j]几种可能的路径
         //网格边界赋初值
         for (int i = 0; i < n; i++) {
@@ -45,5 +45,30 @@ public class UniquePaths {
             }
         }
         return dp[n - 1][m - 1];
+    }
+    /**
+     * dp换一个定义方式，则赋值的方向和上一个就有所不同
+     * 又之前的从（0，0）向（m-1，n-1）赋值变为由(m-1,n-1)向（0，0）赋值
+     * */
+    public int uniquePaths2(int m, int n) {
+        if (m == 0 || n == 0) {
+            return 1;
+        }
+        //dp[i][j]:从[i][j]到[m-1,n-1]一共有多少条路径
+        int[][] dp = new int[m][n];
+        dp[m - 1][n - 1] = 1;
+        //初始化dp数组
+        for (int row = m - 2; row >= 0; row--) {
+            dp[row][n - 1] = 1;
+        }
+        for (int col = n - 2; col >= 0; col--) {
+            dp[m - 1][col] = 1;
+        }
+        for (int i = m - 2; i >= 0; i--) {
+            for (int j = n - 2; j >= 0; j--) {
+                dp[i][j] = dp[i + 1][j] + dp[i][j + 1];
+            }
+        }
+        return dp[0][0];
     }
 }
