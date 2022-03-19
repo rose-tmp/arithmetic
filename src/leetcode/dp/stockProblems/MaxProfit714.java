@@ -27,6 +27,9 @@ package leetcode.dp.stockProblems;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class MaxProfit714 {
+    /**
+     * 和122一模一样的思路
+     * */
     public int maxProfit(int[] prices, int fee) {
         if (prices == null || prices.length == 0 || fee < 0) {
             return 0;
