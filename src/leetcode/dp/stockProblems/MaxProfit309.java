@@ -17,7 +17,7 @@ package leetcode.dp.stockProblems;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
  */
-public class MaxProfit {
+public class MaxProfit309 {
     /**
      * dp函数的设定：
      *     f(i)表示第i天结束的时候所获得的最大利润

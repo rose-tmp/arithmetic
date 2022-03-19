@@ -29,7 +29,7 @@ package leetcode.dp.stockProblems;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii
  */
-public class MaxProfit2 {
+public class MaxProfit122 {
     /**
      * 动态规划
      */
