@@ -30,7 +30,10 @@ package leetcode.dp.stockProblems;
  * 链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii
  */
 public class MaxProfit2 {
-    public int maxProfit(int[] prices) {
+    /**
+     * 动态规划
+     */
+    public int maxProfit1(int[] prices) {
         if (prices.length == 0) {
             return 0;
         }
@@ -54,5 +57,60 @@ public class MaxProfit2 {
             dp[i][1] = Math.max(dp[i - 1][0] + prices[i], dp[i - 1][1]);
         }
         return dp[prices.length - 1][1];
+    }
+
+    /**
+     * 贪心
+     */
+    public int maxProfit2(int[] prices) {
+        if (prices == null || prices.length == 0) {
+            return 0;
+        }
+        int res = 0;
+        for (int i = 1; i < prices.length; i++) {
+            if (prices[i - 1] < prices[i]) {
+                res += prices[i] - prices[i - 1];
+            }
+        }
+        return res;
+    }
+
+    int res = Integer.MIN_VALUE;
+    /**
+     * 暴力递归
+     */
+    public int maxProfit3(int[] prices) {
+        if (prices == null || prices.length == 0) {
+            return 0;
+        }
+        dfs(prices,0,0,false);
+        return res;
+    }
+
+    /**
+     * prices:原始数组
+     * index:当前遍历的结点
+     * profit:当前所获收益
+     * status:当下手里是否持有股票
+     *                                         钱
+     *                 不做任何操作  /                      \ 买
+     *                            钱                      股票
+     *            不做任何操作/         \买       不做任何操作/   \卖
+     *                       ......
+     *
+     */
+    private void dfs(int[] prices, int index, int profit,boolean status) {
+        if (index == prices.length) {
+            res = Math.max(res,profit);
+            return;
+        }
+        //不做任何操作直接进入下一步
+        dfs(prices,index + 1,profit,status);
+        //当下持有股票并卖掉
+        if (status) {
+            dfs(prices,index + 1,profit + prices[index],false);
+        }else {
+            dfs(prices,index + 1,profit - prices[index],true);
+        }
     }
 }

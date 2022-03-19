@@ -22,9 +22,8 @@ class TreeNode {
 public class PreOrder {
 
     /**
-     *
      * @Author: ZwZ
-     * @Description:先让节点的右节点先进栈在将左节点进栈 从而达到出栈顺序是先左后右
+     * @Description:先让节点的右节点先进栈再将左节点进栈 从而达到出栈顺序是先左后右
      * @Param: [root]
      * @return: void
      * @Date: 2020/2/12-20:13
@@ -45,6 +44,7 @@ public class PreOrder {
                 stack.push(currentNode.left);
         }
     }
+
     public List<Integer> preorder2(TreeNode root) {
         List<Integer> res = new ArrayList<Integer>();
         if (root == null) {
@@ -63,6 +63,7 @@ public class PreOrder {
         }
         return res;
     }
+
     public static void main(String[] args) {
         PreOrder order = new PreOrder();
         TreeNode root = new TreeNode(8);
@@ -74,4 +75,5 @@ public class PreOrder {
         root.right.right = new TreeNode(11);
         order.preOrder1(root);
     }
+
 }

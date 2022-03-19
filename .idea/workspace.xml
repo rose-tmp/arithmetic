@@ -28,10 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="494. 目标和">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/MaxPathSum.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiTreeOrder/PreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiTreeOrder/PreOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/stockProblems/MaxProfit2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/stockProblems/MaxProfit2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +84,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
@@ -229,20 +230,7 @@
       <workItem from="1615803120413" duration="19184000" />
       <workItem from="1615956791080" duration="32960000" />
       <workItem from="1616400761708" duration="110351000" />
-    </task>
-    <task id="LOCAL-00080" summary="34. 在排序数组中查找元素的第一个和最后一个位置">
-      <created>1606891359545</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1606891359546</updated>
-    </task>
-    <task id="LOCAL-00081" summary="26. 删除排序数组中的重复项&#10;80. 删除排序数组中的重复项 II">
-      <created>1606897083907</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1606897083907</updated>
+      <workItem from="1647601022326" duration="4967000" />
     </task>
     <task id="LOCAL-00082" summary="204. 计数质数">
       <created>1607055683358</created>
@@ -573,7 +561,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617111587276</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="剑指 Offer 63. 股票的最大利润">
+      <created>1647516889631</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1647516889631</updated>
+    </task>
+    <task id="LOCAL-00130" summary="...">
+      <created>1647520010016</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1647520010016</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,8 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="152. 乘积最大子数组" />
-    <MESSAGE value="25. K 个一组翻转链表" />
     <MESSAGE value="无" />
     <MESSAGE value="快手效率工程部门后端实习生一面第二题" />
     <MESSAGE value="返回一颗二叉树站在右边可以看得到的节点 (瓜子后端实习一面算法题)" />
@@ -630,7 +630,9 @@
     <MESSAGE value="136. 只出现一次的数字" />
     <MESSAGE value="347. 前 K 个高频元素" />
     <MESSAGE value="494. 目标和" />
-    <option name="LAST_COMMIT_MESSAGE" value="494. 目标和" />
+    <MESSAGE value="剑指 Offer 63. 股票的最大利润" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
