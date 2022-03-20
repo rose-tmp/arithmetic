@@ -23,7 +23,7 @@ package leetcode.dp.stockProblems;
  * 链接：https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class MaxProfit63 {
+public class MaxProfit121 {
     public int maxProfit1(int[] prices) {
         if (prices.length <= 1) {
             return 0;
