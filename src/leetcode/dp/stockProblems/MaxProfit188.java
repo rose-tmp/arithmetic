@@ -26,7 +26,7 @@ package leetcode.dp.stockProblems;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class MaxProfit188 {
-    public int maxProfit(int k, int[] prices) {
+    /*public int maxProfit(int k, int[] prices) {
         if (prices == null || prices.length == 0 || k <= 0) {
             return 0;
         }
@@ -45,6 +45,31 @@ public class MaxProfit188 {
             }
         }
         return Math.max(hold[prices.length - 1][k], sail[prices.length - 1][k]);
+    }*/
+    public int maxProfit(int K, int[] prices) {
+        if (prices.length <= 1) {
+            return 0;
+        }
+        //一次交易至少涉及两天，所以如果k大于总天数的一半，就直接取天数一半即可，多余的交易次数是无意义的
+        K = Math.min(K, prices.length / 2);
+
+        //dp[i][j][k]代表 第i天交易了k次时的最大利润，其中j代表当天是否持有股票，0不持有，1持有
+        int[][][] dp = new int[prices.length][2][K + 1];
+        for (int k = 0; k <= K; k++) {
+            dp[0][0][k] = 0;
+            dp[0][1][k] = -prices[0];
+        }
+
+        /*状态方程：
+        dp[i][0][k]，当天不持有股票时，看前一天的股票持有情况
+        dp[i][1][k]，当天持有股票时，看前一天的股票持有情况*/
+        for (int i = 1; i < prices.length; i++) {
+            for (int j = 1; j <= K; j++) {
+                dp[i][0][j] = Math.max(dp[i - 1][0][j], dp[i - 1][1][j] + prices[i]);
+                dp[i][1][j] = Math.max(dp[i - 1][1][j], dp[i - 1][0][j - 1] - prices[i]);
+            }
+        }
+        return dp[prices.length - 1][0][K];
     }
 
     public static void main(String[] args) {
