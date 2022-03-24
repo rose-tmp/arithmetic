@@ -57,6 +57,7 @@ public class StockPrice {
         //key:timestamp value:prices
         timePriceMap = new HashMap<Integer, Integer>();
         //key:prices value:当前价格的次数 记录次数用来决定update的时候要不要remove某个价格
+        //Java里的TreeMap是一个很重要且很好用的数据结构，其实它就可以看作每个元素都能带一个家属(value)的优先队列
         prices = new TreeMap<Integer, Integer>();
     }
 
