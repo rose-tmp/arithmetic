@@ -1,4 +1,4 @@
-package dp.subsequence;
+package dp.subsequenceAndSubstring;
 
 /**
  * @author - ZwZ

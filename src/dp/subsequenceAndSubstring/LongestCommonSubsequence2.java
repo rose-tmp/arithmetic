@@ -1,4 +1,4 @@
-package dp.subsequence;
+package dp.subsequenceAndSubstring;
 
 /**
  * @author - ZwZ
@@ -50,7 +50,7 @@ public class LongestCommonSubsequence2 {
         if (s1.length() == 0 || s2.length() == 0) {
             return "-1";
         }
-        //dp[i][j]:s1[0...i]和s2[0...j]这两个字符串的最长子序列
+        //dp[i][j]:s1[0...i-1]和s2[0...j-1]这两个字符串的最长子序列
         int[][] dp = new int[s1.length() + 1][s2.length() + 1];
         for (int i = 1; i < dp.length; i++) {
             for (int j = 1; j < dp[0].length; j++) {
