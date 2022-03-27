@@ -15,7 +15,7 @@ package dp.subsequenceAndSubstring;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/maximum-subarray
  */
-public class MaxSubArray {
+public class MaxSubArray53 {
     /**
      * 动态规划
      */

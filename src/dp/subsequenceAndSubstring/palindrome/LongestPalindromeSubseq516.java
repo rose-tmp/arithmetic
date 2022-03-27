@@ -1,4 +1,4 @@
-package dp;
+package dp.subsequenceAndSubstring.palindrome;
 
 /**
  * @author - ZwZ
@@ -29,7 +29,7 @@ package dp;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/longest-palindromic-subsequence
  */
-public class LongestPalindromeSubseq {
+public class LongestPalindromeSubseq516 {
     /**
      * 参考 https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484666&idx=1&sn=e3305be9513eaa16f7f1568c0892a468&chksm=9bd7faf2aca073e4f08332a706b7c10af877fee3993aac4dae86d05783d3d0df31844287104e&scene=21#wechat_redirect
      */

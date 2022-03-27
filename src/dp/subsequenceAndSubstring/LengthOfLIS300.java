@@ -21,7 +21,7 @@ import java.util.Arrays;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/longest-increasing-subsequence
  */
-public class LengthOfLIS {
+public class LengthOfLIS300 {
     /**
      * 动态规划 即自下而上为dp表赋值
      * 时间复杂度O(N^2)
@@ -97,7 +97,7 @@ public class LengthOfLIS {
     }
 
     public static void main(String[] args) {
-        LengthOfLIS lis = new LengthOfLIS();
+        LengthOfLIS300 lis = new LengthOfLIS300();
         int[] arr = new int[]{1, 3, 6, 7, 9, 4, 10, 5, 6};
         System.out.println(lis.lengthOfLIS2(arr));
     }

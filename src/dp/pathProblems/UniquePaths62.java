@@ -1,4 +1,4 @@
-package dp;
+package dp.pathProblems;
 
 /**
  * @author - ZwZ
@@ -25,7 +25,7 @@ package dp;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/unique-paths
  */
-public class UniquePaths {
+public class UniquePaths62 {
     /**
      * m:列
      * n:行

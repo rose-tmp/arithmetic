@@ -1,4 +1,4 @@
-package dp;
+package dp.subsequenceAndSubstring;
 
 /**
  * @author - ZwZ
@@ -20,7 +20,7 @@ package dp;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/maximum-product-subarray
  */
-public class MaxProduct {
+public class MaxProduct152 {
     /**
      * 这个题目看起来和最大子序和MaxSubArray是完全相似的题目
      * 所以就直接按照其思路提交了一次代码(见下边被注释的maxProduct(int[] nums))

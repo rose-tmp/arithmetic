@@ -1,4 +1,4 @@
-package dp;
+package dp.pathProblems;
 
 /**
  * @author - ZwZ
@@ -19,7 +19,7 @@ package dp;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/minimum-path-sum
  */
-public class MinPathSum {
+public class MinPathSum64 {
     /**
      * dp
      * @param grid

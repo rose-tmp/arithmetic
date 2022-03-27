@@ -1,4 +1,4 @@
-package dp;
+package dp.coinProblems;
 
 import java.util.Arrays;
 
@@ -35,7 +35,7 @@ import java.util.Arrays;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/coin-change
  */
-public class CoinChange {
+public class CoinChange322 {
     /**
      * 暴力递归 把所有的组合都枚举出来(画出递归树便于理解)
      *                 11

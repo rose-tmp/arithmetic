@@ -33,7 +33,7 @@ package dp.subsequenceAndSubstring;
  * <p>
  * 详细讲解可以参考https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247487860&idx=1&sn=f5759ae4f22f966db8ed5a85821edd34&chksm=9bd7ef7caca0666a628fe838dee6d5da44b05eadf01fd7e87fcef813430c8e6dc3eb3c23e15f&mpshare=1&scene=1&srcid=1029egejOLkD9x33TTXxekdA&sharer_sharetime=1603937174909&sharer_shareid=60fe53036e3f365b12f8b38c78916f27&key=55250639f247efc1f9ff7879f51fc62b3e0ac6335d14635a50650bbb6c37aff461dcb3ea22235612bbedb34f296bec9e78c6754a58003ec6d1039e7c01a70bffe03e9aeb8a5e695b293ec7d79d28b3fbc670b3f4e17c89886a8099777608743ab099c36021f60c109f3e98b28b2cd2e3e9d4263c44fb164693198dbf52a23296&ascene=1&uin=MjM0MDUzMTEwOQ%3D%3D&devicetype=Windows+10+x64&version=6300002f&lang=zh_CN&exportkey=AyfCWTQ6whM%2FT2KxAOY3rnQ%3D&pass_ticket=ZU%2FjJMq%2F3dHvGR18DuVdw1AkG2HHaCijSligxbBV%2FsbvQ3zO8BmCSrqIEJzzjeQM&wx_header=0
  */
-public class LongestCommonSubsequence {
+public class LongestCommonSubsequence1143 {
     /**
      * 对于两个字符串求子序列的问题，都是用两个指针i和j分别在两个字符串上移动，大概率是动态规划思路
      *
