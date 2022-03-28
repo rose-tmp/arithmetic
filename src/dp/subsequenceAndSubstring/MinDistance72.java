@@ -1,4 +1,4 @@
-package dp;
+package dp.subsequenceAndSubstring;
 
 /**
  * @author - ZwZ
@@ -35,7 +35,7 @@ package dp;
  * 链接：https://leetcode-cn.com/problems/edit-distance
  * 思路：https://mp.weixin.qq.com/s/uWzSvWWI-bWAV3UANBtyOw
  */
-public class Distance {
+public class MinDistance72 {
     /**
      * 暴力递归
      *
@@ -78,6 +78,11 @@ public class Distance {
         }
         /*
          * dp[i][j]:将s1[i:]转换成s2[j:]所需要的最少操作数
+         * 这里需要说的一点就是：遇到这种问题尽量去把dp的长度设置的大1，也就是把空串的情况也考虑进来
+         * 代码minDistance4看上去和这个没什么区别，但是sea和eat案例都通不过，正确输出是2，它输出3
+         * 这个凭经验看与dp长度设置的时候没有考虑空串有关系。
+         * 之前很多题也有过这种情况，具体到底哪一步出了错不知道。所以为了避免这种问题，设置dp长度的时候就要注意
+         * 看看如果直接设置成大小相同的话，会不会漏掉某些情况
          * */
         int[][] dp = new int[s1.length() + 1][s2.length() + 1];
         //赋初值
@@ -100,6 +105,46 @@ public class Distance {
         }
         return dp[0][0];
     }
+    /*
+    public int minDistance4(String word1, String word2) {
+        if (word1.length() == 0) {
+            return word2.length();
+        }
+        if (word2.length() == 0) {
+            return word1.length();
+        }
+        //dp[i][j]:word1[0...i]转换为word2[0...j]所需要用的最少操作数
+        int[][] dp = new int[word1.length()][word2.length()];
+        if (word1.charAt(0) == word2.charAt(0)) {
+            dp[0][0] = 0;
+        } else {
+            dp[0][0] = 1;
+        }
+        //赋值第一行
+        for (int j = 1;j < dp[0].length;j++) {
+            if (word1.charAt(0) == word2.charAt(j)) {
+                dp[0][j] = dp[0][j - 1];
+            }
+            dp[0][j] = dp[0][j - 1] + 1;
+        }
+        //赋值第一列
+        for (int i = 1;i < dp.length;i++) {
+            if (word1.charAt(i) == word2.charAt(0)) {
+                dp[i][0] = dp[i - 1][0];
+            }
+            dp[i][0] = dp[i - 1][0] + 1;
+        }
+        for (int i = 1;i < dp.length;i++) {
+            for (int j = 1;j < dp[0].length;j++) {
+                if (word1.charAt(i) == word2.charAt(j)) {
+                    dp[i][j] = dp[i - 1][j - 1];
+                }else {
+                    dp[i][j] = Math.min(dp[i - 1][j],Math.min(dp[i][j - 1],dp[i - 1][j - 1])) + 1;
+                }
+            }
+        }
+        return dp[word1.length() - 1][word2.length() - 1];
+    }*/
 
     /**
      * 暴力递归函数
