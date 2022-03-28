@@ -23,7 +23,7 @@ package dp;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/delete-operation-for-two-strings
  */
-public class MinDistance {
+public class MinDistance583 {
     /**
      * 暴力递归
      * 思路：
@@ -72,7 +72,7 @@ public class MinDistance {
         if (word1 == null || word2 == null) {
             return 0;
         }
-        //dp[i][j]:word1[0...i-1]和word2[0...i-2]相同所需的最小步数
+        //dp[i][j]:word1[0...i-1]和word2[0...j-1]相同所需的最小步数
         int[][] dp = new int[word1.length() + 1][word2.length() + 1];
         for (int i = 0; i < dp.length; i++) {
             for (int j = 0; j < dp[0].length; j++) {
@@ -85,7 +85,7 @@ public class MinDistance {
                     dp[i][j] = 1 + Math.min(dp[i][j - 1], dp[i - 1][j]);
                     /*完全可以写成下边这个形式   2 + dp[i - 1][j - 1]代表word1.charAt(i)和word2.charAt(j)都不在最终的结果内，都要删除
                     但是要知道：dp[i - 1][j] 就是从dp[i - 2][j - 1] dp[i - 1][j - 1] dp[i-2][j]中选的最小的一个
-                    也就是说  dp[i - 1][j] <= dp[i - 1][j - 1]那么自然而然的也就有：1 + dp[i - 1][j] <= 2 + dp[i - 1][j - 1]
+                    也就是说  dp[i - 1][j] <= dp[i - 1][j - 1]那么自然而然的也就有：1 + dp[i - 1][j] < 2 + dp[i - 1][j - 1]
                     所以写上了1 + dp[i - 1][j]之后，也就没有写2 + dp[i - 1][j - 1]的必要了
                     总体一句话就是：dp[i - 1][j]这一最终数值的得来是dp[i - 1][j - 1]参与之后得来的，所以它必dp[i - 1][j - 1]更优
                     而有了dp[i - 1][j]之后就没有必要再去写dp[i - 1][j - 1]了
@@ -178,7 +178,7 @@ public class MinDistance {
     }
 
     public static void main(String[] args) {
-        MinDistance distance = new MinDistance();
+        MinDistance583 distance = new MinDistance583();
         System.out.println(distance.minDistance1("sea", "eat"));
     }
 }

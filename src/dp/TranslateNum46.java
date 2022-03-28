@@ -22,7 +22,7 @@ package dp;
  * 链接：https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class TranslateNum {
+public class TranslateNum46 {
     public int translateNum(int num) {
         if (num < 0) {
             return 0;
