@@ -1,6 +1,6 @@
 package interview;
 
-import leetcode.tool.TreeNode;
+import tool.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
