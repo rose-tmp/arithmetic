@@ -1,4 +1,4 @@
-package dp.subsequenceAndSubstring;
+package dp.subsequenceAndSubstring.palindrome;
 
 /**
  * @author - ZwZ
