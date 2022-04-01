@@ -1,4 +1,4 @@
-package dp;
+package dp.houseRobber;
 
 /**
  * @author - ZwZ
@@ -31,7 +31,7 @@ package dp;
  * 链接：https://leetcode-cn.com/problems/house-robber-ii
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Rob2 {
+public class Rob213 {
     //在198. 打家劫舍的基础上考虑首尾不能同时偷。即分情况讨论问题
     public int rob(int[] nums) {
         if (nums == null || nums.length == 0) {

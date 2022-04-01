@@ -1,4 +1,4 @@
-package dp;
+package dp.houseRobber;
 
 /**
  * @author - ZwZ
@@ -20,7 +20,7 @@ package dp;
  *  来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/house-robber
  */
-public class Rob {
+public class Rob198 {
     public int rob(int[] nums) {
         if(nums == null || nums.length == 0) return 0;
         if(nums.length == 1) return nums[0];
