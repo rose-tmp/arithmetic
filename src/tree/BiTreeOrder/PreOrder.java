@@ -1,4 +1,4 @@
-package BiTreeOrder;
+package tree.BiTreeOrder;
 
 import java.util.ArrayList;
 import java.util.List;
