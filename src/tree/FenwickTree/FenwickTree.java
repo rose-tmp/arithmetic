@@ -1,4 +1,4 @@
-package FenwickTree;
+package tree.FenwickTree;
 
 /**
  * @author - ZwZ
