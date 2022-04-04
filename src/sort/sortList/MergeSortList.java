@@ -1,6 +1,6 @@
 package sort.sortList;
 
-import leetcode.tool.ListNode;
+import tool.ListNode;
 
 /**
  * @author - ZwZ
