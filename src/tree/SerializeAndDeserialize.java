@@ -52,7 +52,7 @@ public class SerializeAndDeserialize {
     //得到以root为根节点的树的序列化列表
     public void fuck1(TreeNode root, StringBuilder str) {
         if (root == null) {
-            str.append("none,");
+            str.append("none").append(",");
         } else {
             str.append(root.val).append(",");
             fuck1(root.left, str);
@@ -62,6 +62,7 @@ public class SerializeAndDeserialize {
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
+        //使用list存储，方便删除和取出
         List<String> list = new ArrayList<>();
         String[] strArr = data.split(",");
         for (int i = 0; i < strArr.length; i++) {
@@ -70,7 +71,7 @@ public class SerializeAndDeserialize {
         return fuck2(list);
     }
 
-    //反序列化List<String>为序列的,,,
+    //反序列化List<String>为序列的二叉树
     public TreeNode fuck2(List<String> list) {
         if (list.get(0).equals("none")) {
             list.remove(0);
