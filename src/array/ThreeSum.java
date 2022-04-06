@@ -29,6 +29,7 @@ import java.util.*;
 public class ThreeSum {
     /**
      * 双指针
+     *
      * @param nums
      * @return
      */
@@ -80,7 +81,7 @@ public class ThreeSum {
     //保证序列不重复
     Set<List<Integer>> set = new HashSet<>();
 
-    public List<List<Integer>> threeSum2(int[] nums) {
+    public List<List<Integer>> threeSum3(int[] nums) {
         if (nums == null) return res;
         Arrays.sort(nums);
         dfs(nums, new ArrayList<>(), 0, 0);
@@ -108,6 +109,59 @@ public class ThreeSum {
             dfs(nums, list, index + 1, sum - nums[i]);
             list.remove(list.size() - 1);
         }
+    }
+
+    /**
+     * 双指针
+     */
+    public List<List<Integer>> threeSum2(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (nums == null || nums.length == 0) {
+            return res;
+        }
+        //排序
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (nums[i] > 0) {
+                break;
+            }
+            int pre = i + 1;
+            int hear = nums.length - 1;
+            while (pre < hear) {
+                int sum = nums[pre] + nums[hear] + nums[i];
+                if (sum == 0) {
+                    List<Integer> list = new ArrayList<>();
+                    list.add(nums[pre]);
+                    list.add(nums[hear]);
+                    list.add(nums[i]);
+                    res.add(list);
+                    //单独考虑重复情况
+                    int tmp = pre + 1;
+                    while (nums[tmp] == nums[pre] && tmp < hear) {
+                        tmp++;
+                    }
+                    pre = tmp;
+
+                    tmp = hear - 1;
+                    //单独考虑重复情况
+                    while (nums[tmp] == nums[hear] && tmp > pre) {
+                        tmp--;
+                    }
+                    hear = tmp;
+                } else if (sum < 0) {
+                    pre++;
+                } else {
+                    hear--;
+                }
+            }
+            //单独考虑重复的情况
+            int tmp = i + 1;
+            while (nums[i] == nums[tmp] && tmp < nums.length - 2) {
+                tmp++;
+            }
+            i = tmp - 1;
+        }
+        return res;
     }
 
     public static void main(String[] args) {
