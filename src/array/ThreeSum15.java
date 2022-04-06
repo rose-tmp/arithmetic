@@ -26,7 +26,7 @@ import java.util.*;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/3sum
  */
-public class ThreeSum {
+public class ThreeSum15 {
     /**
      * 双指针
      *
@@ -165,7 +165,7 @@ public class ThreeSum {
     }
 
     public static void main(String[] args) {
-        ThreeSum sum = new ThreeSum();
+        ThreeSum15 sum = new ThreeSum15();
         int[] arr = new int[]{-1, 0, 1, 2, -1, -4};
         List<List<Integer>> res = sum.threeSum1(arr);
         for (List<Integer> list : res) {
