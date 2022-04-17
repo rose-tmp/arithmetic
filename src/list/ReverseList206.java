@@ -16,7 +16,7 @@ import tool.ListNode;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/reverse-linked-list
  */
-public class ReverseList {
+public class ReverseList206 {
     /**
      * 迭代
      * @param head
@@ -48,5 +48,51 @@ public class ReverseList {
         head.next.next = head;
         head.next = null;
         return newHead;
+    }
+
+    /**
+     * 反转以head为头的链表
+     */
+    public ListNode reverseList3(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) {
+            return head;
+        }
+        if (head.next.next == null) {
+            head.next.next = head;
+            ListNode tmp = head.next;
+            head.next = null;
+            return tmp;
+        }
+        //创建哑节点
+        ListNode dummyNode = new ListNode(-1);
+        ListNode res = fuck(head, dummyNode);
+        head.next = null;
+        return res;
+    }
+
+
+    /**
+     * @return: 返回反转后的链表的头
+     */
+    public ListNode fuck(ListNode head, ListNode preHead) {
+        if (head.next == null) {
+            head.next = preHead;
+            return head;
+        }
+        if (head.next.next == null) {
+            ListNode tmp = head.next;
+            head.next.next = head;
+            head.next = preHead;
+            return tmp;
+        }
+        //记录待反转链表的头
+        ListNode node = head.next.next;
+        ListNode tmp = head.next;
+        head.next.next = head;
+        head.next = preHead;
+        return fuck(node, tmp);
     }
 }
