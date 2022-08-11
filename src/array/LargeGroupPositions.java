@@ -29,9 +29,33 @@ import java.util.List;
  */
 public class LargeGroupPositions {
     /**
+     * @date 20220723 一次遍历
+     */
+    public List<List<Integer>> largeGroupPositions3(String s) {
+        List<List<Integer>> ans = new ArrayList<>();
+        int num = 1;
+        for (int i = 0; i < s.length(); i++) {
+            if (i + 1 < s.length() && s.charAt(i) == s.charAt(i + 1)) {
+                num++;
+            }
+            if (i == s.length() - 1 || s.charAt(i) != s.charAt(i + 1)) {
+                if (num >= 3) {
+                    List<Integer> list = new ArrayList<>();
+                    list.add(i - num + 1);
+                    list.add(i + 1);
+                    ans.add(list);
+                }
+                num = 1;
+            }
+        }
+        return ans;
+    }
+
+
+    /**
      * 双指针暴力解法
      * 时间复杂度O(N^2)
-     * */
+     */
     public List<List<Integer>> largeGroupPositions1(String s) {
         List<List<Integer>> res = new ArrayList<>();
         if (s == null || s.length() < 3) {
@@ -58,10 +82,11 @@ public class LargeGroupPositions {
         }
         return res;
     }
+
     /**
      * 一次遍历
      * 时间复杂度O(N)
-     * */
+     */
     public List<List<Integer>> largeGroupPositions2(String s) {
         List<List<Integer>> res = new ArrayList<>();
         if (s == null || s.length() < 3) {

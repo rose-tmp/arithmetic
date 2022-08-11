@@ -14,41 +14,7 @@ import java.io.*;
  */
 public class SheepDeepCopy2 implements Serializable,Cloneable {
     private String name;
-    private int age;
-    private String color;
     private Friend friend;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public Friend getFriend() {
-        return friend;
-    }
-
-    public void setFriend(Friend friend) {
-        this.friend = friend;
-    }
 
     @Override
     protected Object clone() {

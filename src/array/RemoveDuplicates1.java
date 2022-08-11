@@ -35,6 +35,27 @@ package array;
  * 链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array
  */
 public class RemoveDuplicates1 {
+    /**
+     * @date 20220723
+     */
+    public int removeDuplicates2(int[] nums) {
+        if (nums.length < 2) {
+            return nums.length;
+        }
+        int end = 0;
+        int cur = 1;
+        while (cur < nums.length) {
+            if (nums[cur] == nums[end]) {
+                cur++;
+            } else {
+                nums[end + 1] = nums[cur];
+                cur++;
+                end++;
+            }
+        }
+        return end + 1;
+    }
+
     public int removeDuplicates(int[] nums) {
         if (nums == null || nums.length < 2)
             return nums == null ? null : nums.length;

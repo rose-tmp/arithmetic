@@ -3,6 +3,7 @@ package backtrackingAndDFS;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * @author - ZwZ
@@ -23,6 +24,47 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/generate-parentheses
  */
 public class GenerateParenthesis {
+    List<String> res1 = new ArrayList<>();
+    /**
+     * 20220722
+     * */
+    public List<String> generateParenthesis(int n) {
+        dfs(new char[n * 2], 0);
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < res1.size(); i++) {
+            if (isVaild(res1.get(i))) {
+                list.add(res1.get(i));
+            }
+        }
+        return list;
+    }
+
+    public void dfs(char[] s, int len) {
+        if (s.length == len) {
+            res1.add(new String(s));
+            return;
+        }
+        s[len] = '(';
+        dfs(s, len + 1);
+        s[len] = ')';
+        dfs(s, len + 1);
+    }
+
+    public boolean isVaild(String s) {
+        Stack<Character> stack = new Stack<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') {
+                stack.push(s.charAt(i));
+            } else {
+                if (stack.isEmpty()) {
+                    return false;
+                }
+                stack.pop();
+            }
+        }
+        return stack.isEmpty();
+    }
+
     //方法1 : 递归  这个过程其实就是回溯，只是没有剪枝
     public List<String> generateParenthesis1(int n) {
         List<String> result = new ArrayList();
@@ -62,7 +104,8 @@ public class GenerateParenthesis {
             }
             /*
             正常情况从左到右遍历都是某个右括号对应的左括号先出现，然后右括号再出现将其抵消
-            当出现balance < 0的情况时，则证明某一对括号的右括号先出现
+            即，balance可以>=0但是绝对不能<0
+            当出现balance < 0的情况时，则证明某一对括号的右括号先出现,也就是说这个右括号的左边是没有左括号和它相匹配
             所以这种情况下对应的不是我们最终想要的答案
             */
             if (balance < 0) {
@@ -72,45 +115,6 @@ public class GenerateParenthesis {
         return balance == 0;
     }
 
-    /*
-    把字符串数组修改成StringBuffer
-    public List<String> generateParenthesis12(int n) {
-        List<String> result = new ArrayList();
-        StringBuffer sb = new StringBuffer();
-        generateAll(sb, n, result);
-        return result;
-    }
-
-    public void generateAll(StringBuffer sb, int n, List<String> result) {
-        if (sb.length() == n) {
-            if (valid(sb)) {
-                result.add(sb.toString());
-            }
-        }
-        else {
-            sb.append('(');
-            generateAll(sb, n, result);
-            sb.deleteCharAt(sb.length() - 1);
-
-            sb.append(')');
-            generateAll(sb, n, result);
-            sb.deleteCharAt(sb.length() - 1);
-        }
-    }
-    public boolean valid(StringBuffer sb) {
-        int balance = 0;
-        for (int i = 0; i < sb.length(); i++) {
-            if (sb.charAt(i) == '(') {
-                balance++;
-            } else {
-                balance--;
-            }
-            if (balance < 0) {
-                return false;
-            }
-        }
-        return balance == 0;
-    }*/
 
     /*
     * 方法2 剪枝后的回溯
@@ -123,7 +127,10 @@ public class GenerateParenthesis {
         generateAll2(sb, 0, 0, n, result);
         return result;
     }
-
+    /**
+     * open: 左括号数量
+     * close: 右括号数量
+     * */
     public void generateAll2(StringBuffer sb, int open, int close, int n, List<String> result) {
         if (sb.length() == 2 * n) {
             result.add(sb.toString());

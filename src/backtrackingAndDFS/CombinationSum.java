@@ -46,6 +46,8 @@ public class CombinationSum {
     /**
      index可以达到不重复的目的 例如：
      [2,3,6,7] 7返回的是[2,2,3] [2,3,2],[3,2,2],[7]
+
+     index可以做到控制着每次选元素的时候都只能选择下标为index以及下标 > index的位置的元素
      */
     public void backTrack(int[] candidates,List<Integer> list,int target,int index){
         int sum = 0;

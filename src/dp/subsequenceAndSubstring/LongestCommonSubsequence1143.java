@@ -12,7 +12,7 @@ package dp.subsequenceAndSubstring;
  * 示例 1:
  * 输入：text1 = "abcde", text2 = "ace"
  * 输出：3
- * 解释：最长公共子序列是 "ace"，它的长度为 3。
+ * 解释：最长公共子序列是 "ace"，它的长度为 3 。
  * <p>
  * 示例 2:
  * 输入：text1 = "abc", text2 = "abc"

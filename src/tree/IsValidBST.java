@@ -82,7 +82,30 @@ public class IsValidBST {
         if (root.val <= low || root.val >= high) {
             return false;
         }
-        return judge(root.left, root.val, high) && judge(root.right, low, root.val);
+        return judge(root.left, low,root.val) && judge(root.right, root.val, high);
+    }
+
+    /**
+     * https://leetcode.cn/problems/validate-binary-search-tree/solution/meng-xin-jie-ti-by-i3lissful-devvdney-kwlq/
+     */
+    public boolean isValidBST3(TreeNode root) {
+        return judge2(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    public boolean judge2(TreeNode root, int low, int high) {
+        if (root == null) return true;
+        if (root.val <= low || root.val >= high) {
+            return false;
+        }
+        boolean leftBool = judge2(root.left, low, root.val);
+        if (!leftBool) {
+            return false;
+        }
+        boolean rightBool = judge2(root.right, root.val, high);
+        if (!rightBool) {
+            return false;
+        }
+        return true;
     }
 
     private void inOrder(TreeNode root) {

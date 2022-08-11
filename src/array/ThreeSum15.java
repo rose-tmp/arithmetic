@@ -28,6 +28,53 @@ import java.util.*;
  */
 public class ThreeSum15 {
     /**
+     * 20220724
+     * <p>
+     * 双指针
+     */
+    public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> ans = new ArrayList<>();
+        if (nums.length == 0) {
+            return ans;
+        }
+        Arrays.sort(nums);
+        int p1 = 0;
+        while (p1 < nums.length && nums[p1] <= 0) {
+            int p2 = p1 + 1;
+            int p3 = nums.length - 1;
+            while (p2 < p3) {
+                if (nums[p1] + nums[p2] + nums[p3] < 0) {
+                    p2++;
+                } else if (nums[p1] + nums[p2] + nums[p3] > 0) {
+                    p3--;
+                } else {
+                    List<Integer> list = new ArrayList<>();
+                    list.add(nums[p1]);
+                    list.add(nums[p2]);
+                    list.add(nums[p3]);
+                    ans.add(list);
+                    //避免重复元素导致结果重复
+                    while (p2 < p3 && nums[p2] == nums[p2 + 1]) {
+                        p2++;
+                    }
+                    //避免重复元素导致结果重复
+                    while (p2 < p3 && nums[p3] == nums[p3 - 1]) {
+                        p3--;
+                    }
+                    p2++;
+                    p3--;
+                }
+            }
+            //避免重复元素导致结果重复
+            while (p1 < nums.length - 1 && nums[p1] == nums[p1 + 1]) {
+                p1++;
+            }
+            p1++;
+        }
+        return ans;
+    }
+
+    /**
      * 双指针
      *
      * @param nums

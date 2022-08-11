@@ -22,6 +22,56 @@ import java.util.Stack;
  * 链接：https://leetcode-cn.com/problems/reorder-list
  */
 public class ReorderList {
+    /**
+     * 20220721
+     * */
+    public void reorderList(ListNode head) {
+        if (head == null) {
+            return;
+        }
+        ListNode mid = getMid(head);
+        ListNode tail = revese(mid);
+
+        ListNode node1 = head;
+        ListNode node2 = tail;
+        while (node1.next != null && node2 != null) {
+            ListNode n1Temp = node1.next;
+            ListNode n2Temp = node2.next;
+            node1.next = node2;
+            node2.next = n1Temp;
+            node2 = n2Temp;
+            node1 = n1Temp;
+        }
+    }
+
+    public ListNode getMid(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        ListNode res = slow.next;
+        slow.next = null;
+        return res;
+    }
+
+    /**
+     * @return 反转后链表的头节点
+     */
+    public ListNode revese(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) {
+            return head;
+        }
+        ListNode h = revese(head.next);
+        head.next.next = head;
+        head.next = null;
+        return h;
+    }
+
     public void reorderList1(ListNode head) {
         if (head == null || head.next == null || head.next.next == null) {
             return;

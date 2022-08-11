@@ -104,7 +104,8 @@ public class SubarraySum {
         Map<Integer, Integer> map = new HashMap<>();
         /*重点说一下这个位置
         一开始写代码是没有加这一行的，但是[1,-1,0] 0这种情况正确答案应该是3但是结果得到的是2
-        可以字节走一遍这个例子，如果不加map.put(0,1)的话，一开始sum = 1 + (-1) = 0的时候这个时候就应该将ans+1了
+        可以自己走一遍这个例子，如果不加map.put(0,1)的话，
+        一开始sum = 1 + (-1) = 0的时候这个时候就应该将ans+1了
         但是因为map.containKey(target)为false所以而少加了一次*/
         map.put(0, 1);
         for (int i = 0; i < nums.length; i++) {

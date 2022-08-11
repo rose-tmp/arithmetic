@@ -19,9 +19,9 @@ public class TotalNQueens {
     public int totalNQueens(int n) {
         if(n <= 0) return 0;
         if(n == 1) return 1;
-        Set<Integer> cols = new HashSet();//存储哪一个列上存在元素
-        Set<Integer> diagonal1 = new HashSet();//通过行与列的差值，记录捺对角线上是否存在元素
-        Set<Integer> diagonal2 = new HashSet();//通过行和列的和，记录撇对角线上是否存在元素
+        Set<Integer> cols = new HashSet<>();//存储哪一个列上存在元素
+        Set<Integer> diagonal1 = new HashSet<>();//通过行与列的差值，记录捺对角线上是否存在元素
+        Set<Integer> diagonal2 = new HashSet<>();//通过行和列的和，记录撇对角线上是否存在元素
         return backTrack(cols,diagonal1,diagonal2,0,n);
     }
     /**

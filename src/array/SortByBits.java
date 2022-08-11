@@ -47,7 +47,30 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/sort-integers-by-the-number-of-1-bits
  */
 public class SortByBits {
-    public int[] sortByBits(int[] arr) {
+    public int[] sortByBits2(int[] arr) {
+        List<Integer> list = new ArrayList<Integer>();
+        for (int i : arr) {
+            list.add(i);
+        }
+        //bitArr[i]:值i用二进制表示时1的数量
+        int[] bitArr = new int[10001];
+        for (int i = 1; i < bitArr.length; i++) {
+            bitArr[i] = bitArr[i >> 1] + (i & 1);
+        }
+        Collections.sort(list, (o1, o2) -> {
+            if (bitArr[o1] != bitArr[o2]) {
+                return bitArr[o1] - bitArr[o2];
+            } else {
+                return o1 - o2;
+            }
+        });
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = list.get(i);
+        }
+        return arr;
+    }
+
+    public int[] sortByBits1(int[] arr) {
         if (arr.length == 0 || arr == null) {
             return null;
         }

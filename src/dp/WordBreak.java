@@ -1,5 +1,6 @@
 package dp;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,12 +33,63 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/word-break
  */
 public class WordBreak {
+    List<String> wordRes = new ArrayList<>();
+
+    /**
+     * 20220722
+     */
+    public List<String> wordBreak2(String s, List<String> wordDict) {
+        dfs7(new ArrayList<>(), s, wordDict, 0);
+        return wordRes;
+    }
+
+    public void dfs7(List<String> list, String s, List<String> wordDict, int index) {
+        if (index == s.length()) {
+            StringBuilder sb = new StringBuilder();
+            for (String value : list) {
+                sb.append(value);
+                sb.append(" ");
+            }
+            wordRes.add(sb.substring(0, sb.length() - 1));
+            return;
+        }
+        if (index > s.length()) {
+            return;
+        }
+        for (int i = index; i <= s.length(); i++) {
+            String cur = s.substring(index, i);
+            if (wordDict.contains(cur)) {
+                list.add(cur);
+                dfs7(list, s, wordDict, i);
+                list.remove(list.size() - 1);
+            }
+        }
+    }
+
+
     public boolean wordBreak(String s, List<String> wordDict) {
+        if (s.length() == 0) {
+            return false;
+        }
+        boolean[] dp = new boolean[s.length()];
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (dp[j] && wordDict.contains(s.substring(j + 1, i + 1))) {
+                    dp[i] = true;
+                }
+            }
+            if (wordDict.contains(s.substring(0, i + 1))) {
+                dp[i] = true;
+            }
+        }
+        return dp[dp.length - 1];
+    }
+    /*public boolean wordBreak(String s, List<String> wordDict) {
         boolean[] dp = new boolean[s.length() + 1];
         dp[0] = true;
-        /*dp[i] = dp[j] && check(s.subString(j,i)) 其中0 < j < i
-         *dp[i]表示字符串 s 前 i 个字符组成的字符串 s[0..i−1]是否能被空格拆分成若干个字典中出现的单词
-         */
+        *//*dp[i] = dp[j] && check(s.subString(j,i)) 其中0 < j < i
+     *dp[i]表示字符串 s 前 i 个字符组成的字符串 s[0..i−1]是否能被空格拆分成若干个字典中出现的单词
+     *//*
         for (int i = 0; i <= s.length(); i++) {
             for (int j = 0; j < i; j++) {
                 if (dp[j] && wordDict.contains(s.substring(j, i))) {
@@ -47,6 +99,6 @@ public class WordBreak {
             }
         }
         return dp[s.length()];
-    }
+    }*/
 
 }

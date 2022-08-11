@@ -18,6 +18,22 @@ package array;
  * 链接：https://leetcode-cn.com/problems/move-zeroes
  */
 public class MoveZeroes {
+    /**
+     * 双指针2
+     */
+    public void moveZeroes3(int[] nums) {
+        int i = 0;//记录0点的位置
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != 0) {
+                nums[i] = nums[j];
+                i++;
+            }
+        }
+        for (int k = i; k < nums.length; k++) {
+            nums[k] = 0;
+        }
+    }
+
     public void moveZeroes1(int[] nums) {
         /**
          * 冒泡
@@ -26,7 +42,6 @@ public class MoveZeroes {
             boolean flag = true;
             for (int j = 0; j < end; j++) {
                 if (nums[j] == 0) {
-                    int temp = 0;
                     nums[j] = nums[j + 1];
                     nums[j + 1] = 0;
                     flag = false;
@@ -39,33 +54,25 @@ public class MoveZeroes {
     }
 
     /**
-     * 双指针1
+     * 双指针1 快慢指针
+     * 左指针左边均为非零数；
+     * 右指针左边直到左指针处均为零。
      */
     public void moveZeroes2(int[] nums) {
-        int left = 0, right = 0;
-        while (right < nums.length) {
-            if (nums[right] != 0) {
-                int temp = nums[left];
-                nums[left] = nums[right];
-                nums[right] = temp;
-                left++;
+        int slow = 0, fast = 0;
+        while (fast < nums.length) {
+            /*if (nums[fast] != 0) {
+                nums[slow] = nums[fast];
+                nums[fast] = 0;
+                slow++;
+            }*/
+            if (nums[fast] != 0) {
+                int temp = nums[slow];
+                nums[slow] = nums[fast];
+                nums[fast] = temp;
+                slow++;
             }
-            right++;
-        }
-    }
-    /**
-     * 双指针2
-     * */
-    public void moveZeroes3(int[] nums){
-        int i = 0;//记录0点的位置
-        for (int j = 0; j < nums.length; j++) {
-            if(nums[j] != 0){
-                nums[i] = nums[j];
-                i++;
-            }
-        }
-        for (int k = i; k < nums.length; k++) {
-            nums[k] = 0;
+            fast++;
         }
     }
 }

@@ -40,7 +40,8 @@ public class FindTargetSumWays {
      * sum(A) + sum(A) = target + sum(B) + sum(A)
      * sum(A) = (target + sum(nums))/2
      * <p>
-     * 也就是说我们本来是要找nums中含有+ -之后的target 但是由于这样子直接去定义dp数组(dp[i][j] : nums[0...i]通过+-能得到目标和j的方法数)
+     * 也就是说我们本来是要找nums中含有+ -之后的target
+     * 但是由于这样子直接去定义dp数组(dp[i][j] : nums[0...i]通过+-能得到目标和j的方法数)
      * 的前提下：dp[i][j] = dp[i - 1][j + nums[i]] + dp[i - 1][j - nums[i]]
      * 而由于数组不支持负数下标，所以j - nums[i]在数组中无法表示
      * <p>

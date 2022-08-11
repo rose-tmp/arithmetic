@@ -26,6 +26,44 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/merge-intervals
  */
 public class Merge {
+    /**
+     * @date 20220723
+     */
+    public int[][] merge2(int[][] intervals) {
+        List<int[]> list = new ArrayList<>();
+        int index = 0;
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                if (o1[0] != o2[0]) {
+                    return o1[0] - o2[0];
+                } else {
+                    return o1[1] - o2[1];
+                }
+            }
+        });
+        /**
+         * 如果出现了当前右边界大于下一个的左边界的情况就一直while下去找到最大的有边界
+         * */
+        while (index < intervals.length) {
+            int left = intervals[index][0];
+            int right = intervals[index][1];
+            while (index + 1 < intervals.length && right >= intervals[index + 1][0]) {
+                right = Math.max(right, intervals[index + 1][1]);
+                index++;
+            }
+            list.add(new int[]{left, right});
+            index++;
+        }
+        int[][] res = new int[list.size()][2];
+        for (int i = 0; i < list.size(); i++) {
+            res[i][0] = list.get(i)[0];
+            res[i][1] = list.get(i)[1];
+        }
+        return res;
+    }
+
+
     public int[][] merge(int[][] intervals) {
         if (intervals == null || intervals.length == 0) {
             return new int[0][0];

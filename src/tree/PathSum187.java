@@ -41,15 +41,39 @@ import tool.TreeNode;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class PathSum187 {
+    public int pathSum2(TreeNode root, int targetSum) {
+        int res = 0;
+        res += sum(root, targetSum, 0);
+        res += pathSum2(root.left, targetSum);
+        res += pathSum2(root.right, targetSum);
+        return res;
+    }
+
+    //以root为根节点的树中目标值为target的路径 返回其个数
+    public int sum(TreeNode root, int target, int sum) {
+        if (root == null) {
+            return 0;
+        }
+        int res = 0;
+        if (target - sum == root.val) {
+            res++;
+        }
+        res += sum(root.left, target, sum + root.val);
+        res += sum(root.right, target, sum + root.val);
+        return res;
+    }
+
+
     int res = 0;
 
     public int pathSum(TreeNode root, int targetSum) {
         fuck(root, targetSum);
         return res;
     }
+
     /**
      * 求以root为根节点的树上有多少满足条件的情况
-     * */
+     */
     public void fuck(TreeNode root, int targetSum) {
         if (root == null) {
             return;

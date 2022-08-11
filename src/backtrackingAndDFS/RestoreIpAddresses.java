@@ -39,6 +39,88 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/restore-ip-addresses
  */
 public class RestoreIpAddresses {
+    List<String> fuckL = new ArrayList<>();
+    /**
+     * 20220722按照自己的思路写的，120/145
+     * 总有一些0多的示例过不了
+     * */
+    public List<String> restoreIpAddresses3(String s) {
+        dfs(s, new ArrayList<>(), 0);
+        return fuckL;
+    }
+
+    public void dfs(String s, List<Integer> cur, int index) {
+        if (cur.size() == 4 && index == s.length()) {
+            String temp = cur.get(0) + "." + cur.get(1) + "." + cur.get(2) + "." + cur.get(3);
+            fuckL.add(temp);
+        }
+        if (index >= s.length()) {
+            return;
+        }
+        //该位置进行字符的选择
+        for (int i = index + 1; i <= s.length(); i++) {
+            String str = s.substring(index, i);
+            if (str.length() > 3) {
+                break;
+            }
+            if (Integer.parseInt(str) >= 0 && Integer.parseInt(str) <= 255) {
+                if (str.charAt(0) == '0') {
+                    if (str.length() == 1) {
+                        cur.add(0);
+                        dfs(s, cur, i);
+                        cur.remove(cur.size() - 1);
+                    } else {
+                        break;
+                    }
+                }
+                cur.add(Integer.parseInt(str));
+                dfs(s, cur, i);
+                cur.remove(cur.size() - 1);
+            }
+        }
+    }
+
+
+    List<String> res2 = new ArrayList<>();
+
+    public List<String> restoreIpAddresses2(String s) {
+        dfs2(new ArrayList<>(), s, 0);
+        return res2;
+    }
+    public void dfs2(List<Integer> list, String s,int index) {
+        if (list.size() == 4) {
+            if (index == s.length()) {
+                String temp = "";
+                for (int i = 0; i < 4; i++) {
+                    temp += (list.get(i) + ".");
+                }
+                temp = temp.substring(0, temp.length() - 1);
+                res2.add(temp);
+            }
+            return;
+        }
+        if (index >= s.length()){
+            return;
+        }
+        if (s.charAt(index) == '0') {
+            list.add(0);
+            dfs2(list, s, index + 1);
+            list.remove(list.size() - 1);
+        }
+        int addr = 0;
+        //当前位置的值为s[0...i]
+        for (int i = index; i < s.length(); i++) {
+            addr = addr * 10 + (s.charAt(i) - '0');
+            if (addr <= 0 || addr > 0xFF) {
+                break;
+            }
+            list.add(addr);
+            dfs2(list, s, i + 1);
+            list.remove(list.size() - 1);
+        }
+    }
+
+
     List<String> ans = new ArrayList<String>();
     int[] segments = new int[4];
 
@@ -46,7 +128,10 @@ public class RestoreIpAddresses {
         dfs(s, 0, 0);
         return ans;
     }
-
+    /**
+     * @param segId IP地址的第几个段
+     * @param segStart 该段在s中的起始下标
+     * */
     public void dfs(String s, int segId, int segStart) {
         if (segId == 4) {
             if (segStart == s.length()) {
@@ -72,8 +157,9 @@ public class RestoreIpAddresses {
             segments[segId] = 0;
             dfs(s, segId + 1, segStart + 1);
         }
-
-        // 一般情况，枚举每一种可能性并递归
+        /**
+         * 一般情况，枚举每一种可能性并递归
+         * */
         int addr = 0;
         for (int segEnd = segStart; segEnd < s.length(); ++segEnd) {
             addr = addr * 10 + (s.charAt(segEnd) - '0');

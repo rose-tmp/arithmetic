@@ -29,9 +29,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="...">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiTreeOrder/PreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiTreeOrder/PreOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dp/stockProblems/MaxProfit2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dp/stockProblems/MaxProfit2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/CanFormArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/CanFormArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/LargeGroupPositions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/LargeGroupPositions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/Merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Merge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/MergeArr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MergeArr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/MoveZeroes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MoveZeroes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/PrefixSum/CheckSubarraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/PrefixSum/CheckSubarraySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/PrefixSum/SubarraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/PrefixSum/SubarraySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/RemoveDuplicates1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/RemoveDuplicates1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/RemoveDuplicates2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/RemoveDuplicates2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/SetZeroes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SetZeroes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/SortByBits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SortByBits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/SortedSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SortedSquares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/ThreeSum15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/ThreeSum15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtrackingAndDFS/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtrackingAndDFS/CombinationSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtrackingAndDFS/Exist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtrackingAndDFS/Exist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtrackingAndDFS/GenerateParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtrackingAndDFS/GenerateParenthesis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtrackingAndDFS/GenerateTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtrackingAndDFS/GenerateTrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtrackingAndDFS/LetterCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtrackingAndDFS/LetterCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtrackingAndDFS/NQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtrackingAndDFS/NQueens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtrackingAndDFS/Partition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtrackingAndDFS/Partition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtrackingAndDFS/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtrackingAndDFS/Permutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtrackingAndDFS/RestoreIpAddresses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtrackingAndDFS/RestoreIpAddresses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtrackingAndDFS/TotalNQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtrackingAndDFS/TotalNQueens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/designPattern/prototypePattern/SheepDeepCopy1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/designPattern/prototypePattern/SheepDeepCopy1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/designPattern/prototypePattern/SheepDeepCopy2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/designPattern/prototypePattern/SheepDeepCopy2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/FindTargetSumWays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/FindTargetSumWays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/NumTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/NumTrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/WordBreak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/stockProblems/MaxProfit121.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/stockProblems/MaxProfit121.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/stockProblems/MaxProfit188.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/stockProblems/MaxProfit188.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/LengthOfLIS300.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/LengthOfLIS300.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/LongestCommonSubsequence1143.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/LongestCommonSubsequence1143.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/LongestValidParentheses32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/LongestValidParentheses32.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/palindrome/LongestPalindrome5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/palindrome/LongestPalindrome5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/palindrome/LongestPalindromeSubseq516.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/palindrome/LongestPalindromeSubseq516.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/readMe" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/readMe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/list/DeleteDuplicates2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/DeleteDuplicates2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/list/MergeTwoLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/MergeTwoLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/list/ReorderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/ReorderList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/list/ReverseList206.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/ReverseList206.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/ConvertBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/ConvertBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/IsValidBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/IsValidBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/LowestCommonAncestor2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/LowestCommonAncestor2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/PathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/PathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/PathSum187.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/PathSum187.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +103,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="sortByName" value="true" />
   </component>
@@ -68,24 +117,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/JavaProject/arithmetic",
+    "settings.editor.selected.configurable": "vcs.Git"
+  }
+}]]></component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
   </component>
@@ -231,6 +271,7 @@
       <workItem from="1615956791080" duration="32960000" />
       <workItem from="1616400761708" duration="110351000" />
       <workItem from="1647601022326" duration="4967000" />
+      <workItem from="1660208396449" duration="373000" />
     </task>
     <task id="LOCAL-00082" summary="204. 计数质数">
       <created>1607055683358</created>
@@ -603,7 +644,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

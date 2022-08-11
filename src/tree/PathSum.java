@@ -31,7 +31,34 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/path-sum-ii
  */
 public class PathSum {
-    List<Integer> list = new ArrayList();
+    List<List<Integer>> res = new ArrayList<>();
+
+    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
+        dfs(new ArrayList<>(), root, targetSum);
+        return res;
+    }
+
+    //从根节点为root的树中寻找路径和为target的路径
+    public void dfs(List<Integer> list, TreeNode root, int target) {
+        if (root == null) {
+            return;
+        }
+        list.add(root.val);
+        int sum = 0;
+        for (int i = 0; i < list.size(); i++) {
+            sum += list.get(i);
+        }
+        if (root.left == null && root.right == null) {
+            if (target == sum) {
+                res.add(new ArrayList<>(list));
+            }
+        }
+        dfs(list, root.left, target);
+        dfs(list, root.right, target);
+        list.remove(list.size() - 1);
+    }
+
+    /*List<Integer> list = new ArrayList();
     List<List<Integer>> res = new ArrayList();
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         preOrder(root,sum);
@@ -54,5 +81,5 @@ public class PathSum {
         preOrder(root.left,sum);
         preOrder(root.right,sum);
         list.remove(list.size() - 1);
-    }
+    }*/
 }

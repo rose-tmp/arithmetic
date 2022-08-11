@@ -36,4 +36,21 @@ public class ConvertBST {
         }
         return root;
     }
+
+    /**
+     * 反向中序遍历
+     */
+    int sum = 0;
+
+    public TreeNode convertBST2(TreeNode root) {
+        int res = 0;
+        if (root == null) {
+            return null;
+        }
+        convertBST(root.right);
+        sum += root.val;
+        root.val = sum;
+        convertBST(root.left);
+        return root;
+    }
 }

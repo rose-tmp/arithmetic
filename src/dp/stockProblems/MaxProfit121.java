@@ -24,6 +24,11 @@ package dp.stockProblems;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class MaxProfit121 {
+    /**
+     * 记录之前股价的最小值
+     * 然后计算如果是第i天卖出的话可以赚多少钱
+     * 哪一天赚的最多，就是结果
+     * */
     public int maxProfit1(int[] prices) {
         if (prices.length <= 1) {
             return 0;

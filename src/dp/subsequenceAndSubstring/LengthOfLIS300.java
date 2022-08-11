@@ -45,14 +45,16 @@ public class LengthOfLIS300 {
         }
         return res;
     }
+
     /**
      * 贪心+二分查找
      * 时间复杂度O(nlogn)
-     * */
+     */
     public int lengthOfLIS3(int[] nums) {
 
         return 0;
     }
+
     /**
      * 带备忘录的递归 即自顶向下去为dp表赋值
      */

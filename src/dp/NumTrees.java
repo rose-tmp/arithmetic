@@ -20,6 +20,9 @@ package dp;
  * <p>
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/unique-binary-search-trees
+ *
+ *
+ * 该题目有一个变形题：https://leetcode.cn/problems/unique-binary-search-trees-ii/ 可以用回溯去做
  */
 public class NumTrees {
     /**

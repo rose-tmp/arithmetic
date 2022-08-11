@@ -1,5 +1,7 @@
 package array;
 
+import java.util.Arrays;
+
 /**
  * @author - ZwZ
  * @date - 2021/3/21 - 14:34
@@ -59,7 +61,12 @@ public class SetZeroes {
      * 使用矩阵的第一行和第一列去模拟方法1中的两个标记数组
      * 时间复杂度O(m*n)
      * 空间复杂度O(1)
-     *
+     * <p>
+     * 为什么用第0行第0列模拟是可行的？
+     * 1. 如果某一行某一列的某个元素是0，那么对应的一整行，一整列都要被置0
+     * 将对应的第0行，第0列标记为0之后虽然修改了它们原始数据，但是这个位置上本来就要被置0的，所以不对结果产生影响
+     * 2. 如果某一行或者某一列都没有0，那么对应的第0行第0列就不会被修改，所以不对结果产生影响
+     * 3. 因为起初对第0行第0列是否含有0做了标记，所以最后可以根据标记对第0行和第0列做专门的修改，可以保证第0行和第0列的数据正确性
      * @param matrix
      */
     public void setZeroes2(int[][] matrix) {
@@ -100,9 +107,7 @@ public class SetZeroes {
         }
         //更新第0行和第0列
         if (flagRow0) {
-            for (int i = 0; i < matrix[0].length; i++) {
-                matrix[0][i] = 0;
-            }
+            Arrays.fill(matrix[0], 0);
         }
         if (flagCol0) {
             for (int i = 0; i < matrix.length; i++) {

@@ -9,8 +9,10 @@ import java.util.Set;
  * @author - ZwZ
  * @date - 2020/10/18 - 12:52
  * @Description:51. N 皇后
+ * 皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。
+ *
  * n 皇后问题研究的是如何将n个皇后放置在 n×n 的棋盘上，并且使皇后彼此之间不能相互攻击。
- * 给定一个整数 n，返回所有不同的 n 皇后问题的解决方案。
+ * 给定一个整数 n，返回所有不同的 n 皇后问题的 解决方案。
  * 每一种解法包含一个明确的 n 皇后问题的棋子放置方案，该方案中 'Q' 和 '.' 分别代表了皇后和空位。
  * 示例：
  * 输入：4
@@ -44,11 +46,17 @@ public class NQueens {
      * map 用于记录皇后存放的每一个位置 用于添加到result中每一种
      * 符合条件的情况  在N皇后II中只让求count没有让记录具体结果
      * row 代表行用于递归终止
+     *
+     *
+     * 流程：一行一行的放皇后，而在每一行的每一列（也就是该函数中的for）都有两种选择：放或者不放，然后依次遍历
+     * 所以整个流程总结下来就是：从[0,0]开始一直遍历到[n,n] 每个位置都判断一些皇后能不能放，即：
+     * 如果第0行的第0列放了皇后，然后接下来第1行第0列怎么办，第2行第0列怎么办，...第n行第0列怎么办
+     * 回溯树还是可以画出来的：https://labuladong.github.io/algo/4/30/104/
      */
     public void backTrack(List<List<String>> result, Set<Integer> cols, boolean[][] map,
                           Set<Integer> diagonals1, Set<Integer> diagonals2, int n, int row) {
         if (row == n) {
-            List<String> list = new ArrayList();
+            List<String> list = new ArrayList<>();
             //遍历map i控制行 j控制列
             for (int i = 0; i < n; i++) {
                 StringBuilder sb = new StringBuilder();
@@ -64,19 +72,21 @@ public class NQueens {
             result.add(list);
         }
         //for控制列   而行使用变量中的row控制
-        for (int i = 0; i < n; i++) {
-            if (cols.contains(i) || diagonals1.contains(row - i) || diagonals2.contains(row + i)) {
+        for (int j = 0; j < n; j++) {
+            //(同一对角线上每个位置满足行下标与列下标之差或者行下标与列下标之和相等)
+            //cols.contains(j) == true就代表着在此递归之前的行中，有在这一列中放皇后
+            if (cols.contains(j) || diagonals1.contains(row - j) || diagonals2.contains(row + j)) {
                 continue;
             }
-            cols.add(i);
-            map[row][i] = true;
-            diagonals1.add(row - i);
-            diagonals2.add(row + i);
+            cols.add(j);
+            map[row][j] = true;
+            diagonals1.add(row - j);
+            diagonals2.add(row + j);
             backTrack(result, cols, map, diagonals1, diagonals2, n, row + 1);
-            cols.remove(i);
-            map[row][i] = false;
-            diagonals1.remove(row - i);
-            diagonals2.remove(row + i);
+            cols.remove(j);
+            map[row][j] = false;
+            diagonals1.remove(row - j);
+            diagonals2.remove(row + j);
         }
     }
 

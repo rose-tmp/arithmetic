@@ -40,6 +40,8 @@ public class LongestPalindrome5 {
                     if ((j - i) < 3) {
                         dpArr[i][j] = true;
                     } else {
+                        //i是递增赋值的，这里却等于了[i+1]，会导致用还没有被遍历到的位置给当前位置赋值嘛？
+                        //不会。可以画一个二维数组走一下整个流程中的赋值流程
                         dpArr[i][j] = dpArr[i + 1][j - 1];
                     }
                 }

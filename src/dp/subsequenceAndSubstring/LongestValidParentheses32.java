@@ -49,8 +49,7 @@ public class LongestValidParentheses32 {
                 }
                 //前一个字符是)
                 if (dp[i - 1] > 0) {
-                    if (i - dp[i - 1] - 1 >= 0
-                            && s.charAt(i - dp[i - 1] - 1) == '(') {
+                    if (i - dp[i - 1] - 1 >= 0 && s.charAt(i - dp[i - 1] - 1) == '(') {
                         dp[i] = 2 + dp[i - 1];
                         if (i - dp[i - 1] - 2 > 0) {
                             dp[i] += dp[i - dp[i - 1] - 2];

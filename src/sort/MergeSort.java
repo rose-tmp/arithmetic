@@ -54,7 +54,7 @@ public class MergeSort {
      * 空间复杂度O(1)
      */
     public void mergeSort2(int[] arr) {
-        if(arr == null){
+        if (arr == null) {
             return;
         }
         // k代表每次所合并的两个子序列的大小
@@ -68,6 +68,7 @@ public class MergeSort {
             k *= 2;
         }
     }
+
     /**
      * 将数组中相邻的有k个元素的子序列进行归并
      */
@@ -88,7 +89,7 @@ public class MergeSort {
 
     public static void main(String[] args) {
         MergeSort mergeSort = new MergeSort();
-        int[] arr = {1, 3, 4, 2, 5,2,6,8};
+        int[] arr = {1, 3, 4, 2, 5, 2, 6, 8};
         mergeSort.mergeSort2(arr);
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);

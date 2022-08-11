@@ -21,6 +21,9 @@ package array;
  * 链接：https://leetcode-cn.com/problems/merge-sorted-array
  */
 public class MergeArr {
+    /**
+     * 就是归并排序的一个merge过程
+     * */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         if (nums1 == null || nums2 == null) return;
         int ptr1 = m - 1;

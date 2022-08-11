@@ -57,7 +57,7 @@ public class Partition {
         for (int i = 1; i < s.length() + 1; i++) {
             String temp = s.substring(0, i);
             if (judge(temp)) {
-                list.add(s.substring(0, i));
+                list.add(temp);
                 backTrack(list, s.substring(i));
                 list.remove(list.size() - 1);
             }

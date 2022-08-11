@@ -24,6 +24,27 @@ import java.util.Map;
  * 链接：https://leetcode-cn.com/problems/continuous-subarray-sum
  */
 public class CheckSubarraySum {
+    //前缀和
+    public boolean demo(int[] nums, int k) {
+        if (nums.length == 0 || k < 0) {
+            return false;
+        }
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+            if (map.containsKey(sum % k)) {
+                if (i - map.get(sum % k) > 1) {
+                    return true;
+                }
+            } else {
+                map.put(sum % k, i);
+            }
+        }
+        return false;
+    }
+
+
     /**
      * 暴力枚举
      * 时间复杂度O(N^2)
@@ -82,6 +103,7 @@ public class CheckSubarraySum {
      * ------> sums[i] % k == sums[j] % k
      * -------->此时，sums[i]和sums[j]扯上了关系  我们寻找(sums[i] - sums[j]) % k == 0的问题就变成了在[0...i]上找一个j位置
      * 然后sum[j]满足sums[i] % k == sums[j] % k
+     *
      * @param nums
      * @param k
      * @return

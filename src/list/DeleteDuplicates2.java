@@ -22,8 +22,29 @@ import tool.ListNode;
  * 链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii
  */
 public class DeleteDuplicates2 {
-
     public ListNode deleteDuplicates(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode dummy = new ListNode(-1);
+        ListNode cur = dummy;
+        cur.next = head;
+        //因为重复肯定至少是两个节点直接的事儿，所以这里用这种while条件
+        while (cur.next != null && cur.next.next != null) {
+            if (cur.next.val == cur.next.next.val) {
+                ListNode next = cur.next;
+                while (next.next != null && next.val == next.next.val) {
+                    next = next.next;
+                }
+                cur.next = next.next;
+            } else {
+                cur = cur.next;
+            }
+        }
+        return dummy.next;
+    }
+
+    public ListNode deleteDuplicates2(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }

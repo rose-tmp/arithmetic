@@ -30,6 +30,39 @@ package backtrackingAndDFS;
  * 链接：https://leetcode-cn.com/problems/word-search
  */
 public class Exist {
+    public boolean exsit2(char[][] board, String word) {
+        boolean[][] flags = new boolean[board.length][board[0].length];
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[0].length; j++) {
+                if (dfs(flags, board, word, 0, i, j)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean dfs(boolean[][] flags, char[][] board, String word, int index, int i, int j) {
+        boolean res = false;
+        if (index == word.length()) {
+            return true;
+        }
+        if (i < 0 || j < 0 || i >= board.length || j >= board[0].length) {
+            return false;
+        }
+        //可以匹配
+        if (board[i][j] == word.charAt(index) && !flags[i][j]) {
+            flags[i][j] = true;
+            res = dfs(flags, board, word, index + 1, i - 1, j) ||
+                    dfs(flags, board, word, index + 1, i + 1, j) ||
+                    dfs(flags, board, word, index + 1, i, j - 1) ||
+                    dfs(flags, board, word, index + 1, i, j + 1);
+            flags[i][j] = false;
+        }
+        return res;
+    }
+
+
     public boolean exist(char[][] board, String word) {
         if (board == null || word.length() == 0 || (board.length + board[0].length) < word.length())
             return false;
@@ -65,7 +98,7 @@ public class Exist {
         if (row < 0 || row >= board.length || col < 0 || col >= board[0].length)
             return false;
         //此位置可以匹配
-        if (board[row][col] == word.charAt(index) && sign[row][col] == false) {
+        if (board[row][col] == word.charAt(index) && !sign[row][col]) {
             sign[row][col] = true;
             res = backTrack(board, sign, word, index + 1, row, col + 1) ||
                     backTrack(board, sign, word, index + 1, row, col - 1) ||
