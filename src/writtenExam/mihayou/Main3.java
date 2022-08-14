@@ -1,4 +1,4 @@
-package writtenExam.meituan.mihayou;
+package writtenExam.mihayou;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

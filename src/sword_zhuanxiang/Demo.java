@@ -1,7 +1,10 @@
 package sword_zhuanxiang;
 
+import tool.TreeNode;
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 /**
  * @author - ZwZ
@@ -10,20 +13,62 @@ import java.util.Map;
  */
 public class Demo {
 
-    public static void main(String[] args) {
-        /*Scanner sc = new Scanner(System.in);
-        int len = Integer.parseInt(sc.nextLine());
-        List<String> list = new ArrayList<>();
-        for (int i = 0; i < len; i++) {
-            list.add(sc.nextLine());
+    public boolean isBalance(TreeNode root) {
+
+        boolean[] isBalance = new boolean[1];
+        isBalance[0] = true;
+
+        getHeight(root, isBalance);
+
+        return isBalance[0];
+
+    }
+
+    public int getHeight(TreeNode root, boolean[] isBalance) {
+        if (root == null) return 0;
+
+        int leftHeight = getHeight(root.left, isBalance);
+        if (!isBalance[0]) return -1; // 左子树不平衡，直接返回，不用计算当前节点的高度了
+        int rightHeight = getHeight(root.right, isBalance);
+        if (!isBalance[0]) return -1; // 右子树不平衡，直接返回，不用计算当前节点的高度了
+
+        if (Math.abs(leftHeight - rightHeight) > 1) {
+            isBalance[0] = false;
+            return -1;
         }
-        for (int i = 0; i < list.size(); i++) {
-            if (isValid(list.get(i))) {
-                System.out.println("Accept");
-            } else {
-                System.out.println("Wrong");
+
+        // 只有左右子树平衡了，才返回高度
+        return 1 + Math.max(leftHeight, rightHeight);
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+    }
+
+    class MyCalendar {
+
+        int minVal = Integer.MAX_VALUE;
+        int maxVal = Integer.MIN_VALUE;
+
+        public MyCalendar() {
+
+        }
+
+        public boolean book(int start, int end) {
+            //初次book
+            if (minVal == Integer.MAX_VALUE && maxVal == Integer.MIN_VALUE) {
+                minVal = start;
+                maxVal = end;
+                return true;
             }
-        }*/
+            if ((end < minVal && start < minVal) || (start >= maxVal && end >= start)) {
+
+                return true;
+            }
+            return false;
+        }
     }
 
     public static boolean isValid(String username) {

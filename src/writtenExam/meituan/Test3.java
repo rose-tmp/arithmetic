@@ -1,4 +1,4 @@
-package writtenExam.meituan.meituan;
+package writtenExam.meituan;
 
 import java.util.*;
 
