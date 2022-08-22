@@ -1,4 +1,4 @@
-package sword_zhuanxiang;
+package sword_zhuanxiang.lianbiao;
 
 import tool.ListNode;
 

@@ -81,7 +81,7 @@ public class Main2 {
     /**
      * @return 以root为根节点的树的高度
      */
-    public int getHigh2(TreeNode root) {
+    private int getHigh2(TreeNode root) {
         if (root == null) {
             return 0;
         }

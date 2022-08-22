@@ -30,7 +30,7 @@ import tool.TreeNode;
  * -1000 <= Node.val <= 1000
  * <p>
  * 注意：本题与主站 124 题相同： https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/
- *
+ * <p>
  * 这道题和字节跳动-互娱二面时的题很像，但是那个没有这个难
  */
 public class MaxPathSum051 {
@@ -42,14 +42,22 @@ public class MaxPathSum051 {
     }
 
     /**
-     * 从左子树或者右子树来到root,所能取得的最大值
+     * @return 从左子树 或者 右子树来到root, 所能取得的最大值
      */
     public int maxN(TreeNode root) {
         if (root == null) {
             return 0;
         }
+        /**
+         * 这里就是通过和0比较去在逻辑上实现的:选还是不选 这个逻辑
+         * 如果从某子树来到root所取得的最大值比0小,那么就让他等于0 -> 也就意味着不在选择这条子路径
+         * (当然不会出现”从某子树来到root所取得的最大值比0小“这个情况 因为每次都和0比较了，最小都要返回0)
+         * */
+        //来到左孩子时，所能取得的最大值
         int leftMax = Math.max(0, maxN(root.left));
+        //来到右孩子时，所能取得的最大值
         int rightMax = Math.max(0, maxN(root.right));
+        //需要返回的值
         int maxPath = Math.max(leftMax, rightMax) + root.val;
         //在此过程中更新res
         res = Math.max(res, leftMax + rightMax + root.val);

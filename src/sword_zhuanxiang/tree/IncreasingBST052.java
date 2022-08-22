@@ -26,9 +26,16 @@ import tool.TreeNode;
  * 注意：本题与主站 897 题相同： https://leetcode-cn.com/problems/increasing-order-search-tree/
  */
 public class IncreasingBST052 {
+    /*
+    * 通过创建哑节点的方式将一开始遍历根节点的这一特殊情况普通化,从而简化代码的编写
+    * */
     TreeNode dummyNode = new TreeNode(-1);
     TreeNode preNode = dummyNode;
-
+    /**
+     * 在中序遍历的过程中保存指向上一个节点的指针，
+     * 然后每次遍历到当前节点的时候就将指向上一个节点的指针指向当前节点
+     * 如此下去...
+     * */
     public TreeNode increasingBST(TreeNode root) {
         if (root == null || root.left == null && root.right == null) {
             return root;

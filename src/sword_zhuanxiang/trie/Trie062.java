@@ -70,7 +70,7 @@ public class Trie062 {
     /**
      * Returns if the word is in the trie.
      */
-    public boolean search(String word) {
+    public  boolean search(String word) {
         Trie062 node = this;
         for (int i = 0; i < word.length(); i++) {
             char c = word.charAt(i);

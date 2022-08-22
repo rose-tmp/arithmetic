@@ -53,9 +53,11 @@ public class MinWindow017 {
         Map<Character, Integer> map = new HashMap<>();
         map.put(s.charAt(0), 1);
         for (int left = 0; left < s.length(); left++) {
+            //滑动窗口左边界右移
             if (left != 0) {
                 map.put(s.charAt(left - 1), map.get(s.charAt(left - 1)) - 1);
             }
+            //滑动窗口右边界右扩
             while (right < s.length() && !isContainsAll(map, t)) {
                 map.put(s.charAt(right), 1 + map.getOrDefault(s.charAt(right), 0));
                 right++;
@@ -68,19 +70,22 @@ public class MinWindow017 {
         }
         return s.substring(res[0], res[1]);
     }
-
+    /**
+     * @param map key:字符 val:出现次数
+     * */
     public boolean isContainsAll(Map<Character, Integer> map, String t) {
         for (int i = 0; i < t.length(); i++) {
             if (!map.containsKey(t.charAt(i)) || map.get(t.charAt(i)) <= 0) {
                 return false;
             }
         }
+        //临时map 用来存储t中每个字符以及其出现次数 -> 用来在接下来的for中去和map中存储信息作比较
         Map<Character, Integer> mapT = new HashMap<>();
         for (int i = 0; i < t.length(); i++) {
             mapT.put(t.charAt(i), mapT.getOrDefault(t.charAt(i), 0) + 1);
         }
-        //防止个数不够
         for (Character key : mapT.keySet()) {
+            //允许大于，但是不允许小于 -> 小于就说明字符的数量不够，没有完全把t中的所有字符都覆盖
             if (map.get(key) < mapT.get(key)) {
                 return false;
             }

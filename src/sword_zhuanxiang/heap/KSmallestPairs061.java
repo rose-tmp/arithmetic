@@ -51,7 +51,7 @@ public class KSmallestPairs061 {
      * 大思路就是：[i,j]如果是第n个小的元素，那么第n+1小的元素就是[i+1,j]或者[i,j+1]
      * 那么我们就把这两个数放进堆中，堆自动调整好之后就可以把小根堆的堆头取出来放在结果里
      * 而官方给的题解难就难在避免重复元素的方式上->没看懂为什么这样可以避免重复
-     *
+     * <p>
      * 避免重复还有另一种方式：set
      * 具体可以看一下：https://leetcode.cn/problems/qn8gGX/solution/yi-bu-bu-si-kao-chu-bfs-you-xian-dui-lie-smel/
      */
@@ -66,14 +66,23 @@ public class KSmallestPairs061 {
         for (int i = 0; i < Math.min(nums2.length, k); i++) {
             smallHeap.offer(new int[]{0, i});
         }
+
         List<List<Integer>> ans = new ArrayList<>();
         //官方题解
-        while (k-- >  0 && !smallHeap.isEmpty()) {
+        while (k-- > 0 && !smallHeap.isEmpty()) {
             int[] cur = smallHeap.poll();
             List<Integer> l = new ArrayList<>();
             l.add(nums1[cur[0]]);
             l.add(nums2[cur[1]]);
             ans.add(l);
+            /*
+            * 首先因为nums1和nums2都是有序的,所以[0,0]所对应的元素(即nums1[0],nums2[0])一定是最小的元素
+            * 因为[i,j]如果是第n个小的元素，那么第n+1小的元素就是[i+1,j]或者[i,j+1]
+            * 所以第二小的元素只可能出现在[0,1]或者[1,0]这两个位置
+            * 又因为一开始的时候在67行已经把[0,i]加进了堆中
+            * 所以这里每次遍历到[i,j]的时候只需要将[i+1,j]加入到堆中
+            * 直到找到了k个组合，就会跳出while.这样比起kSmallestPairs1时间复杂度少很多
+            * */
             if (cur[0] + 1 < nums1.length) {
                 smallHeap.offer(new int[]{cur[0] + 1, cur[1]});
             }

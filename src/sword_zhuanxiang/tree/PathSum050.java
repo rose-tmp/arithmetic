@@ -30,6 +30,9 @@ import tool.TreeNode;
  * 注意：本题与主站 437 题相同：https://leetcode-cn.com/problems/path-sum-iii/
  */
 public class PathSum050 {
+    /**
+     * 这道题注意一点：节点值有正有负 所以在getSum()中即使sum == target 依旧向下继续遍历下去
+     */
     public int pathSum(TreeNode root, int targetSum) {
         int res = 0;
         res += getSum(root, 0, targetSum);
@@ -38,6 +41,13 @@ public class PathSum050 {
         return res;
     }
 
+    /**
+     * @param sum 走到当前root时之前遍历到的节点值的和
+     * @return root节点为根节点的树上, 有多少条和等于target的路径（这里没有要求必须从根节点出发,也没有要求必须到叶子节点结束。
+     * 和要求根节点到叶子节点的路径和为目标值的那道题有区别，不过整体的方法和逻辑是一样的，
+     * 只是getSum()中不再需要判断root为叶子节点并且sum == target的时候才res++，
+     * 而是满足sum == target之后就res++）
+     */
     public int getSum(TreeNode root, int sum, int target) {
         if (root == null) {
             return 0;

@@ -1,4 +1,4 @@
-package writtenExam.microsoft;
+package writtenExam.microsoft.test2;
 
 import java.util.ArrayList;
 import java.util.Arrays;

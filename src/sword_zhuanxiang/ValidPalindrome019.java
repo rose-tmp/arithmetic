@@ -9,7 +9,7 @@ package sword_zhuanxiang;
  * 示例 1:
  * <p>
  * 输入: s = "aba"
- * 输出: true
+ * 输出: true ->删除0个也算是”最多删除一个字符"
  * 示例 2:
  * <p>
  * 输入: s = "abca"
@@ -32,17 +32,18 @@ package sword_zhuanxiang;
 public class ValidPalindrome019 {
     /**
      * 双指针
-     * 如果两个位置上的元素不等，则分别删除两个之后判断剩下的字符串是否为回文串
+     * 贪心策略：如果两个位置上的元素不等，则分别删除两个之后判断剩下的字符串是否为回文串
      * 如果其中一个是，返回true;如果两个都不是，返回false
      */
     public boolean validPalindrome(String s) {
         return isValid(s, false);
     }
+
     /**
      * @param flag 是否为分割后的字符 如果是，并且有s.charAt(i)!=s.charAt(j)那么就不用在继续
      *             删除i或j位置上的元素继续递归，而是直接返回false
      *             因为题目要求只能删除一个元素
-     * */
+     */
     public boolean isValid(String s, boolean flag) {
         if (s.length() == 0) {
             return true;

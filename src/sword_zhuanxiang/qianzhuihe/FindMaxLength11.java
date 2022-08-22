@@ -1,4 +1,4 @@
-package sword_zhuanxiang;
+package sword_zhuanxiang.qianzhuihe;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -34,10 +34,11 @@ public class FindMaxLength11 {
         map.put(0, -1);
         for (int i = 0; i < nums.length; i++) {
             preSum += nums[i] == 0 ? -1 : 1;
-            //nums[map.get(presum)...i]这段和为0
+            //之前已经出现过这个前缀和，那么就意味着nums[map.get(presum)...i]这段和为0
             if (map.containsKey(preSum)) {
                 maxRes = Math.max(maxRes, i - map.get(preSum));
             } else {
+                //之前没有出现过这个前缀和，那么就把它的第一次出现的下标记录下来
                 map.put(preSum, i);
             }
         }

@@ -23,6 +23,7 @@ import java.util.List;
 public class NumSubarrayProductLessThanK009 {
     /**
      * 滑动窗口 官方题解
+     * 这个题和008很像，一个是求和，一个是求乘积
      */
     public int numSubarrayProductLessThanK(int[] nums, int k) {
         if (nums.length == 0) {

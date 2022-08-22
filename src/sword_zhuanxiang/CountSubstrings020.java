@@ -26,13 +26,18 @@ package sword_zhuanxiang;
  * 注意：本题与主站 647 题相同：https://leetcode-cn.com/problems/palindromic-substrings/
  */
 public class CountSubstrings020 {
+    /**
+     * 将每个位置作为中间位置然后向两边扩展
+     * */
     public int countSubstrings(String s) {
         if (s.length() == 0) {
             return 0;
         }
         int res = 0;
         for (int i = 0; i < s.length(); i++) {
+            //以字符s.charAt(i)为中心向两边扩展
             res += getCount(s, i, i);
+            //以字符s.charAt(i)和s..charAt(i+1)为中心点向外扩
             res += getCount(s, i, i + 1);
         }
         return res;

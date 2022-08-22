@@ -1,4 +1,4 @@
-package sword_zhuanxiang;
+package sword_zhuanxiang.qianzhuihe;
 
 /**
  * @author - ZwZ
@@ -30,12 +30,15 @@ public class PivotIndex012 {
      * sumL + nums[i] + sumR = sum
      * 2sumL + nums[i] = sum
      * num[i] = sum - 2sumL
+     *
+     * 时间复杂度o(N)
      * */
     public int pivotIndex1(int[] nums) {
         int sumL = 0,sum = 0;
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
         }
+        //nums[0] = sum,即2sumL=0,所以直接返回0
         if (sum - nums[0] == 0) {
             return 0;
         }

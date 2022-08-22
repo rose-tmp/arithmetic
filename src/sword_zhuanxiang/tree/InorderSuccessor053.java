@@ -31,7 +31,9 @@ import tool.TreeNode;
 public class InorderSuccessor053 {
     TreeNode res = null;
     TreeNode pre = new TreeNode(-1);
-
+    /*
+    * 和052的整体逻辑是一样的,都是在中序遍历的过程中维护指向上一个节点的方式去完成题目
+    * */
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         inOrder(root, p);
         return res;

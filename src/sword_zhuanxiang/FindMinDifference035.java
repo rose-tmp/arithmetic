@@ -27,7 +27,7 @@ public class FindMinDifference035 {
         return res;
     }
 
-    //t1代表的时间已经比t2小
+    //t1代表的时间数值上已经比t2小,因为排了序
     public int getMin(String t1, String t2) {
         int m1 = (((t1.charAt(0) - '0') * 10 + (t1.charAt(1) - '0')) * 60 +
                 ((t1.charAt(3) - '0') * 10 + t1.charAt(4) - '0'));
