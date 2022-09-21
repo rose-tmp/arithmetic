@@ -83,4 +83,9 @@ public class LongestCommonSubsequence2 {
         //反转
         return sb.reverse().toString();
     }
+
+    public static void main(String[] args) {
+        LongestCommonSubsequence2 longestCommonSubsequence2 = new LongestCommonSubsequence2();
+        System.out.println(longestCommonSubsequence2.LCS("newcoder","nowcoder"));
+    }
 }

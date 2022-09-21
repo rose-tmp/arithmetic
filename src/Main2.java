@@ -6,70 +6,67 @@ import java.util.*;
  * @Description:
  */
 public class Main2 {
-    public static void main(String[] args) {
-        String res1 = "Yes";
-        String res2 = "No";
-        List<String> res = new ArrayList<>();
-        Scanner in = new Scanner(System.in);
-        int num = Integer.parseInt(in.nextLine());
-        List<List<Integer>> list = new ArrayList<>();
+    List<List<Integer>> res = new ArrayList<>();
 
-        while (num > 0) {
-            num--;
-            String[] temp = in.nextLine().split(" ");
-            List<Integer> l = new ArrayList<>();
-            for (String s : temp) {
-                System.out.println(s);
-                l.add(Integer.parseInt(s));
-            }
-            list.add(l);
-        }
+    public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
+        dfs(graph,0,new ArrayList<>());
+        return res;
+    }
 
-        //排序
-        for (int i = 0; i < list.size(); i++) {
-            list.get(i).sort(new Comparator<Integer>() {
-                @Override
-                public int compare(Integer o1, Integer o2) {
-                    return o1 - o2;
-                }
-            });
+    public void dfs(int[][] graph, int index, List<Integer> list) {
+        if (index == graph.length) {
+            res.add(new ArrayList<>(list));
+            return;
         }
-        for (int i = 0; i < list.size(); i++) {
-            List<Integer> l0 = list.get(i);
-            if (num1(l0)) {
-                res.add(res1);
-            } else {
-                res.add(res2);
-            }
-        }
-        for (String r : res) {
-            System.out.println(r);
+        for (int i = 0; i < graph[index].length; i++) {
+            list.add(graph[index][i]);
+            dfs(graph, i, list);
+            list.remove(list.size() - 1);
         }
     }
 
-    public static boolean num1(List<Integer> list) {
-        int n = list.size();
-        int ans = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                int left = j + 1, right = n - 1, k = j;
-                while (left <= right) {
-                    int mid = left + (right - left) / 2;
-                    if (list.get(mid) < list.get(i) + list.get(j)) {
-                        k = mid;
-                        left = mid + 1;
-                    } else {
-                        right = mid - 1;
-                    }
-                }
-                ans += k - j;
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        //用来记录有向图 key:课程编号 val:在有向图中该课程指向的课程，即这个课程是哪些课程的先修课程
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        //in[i]记录了第i门课在图中的入度
+        int[] in = new int[numCourses];
+        for (int i = 0; i < prerequisites.length; i++) {
+            int pre = prerequisites[i][1];
+            int cur = prerequisites[i][0];
+            List<Integer> list = map.getOrDefault(pre, new ArrayList<>());
+            list.add(cur);
+            map.put(pre, list);
+            in[cur] = in[cur] + 1;
+        }
+        Queue<Integer> queue = new LinkedList<>();
+        //将入度为0的课程编号加入队列中
+        for (int i = 0; i < in.length; i++) {
+            if (in[i] == 0) {
+                queue.offer(i);
             }
         }
-        if (ans == 2) {
-            return true;
-        } else {
-            return false;
+        int[] res = new int[numCourses];
+        int index = 0;
+        while (!queue.isEmpty()) {
+            int cur = queue.poll();
+            res[index++] = cur;
+            if (!map.containsKey(cur)) {
+                continue;
+            }
+            List<Integer> list = map.get(cur);
+            //将该节点指向的其他所有节点的入度-1
+            for (int i = 0; i < list.size(); i++) {
+                int temp = list.get(i);
+                in[temp] = in[temp] - 1;
+                if (in[temp] == 0) {
+                    queue.offer(temp);
+                }
+            }
         }
+        //没有把全部的节点都放入res中，说明存在环，存在环就一定不可能有拓扑序
+        if (index != numCourses) {
+            return new int[0];
+        }
+        return res;
     }
-
 }

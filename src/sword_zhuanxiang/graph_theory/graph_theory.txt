@@ -10,3 +10,10 @@ https://labuladong.gitee.io/algo/2/22/51/
  1. 求拓扑序  FindOrder113
  2. 有向图中环检测的问题 CanFinish207
  3. 二分数判定算法 IsBipartite106
+
+笔记1:如何判断一个有向图是否含有环？
+    寻找该有向图中的拓扑序，如果找到了则说明无环，否则有环
+    参考题目:113,207
+笔记2:如何判断一个无向图是否含有环？
+    并查集
+    参考题目:bingchaji.UnionFind2,261,minimumSpanningTree.Kruskal

@@ -21,13 +21,14 @@ public class Stack {
         stack1.push(node);
     }
 
-    public void pop() {
+    public int pop() {
         if (!stack1.empty()) {
             int top = stack1.pop();
             int min = stack2.peek();
             if (top == min)
                 stack2.pop();
         }
+        return 0;
     }
 
     public int top() {

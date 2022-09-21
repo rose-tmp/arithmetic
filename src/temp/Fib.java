@@ -1,5 +1,8 @@
 package temp;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 /**
  * @author - ZwZ
  * @date - 2021/1/4 - 18:34
@@ -24,13 +27,13 @@ package temp;
  * 链接：https://leetcode-cn.com/problems/fibonacci-number
  */
 public class Fib {
-    /*public int fib(int n) {
+    public int fib(int n) {
         if (n == 0 || n == 1) {
             return n;
         }
         return fib(n - 1) + fib(n - 2);
-    }*/
-    public int fib(int n) {
+    }
+    /*public int fib(int n) {
         if(n < 0){
             return -1;
         }
@@ -41,5 +44,12 @@ public class Fib {
             dp[i] = dp[i - 1] + dp[i + 2];
         }
         return dp[n];
+    }*/
+
+    public static void main(String[] args) {
+
+
+        Fib fib = new Fib();
+        System.out.println(fib.fib(12));
     }
 }

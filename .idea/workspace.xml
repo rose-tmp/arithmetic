@@ -28,105 +28,60 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="...">
-      <change afterPath="$PROJECT_DIR$/src/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/SlidingWindow/LengthOfLongestSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/SlidingWindow/MinWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/SlidingWindow/NumSubarrayProductLessThanK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPattern/proxy/Demo9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPattern/proxy/DynamicProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPattern/proxy/StaticProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/DicesProbability.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/MaxValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/NthUglyNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/TranslateNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/knapsackProblem/CompleteKnapsack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/knapsackProblem/Knapsack01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/IsMatch44.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/MaxEnvelopes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/MinDistance583.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/MinimumDeleteSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/NumDistinct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/treeDP/MinCameraCover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/treeDP/Rob337.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/easy/Divide29.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interview/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interview/Demo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interview/Demo3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interview/byteDance_huyu/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interview/byteDance_huyu/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interview/byteDance_xiaohe/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interview/byteDance_xiaohe/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword2/AddBinary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/AsteroidCollision037.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/CheckInclusion014.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/CountSubstrings020.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/DailyTemperatures038.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/DetectCycle022.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/EvalRPN036.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/FindMaxLength11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/FindMinDifference035.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/GetIntersectionNode023.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/GroupAnagrams033.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/LRUCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/MaxProduct005.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/MinSubArrayLen008.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/PivotIndex012.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/ReorderList026.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/SubarraySum010.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/TreeSum007.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/ValidPalindrome019.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/huaDongChuangKou/ContainsNearbyAlmostDuplicate057.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/huaDongChuangKou/LengthOfLongestSubstring016.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/huaDongChuangKou/MinWindow017.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/huaDongChuangKou/NumSubarrayProductLessThanK009.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/tree/CBTInserter043.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/tree/Codec048.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/tree/ConvertBST054.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/tree/FindTarget056.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/tree/IncreasingBST052.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/tree/InorderSuccessor053.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/tree/MaxPathSum051.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/tree/PathSum050.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/tree/SumNumbers049.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/BuildTree105.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/LongestUnivaluePath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/MaxPathSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/TreeToDoublyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/ZigzagLevelOrder103.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/meituan/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/meituan/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/meituan/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/meituan/Main4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/meituan/meituan/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/meituan/meituan/Test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/meituan/meituan/Test4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/meituan/meituan/Test5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/meituan/mihayou/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/Fuck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/Fuck2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ10_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ11_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ12_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ13_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ14_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ15_noac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ16_noac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ17_noac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ1_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ20_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ26_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ2_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ3_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ4_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ5_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ6_no.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ7_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ8_ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ9_ac.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="图论">
+      <change afterPath="$PROJECT_DIR$/src/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/Trap42.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/binarySearch/MaximumCandies2226.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/greedy/EraseOverlapIntervals435.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interview/honor/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/Calculate227.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword2/CoinChange103.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword2/MinCost091.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/ValidTree261.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/minimumSpanningTree/MinCostConnectPoints1584.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/minimumSpanningTree/MinimumCost1135.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/minimumSpanningTree/MinimumEffortPath1631.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/Thoughtworks/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/Thoughtworks/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/Thoughtworks/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/Thoughtworks/Main4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/alibaba/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/alibaba/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/alibaba/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/alibaba/Main4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/didi/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/honor/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/honor/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/honor/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/huawei/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/ningmengweiqu/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/ningmengweiqu/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/ningmengweiqu/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/ningmengweiqu/Main4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/ningmengweiqu/Main5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/qunaer/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/qunaer/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/qunaer/Main4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/shunfeng/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/shunfeng/Main11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/shunfeng/Main12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/shunfeng/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/vistras/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/vistras/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/wande/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/zhongxing/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writtenExam/zhongxing/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ43.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/LongestCommonSubsequence2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/LongestCommonSubsequence2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sword/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sword/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/graph_theory" beforeDir="false" afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/graph_theory.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/minimumSpanningTree/Prim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/minimumSpanningTree/Prim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/temp/Fib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/temp/Fib.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +94,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -166,34 +122,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/JavaProject/arithmetic",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaProject/windProject&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;
   }
-}]]></component>
+}</component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\arithmetic\src\sword_zhuanxiang\qianzhuihe" />
+      <recent name="D:\JetBrains\IntelliJ IDEA\IDEProjects\arithmetic\src\leetcode\greedy" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JetBrains\IntelliJ IDEA\IDEProjects\arithmetic\src\leetcode\dp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sword_zhuanxiang.erfenchazhao" />
+      <recent name="sword_zhuanxiang.qianzhuihe" />
+      <recent name="sword_zhuanxiang.bingchaji" />
       <recent name="leetcode.dp" />
       <recent name="interview" />
-      <recent name="leetcode.greedy" />
-      <recent name="leetcode.difficult" />
-      <recent name="leetcode.backtracking" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JetBrains\IntelliJ IDEA\IDEProjects\arithmetic\src\leetcode\greedy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NumSubarrayProductLessThanK">
+  <component name="RunManager" selected="Application.Calculate227">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -205,12 +166,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckSubarraySum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.PrefixSum.CheckSubarraySum" />
+    <configuration name="Calculate227" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.Calculate227" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.SlidingWindow.*" />
+          <option name="PATTERN" value="stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -218,12 +179,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindTargetSumWays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.backtrackingAndDFS.FindTargetSumWays" />
+    <configuration name="Fib" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="temp.Fib" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.backtrackingAndDFS.*" />
+          <option name="PATTERN" value="temp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -231,12 +192,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumSubarrayProductLessThanK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.SlidingWindow.NumSubarrayProductLessThanK" />
+    <configuration name="LongestCommonSubsequence2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.subsequenceAndSubstring.LongestCommonSubsequence2" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.SlidingWindow.*" />
+          <option name="PATTERN" value="dp.subsequenceAndSubstring.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -244,12 +205,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.easy.SingleNumber" />
+    <configuration name="MaximumCandies2226" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="binarySearch.MaximumCandies2226" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.easy.*" />
+          <option name="PATTERN" value="binarySearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -257,12 +218,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubarraySum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.PrefixSum.SubarraySum" />
+    <configuration name="writtenExam.wande.Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="writtenExam.wande.Main1" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.SlidingWindow.*" />
+          <option name="PATTERN" value="writtenExam.wande.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -272,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NumSubarrayProductLessThanK" />
-        <item itemvalue="Application.CheckSubarraySum" />
-        <item itemvalue="Application.SubarraySum" />
-        <item itemvalue="Application.FindTargetSumWays" />
-        <item itemvalue="Application.SingleNumber" />
+        <item itemvalue="Application.Calculate227" />
+        <item itemvalue="Application.MaximumCandies2226" />
+        <item itemvalue="Application.Fib" />
+        <item itemvalue="Application.writtenExam.wande.Main1" />
+        <item itemvalue="Application.LongestCommonSubsequence2" />
       </list>
     </recent_temporary>
   </component>
@@ -321,27 +282,17 @@
       <workItem from="1616400761708" duration="110351000" />
       <workItem from="1647601022326" duration="4967000" />
       <workItem from="1660208396449" duration="833000" />
-    </task>
-    <task id="LOCAL-00083" summary="659. 分割数组为连续子序列">
-      <created>1607066340683</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1607066340683</updated>
-    </task>
-    <task id="LOCAL-00084" summary="96. 不同的二叉搜索树">
-      <created>1607155069223</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1607155069223</updated>
-    </task>
-    <task id="LOCAL-00085" summary="题目分类汇总">
-      <created>1607156087328</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1607156087329</updated>
+      <workItem from="1660219118528" duration="4160000" />
+      <workItem from="1660295145520" duration="5196000" />
+      <workItem from="1660356044275" duration="11881000" />
+      <workItem from="1660404700216" duration="94336000" />
+      <workItem from="1660789214435" duration="59542000" />
+      <workItem from="1660978098898" duration="15426000" />
+      <workItem from="1661148801351" duration="8324000" />
+      <workItem from="1661322926839" duration="29282000" />
+      <workItem from="1662002360016" duration="39408000" />
+      <workItem from="1662447980745" duration="74173000" />
+      <workItem from="1663088516589" duration="24396000" />
     </task>
     <task id="LOCAL-00086" summary="621. 任务调度器">
       <created>1607168430289</created>
@@ -665,7 +616,28 @@
       <option name="project" value="LOCAL" />
       <updated>1660208839287</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="《剑指offer》专项突击版关于堆的一些题目">
+      <created>1660472373934</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1660472373934</updated>
+    </task>
+    <task id="LOCAL-00133" summary="《剑指offer》专项突击版关于字典树(Trie)的一些题目">
+      <created>1660553233957</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1660553233957</updated>
+    </task>
+    <task id="LOCAL-00134" summary="图论">
+      <created>1661153593638</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1661153593638</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -696,9 +668,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="无" />
-    <MESSAGE value="快手效率工程部门后端实习生一面第二题" />
-    <MESSAGE value="返回一颗二叉树站在右边可以看得到的节点 (瓜子后端实习一面算法题)" />
     <MESSAGE value="73. 矩阵置零" />
     <MESSAGE value="11. 盛最多水的容器" />
     <MESSAGE value="412. Fizz Buzz" />
@@ -721,7 +690,10 @@
     <MESSAGE value="494. 目标和" />
     <MESSAGE value="剑指 Offer 63. 股票的最大利润" />
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
+    <MESSAGE value="《剑指offer》专项突击版关于堆的一些题目" />
+    <MESSAGE value="《剑指offer》专项突击版关于字典树(Trie)的一些题目" />
+    <MESSAGE value="图论" />
+    <option name="LAST_COMMIT_MESSAGE" value="图论" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -729,7 +701,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/dp/MinCut.java</url>
           <line>38</line>
-          <properties class="leetcode.dp.MinCut" method="minCut">
+          <properties class="leetcode.dp.MinCut">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="13" />
@@ -737,10 +709,19 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/easy/SingleNumber.java</url>
           <line>46</line>
-          <properties class="leetcode.easy.SingleNumber" method="singleNumber2">
+          <properties class="leetcode.easy.SingleNumber">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/binarySearch/MaximumCandies2226.java</url>
+          <line>71</line>
+          <properties class="binarySearch.MaximumCandies2226" method="show">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

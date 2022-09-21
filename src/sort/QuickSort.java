@@ -65,6 +65,7 @@ public class QuickSort {
                 int temp = nums[right - 1];
                 nums[right - 1] = nums[cur];
                 nums[cur] = temp;
+                right--;
             }
         }
         return new int[]{left, right};

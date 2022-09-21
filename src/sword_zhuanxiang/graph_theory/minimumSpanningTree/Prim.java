@@ -6,4 +6,5 @@ package sword_zhuanxiang.graph_theory.minimumSpanningTree;
  * @desc: https://labuladong.gitee.io/algo/2/22/54/
  */
 public class Prim {
+
 }
