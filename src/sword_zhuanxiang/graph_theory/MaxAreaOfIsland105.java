@@ -79,4 +79,22 @@ public class MaxAreaOfIsland105 {
         }
         return ans;
     }
+
+    public int[][] dirt = new int[][]{{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
+    /**
+     * 通过dirt坐标的方式，写起来更简洁
+     * */
+    public int dfs2(int[][] grid, int i, int j) {
+        if (i < 0 || i > grid.length || j < 0 || j > grid[0].length || grid[i][j] == 0) {
+            return 0;
+        }
+        int ans = 1;
+        grid[i][j] = 0;
+        for (int k = 0; k < dirt.length; k++) {
+            int newX = i + dirt[k][0];
+            int newY = j + dirt[k][1];
+            ans += dfs(grid, newX, newY);
+        }
+        return ans;
+    }
 }

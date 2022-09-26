@@ -1,4 +1,4 @@
-package sword_zhuanxiang.graph_theory.minimumSpanningTree;
+package sword_zhuanxiang.graph_theory;
 
 /**
  * @author: ZwZ
@@ -55,6 +55,13 @@ public class MinimumEffortPath1631 {
      * 而在这里，用i*N+j的方式去唯一确定某个格子的位置
      */
     public int minimumEffortPath(int[][] heights) {
-        return 1;
+        return 0;
+    }
+
+    int sum = 0;
+    int[][] dirt = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+
+    public void bfs(int[][] heights, int i, int j) {
+
     }
 }

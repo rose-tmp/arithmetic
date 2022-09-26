@@ -28,60 +28,28 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="图论">
-      <change afterPath="$PROJECT_DIR$/src/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/Trap42.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/binarySearch/MaximumCandies2226.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/greedy/EraseOverlapIntervals435.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interview/honor/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/Calculate227.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword2/CoinChange103.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword2/MinCost091.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/ValidTree261.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/minimumSpanningTree/MinCostConnectPoints1584.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/minimumSpanningTree/MinimumCost1135.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/minimumSpanningTree/MinimumEffortPath1631.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/Thoughtworks/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/Thoughtworks/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/Thoughtworks/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/Thoughtworks/Main4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/alibaba/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/alibaba/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/alibaba/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/alibaba/Main4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/didi/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/honor/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/honor/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/honor/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/huawei/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/ningmengweiqu/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/ningmengweiqu/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/ningmengweiqu/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/ningmengweiqu/Main4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/ningmengweiqu/Main5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/qunaer/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/qunaer/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/qunaer/Main4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/shunfeng/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/shunfeng/Main11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/shunfeng/Main12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/shunfeng/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/vistras/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/vistras/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/wande/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/zhongxing/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writtenExam/zhongxing/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zhanlang/HJ43.java" afterDir="false" />
+    <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="...">
+      <change afterPath="$PROJECT_DIR$/src/array/CountBattleships419.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/FindLength718.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/easy/CompressString0106.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/easy/IsHappy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword/BuildTree07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword2/LevelOrder32.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword2/LowestCommonAncestor68.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword2/VerifyPostorder33.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/Dijkstra1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/Dijkstra2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/FindCheapestPrice787.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/MinimumEffortPath1631.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/NetworkDelayTime743.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/BinaryTreePaths257.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/LongestCommonSubsequence2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/subsequenceAndSubstring/LongestCommonSubsequence2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sword/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sword/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/graph_theory" beforeDir="false" afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/graph_theory.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/minimumSpanningTree/Prim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/minimumSpanningTree/Prim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/temp/Fib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/temp/Fib.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/ClimbStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/ClimbStairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/MaxAreaOfIsland105.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/MaxAreaOfIsland105.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/minimumSpanningTree/MinimumEffortPath1631.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/MinimumEffortPath1631.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,8 +62,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -154,7 +122,7 @@
       <recent name="interview" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Calculate227">
+  <component name="RunManager" selected="Application.ClimbStairs">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -166,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Calculate227" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.Calculate227" />
+    <configuration name="BinaryTreePaths257" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.BinaryTreePaths257" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="stack.*" />
+          <option name="PATTERN" value="tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fib" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="temp.Fib" />
+    <configuration name="ClimbStairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.ClimbStairs" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="temp.*" />
+          <option name="PATTERN" value="dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -192,12 +160,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestCommonSubsequence2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.subsequenceAndSubstring.LongestCommonSubsequence2" />
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.Demo" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.subsequenceAndSubstring.*" />
+          <option name="PATTERN" value="tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -205,12 +173,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumCandies2226" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="binarySearch.MaximumCandies2226" />
+    <configuration name="IsHappy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.IsHappy" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="binarySearch.*" />
+          <option name="PATTERN" value="easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -218,12 +186,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="writtenExam.wande.Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="writtenExam.wande.Main1" />
+    <configuration name="MinimumEffortPath1631" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sword_zhuanxiang.graph_theory.MinimumEffortPath1631" />
       <module name="arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="writtenExam.wande.*" />
+          <option name="PATTERN" value="sword_zhuanxiang.graph_theory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -233,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Calculate227" />
-        <item itemvalue="Application.MaximumCandies2226" />
-        <item itemvalue="Application.Fib" />
-        <item itemvalue="Application.writtenExam.wande.Main1" />
-        <item itemvalue="Application.LongestCommonSubsequence2" />
+        <item itemvalue="Application.ClimbStairs" />
+        <item itemvalue="Application.MinimumEffortPath1631" />
+        <item itemvalue="Application.IsHappy" />
+        <item itemvalue="Application.BinaryTreePaths257" />
+        <item itemvalue="Application.Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -292,14 +260,7 @@
       <workItem from="1661322926839" duration="29282000" />
       <workItem from="1662002360016" duration="39408000" />
       <workItem from="1662447980745" duration="74173000" />
-      <workItem from="1663088516589" duration="24396000" />
-    </task>
-    <task id="LOCAL-00086" summary="621. 任务调度器">
-      <created>1607168430289</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1607168430290</updated>
+      <workItem from="1663088516589" duration="98984000" />
     </task>
     <task id="LOCAL-00087" summary="整理">
       <created>1607168658624</created>
@@ -637,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661153593638</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="...">
+      <created>1663727934312</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1663727934312</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -689,11 +657,11 @@
     <MESSAGE value="347. 前 K 个高频元素" />
     <MESSAGE value="494. 目标和" />
     <MESSAGE value="剑指 Offer 63. 股票的最大利润" />
-    <MESSAGE value="..." />
     <MESSAGE value="《剑指offer》专项突击版关于堆的一些题目" />
     <MESSAGE value="《剑指offer》专项突击版关于字典树(Trie)的一些题目" />
     <MESSAGE value="图论" />
-    <option name="LAST_COMMIT_MESSAGE" value="图论" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
