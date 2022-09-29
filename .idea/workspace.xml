@@ -29,27 +29,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28df0cbe-65fa-48c2-89b9-3644072ffa69" name="Default Changelist" comment="...">
-      <change afterPath="$PROJECT_DIR$/src/array/CountBattleships419.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/FindLength718.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/easy/CompressString0106.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/easy/IsHappy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword/BuildTree07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword2/LevelOrder32.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword2/LowestCommonAncestor68.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword2/VerifyPostorder33.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/Dijkstra1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/Dijkstra2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/FindCheapestPrice787.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/MinimumEffortPath1631.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/NetworkDelayTime743.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/BinaryTreePaths257.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/binarySearch/TriangleNumber611.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interview/huawei/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middling/SortColors75.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/ClimbStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/ClimbStairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/MaxAreaOfIsland105.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/MaxAreaOfIsland105.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/minimumSpanningTree/MinimumEffortPath1631.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/MinimumEffortPath1631.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/NetworkDelayTime743.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sword_zhuanxiang/graph_theory/zuiduanlujing/NetworkDelayTime743.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +47,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -122,7 +107,7 @@
       <recent name="interview" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClimbStairs">
+  <component name="RunManager" selected="Application.Demo1">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -130,19 +115,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinaryTreePaths257" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.BinaryTreePaths257" />
-      <module name="arithmetic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,15 +132,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.Demo" />
+    <configuration name="Demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview.huawei.Demo1" />
       <module name="arithmetic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -199,13 +165,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview.huawei.Test5" />
+      <module name="arithmetic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interview.huawei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo1" />
+        <item itemvalue="Application.Test5" />
         <item itemvalue="Application.ClimbStairs" />
         <item itemvalue="Application.MinimumEffortPath1631" />
         <item itemvalue="Application.IsHappy" />
-        <item itemvalue="Application.BinaryTreePaths257" />
-        <item itemvalue="Application.Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -260,14 +239,8 @@
       <workItem from="1661322926839" duration="29282000" />
       <workItem from="1662002360016" duration="39408000" />
       <workItem from="1662447980745" duration="74173000" />
-      <workItem from="1663088516589" duration="98984000" />
-    </task>
-    <task id="LOCAL-00087" summary="整理">
-      <created>1607168658624</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1607168658625</updated>
+      <workItem from="1663088516589" duration="112686000" />
+      <workItem from="1664369806643" duration="4312000" />
     </task>
     <task id="LOCAL-00088" summary="516. 最长回文子序列">
       <created>1607238512451</created>
@@ -605,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663727934312</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="...">
+      <created>1664235930390</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1664235930391</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -42,7 +42,7 @@ public class NetworkDelayTime743 {
      */
     public int networkDelayTime(int[][] times, int n, int k) {
         // 节点编号是从 1 开始的，所以要一个大小为 n + 1 的邻接表
-        List<int[]>[] graph = new ArrayList<>[n + 1];
+        List<int[]>[] graph = new ArrayList[n + 1];
         for (int i = 1; i <= n; i++) {
             graph[i] = new ArrayList<>();
         }
